@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+*.egg-info/
+
+# Secrets
+.env
+*.env.local
+backend/.env
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Data: raw PDFs and large media are NOT versioned (sha256 manifest is).
+data/raw/**/*.pdf
+data/raw/**/*.mp4
+data/raw/**/*.zip
+data/raw/**/*.xlsx
+data/processed/*.duckdb
+data/processed/*.duckdb.wal
+data/processed/embeddings/
+models_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test / build artefacts
+playwright-report/
+test-results/
+coverage/
+paper/*.aux
+paper/*.log
+paper/*.out

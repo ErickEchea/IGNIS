@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+/*
+ * IGNIS design tokens. Graphite + regolith neutrals, a single amber/ember accent.
+ * Dark is the default "mission control" look; light mode is supported for printing and daylight.
+ */
+:root {
+  --bg: #121417;
+  --surface: #1a1d21;
+  --surface-2: #22262c;
+  --border: #30353d;
+  --text: #ecebe6;
+  --text-muted: #a8a69e;
+  --accent: #ffb547;
+  --accent-strong: #ff7a2e;
+  --danger: #ff6b5b;
+  --ok: #7cc79a;
+  --warn: #f2c14e;
+  --focus: #8fb3ff;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --bg: #f6f5f1;
+    --surface: #ffffff;
+    --surface-2: #efede7;
+    --border: #d6d3ca;
+    --text: #1b1d20;
+    --text-muted: #5b5a55;
+    --accent: #a65f00;
+    --accent-strong: #c2410c;
+    --danger: #b42318;
+    --ok: #1f7a4a;
+    --warn: #8a6100;
+    --focus: #1d4ed8;
+    color-scheme: light;
+  }
+}
+
+:root[data-theme='light'] {
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --surface-2: #efede7;
+  --border: #d6d3ca;
+  --text: #1b1d20;
+  --text-muted: #5b5a55;
+  --accent: #a65f00;
+  --accent-strong: #c2410c;
+  --danger: #b42318;
+  --ok: #1f7a4a;
+  --warn: #8a6100;
+  --focus: #1d4ed8;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Code', monospace;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
