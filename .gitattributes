@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Raw data must stay byte-identical so sha256 checksums are reproducible
+data/raw/** -text
+*.png binary
+*.pdf binary
+*.onnx binary
