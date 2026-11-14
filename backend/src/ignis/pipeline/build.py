@@ -10,6 +10,7 @@ from typing import Any
 import duckdb
 import yaml
 
+from ignis.core.analysis import build_analysis
 from ignis.evidence.cards import load_cards, verify_all
 from ignis.evidence.documents import DocumentStore, pdf_pages
 from ignis.evidence.scenarios import load_scenarios, verify_scenario
@@ -204,13 +205,14 @@ def build_all(*, strict: bool = True) -> int:
     _dump(STATIC_DIR / "scenarios.json", {"built_at": built_at, "scenarios": scenario_rows})
 
     flex = ds.parse_flex(raw)
+    bass2, saffire = ds.parse_bass2(raw), ds.parse_saffire(raw)
     tp_pdf = raw / "ntrs" / "pdf" / "20150023456.pdf"
     cross = ds.crosscheck_flex(flex, pdf_pages(str(tp_pdf))) if tp_pdf.exists() else None
     _dump(STATIC_DIR / "datasets.json", {
         "built_at": built_at,
         "flex": [r.as_record() for r in flex],
-        "bass2": ds.parse_bass2(raw),
-        "saffire": ds.parse_saffire(raw),
+        "bass2": bass2,
+        "saffire": saffire,
         "flex_crosscheck": None if cross is None else {
             "source_a": "PSI-69 experimental table (CSV)", "source_b": f"{ds.FLEX_TP_SOURCE} result tables",
             "join_key": "FLEX identifier",
@@ -220,6 +222,10 @@ def build_all(*, strict: bool = True) -> int:
         },
         "quality_log": [vars(q) for q in ds.QUALITY_LOG],
     })
+    analysis = build_analysis(
+        verified, scenarios, {"flex": [r.as_record() for r in flex], "bass2": bass2, "saffire": saffire}
+    )
+    _dump(STATIC_DIR / "analysis.json", {"built_at": built_at, **analysis})
     _dump(STATIC_DIR / "verification.json", {
         "built_at": built_at,
         "n_cards": len(cards),
