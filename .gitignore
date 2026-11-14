@@ -42,3 +42,7 @@ coverage/
 paper/*.aux
 paper/*.log
 paper/*.out
+
+# PSI raw investigation JSON includes researcher contact e-mails: keep local only
+data/raw/psi/investigations/
+data/raw/psi/search_*.json

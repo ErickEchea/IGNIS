@@ -1,0 +1,323 @@
+# Ferkul, Kralik & Liao (2026) "Material Flammability at Lunar and Martian Gravity", LPSC 2026
+#   extended abstract, NTRS 20260000646 (GOV_PERMITTED).
+# Ferkul, Johnston, Kralik & Liao (2025) "Lunar Combustion Investigation: Flammability Results from a
+#   Rotating Sounding Rocket", ASGSR 2025 presentation, NTRS 20250010653 (GOV_PERMITTED).
+#   LUCI flew on Blue Origin New Shepard (launch 4 Feb 2025), 11 rpm at 1.22 m radius.
+
+cards:
+  # ---------------------------------------------------------------- LUCI measurements (slides)
+  - id: LUCI2025-SIBAL-BASE-SPREAD
+    claim: "In simulated lunar gravity (spinning New Shepard), the flame base of SIBAL cotton-fiberglass fabric burning downward in air spread at 0.9 mm/s versus 1.5 mm/s in the matching 1-g burn (ratio 0.6), from linear fits."
+    material: "SIBAL cotton-fiberglass composite fabric"
+    material_class: "cotton-fiberglass fabric (charring)"
+    geometry: fabric
+    o2: {value: 20, unit: "%", dimension: fraction, uncertainty_kind: unknown}
+    pressure: {value: 1, unit: atm, dimension: pressure}
+    flow_direction: buoyant_downward
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: platform_jitter}
+    platform: suborbital_spin
+    reduced_gravity_duration_s: 150
+    measured_variable: flame_spread_rate
+    value: {value: 0.9, unit: mm/s, dimension: velocity, uncertainty_kind: unknown}
+    comparison_1g: {value: 1.5, unit: mm/s, dimension: velocity, uncertainty_kind: unknown}
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Single flight; rates from linear fits shown on slides; Coriolis effects acknowledged by the team."
+    caveats:
+      - "One flight, one sample per material; no repeat tests."
+      - "Rotating platform: Coriolis force distorts the flame (slide 17)."
+      - "O2 fell from ~20% to ~18% during the burn (slide 42)."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [partial_gravity, lunar, long_duration, flame_spread]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 33
+      locator: "Slide 33, SIBAL flame spread fit comparison"
+      quote: "Flame Base .9 1.5 .6"
+      extraction: llm_assisted_quote_verified
+
+  - id: LUCI2025-SIBAL-TIP-SPREAD
+    claim: "SIBAL fabric flame tip spread rate was 1.1 mm/s in simulated lunar gravity versus 2.8 mm/s in 1 g (ratio 0.39), from linear fits."
+    material: "SIBAL cotton-fiberglass composite fabric"
+    material_class: "cotton-fiberglass fabric (charring)"
+    geometry: fabric
+    o2: {value: 20, unit: "%", dimension: fraction, uncertainty_kind: unknown}
+    pressure: {value: 1, unit: atm, dimension: pressure}
+    flow_direction: buoyant_downward
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: platform_jitter}
+    platform: suborbital_spin
+    reduced_gravity_duration_s: 150
+    measured_variable: flame_tip_spread_rate
+    value: {value: 1.1, unit: mm/s, dimension: velocity, uncertainty_kind: unknown}
+    comparison_1g: {value: 2.8, unit: mm/s, dimension: velocity, uncertainty_kind: unknown}
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Single flight; linear fits; 1-g tracking noted as less clean by the team (slide 23)."
+    caveats:
+      - "1-g spread fits are approximate because of tracking fluctuations (slide 25)."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [partial_gravity, lunar, long_duration, flame_spread]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 33
+      locator: "Slide 33, SIBAL flame spread fit comparison"
+      quote: "Flame Tip 1.1 2.8 .39"
+      extraction: llm_assisted_quote_verified
+
+  - id: LUCI2025-PMMA-TIP-SPREAD
+    claim: "A 4-mm PMMA rod burning upward in air had a flame tip spread rate of 0.15 cm/s in simulated lunar gravity versus 0.40 cm/s in 1 g (ratio 0.38), from linear fits."
+    material: "PMMA (acrylic) rod, 4 mm diameter"
+    material_class: "PMMA (non-charring, melting)"
+    geometry: rod
+    thickness: {value: 4, unit: mm, dimension: length}
+    o2: {value: 20, unit: "%", dimension: fraction, uncertainty_kind: unknown}
+    pressure: {value: 1, unit: atm, dimension: pressure}
+    flow_direction: buoyant_upward
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: platform_jitter}
+    platform: suborbital_spin
+    reduced_gravity_duration_s: 150
+    measured_variable: flame_tip_spread_rate
+    value: {value: 0.15, unit: cm/s, dimension: velocity, uncertainty_kind: unknown}
+    comparison_1g: {value: 0.40, unit: cm/s, dimension: velocity, uncertainty_kind: unknown}
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Single flight; Coriolis force pulls the flame off the rod axis (slide 17)."
+    caveats:
+      - "Coriolis force pulls the flame away from the fuel axis (slide 17)."
+      - "Gravity level started dropping at t = 125 s (slide 43)."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [partial_gravity, lunar, long_duration, flame_spread]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 36
+      locator: "Slide 36, PMMA flame tip comparison"
+      quote: "Ratio .15 .40 .38"
+      extraction: llm_assisted_quote_verified
+
+  - id: LUCI2025-PMMA-O2-DEPLETION
+    claim: "During the lunar-gravity PMMA burn the chamber O2 fell from 20% to 14.3% while the flame was still present, then rose back to 15.8% as gravity (and buoyant flow) decreased at 125 s. This is an O2 history, not an extinction limit."
+    material: "PMMA (acrylic) rod, 4 mm diameter"
+    material_class: "PMMA (non-charring, melting)"
+    geometry: rod
+    pressure: {value: 1, unit: atm, dimension: pressure}
+    flow_direction: buoyant_upward
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: platform_jitter}
+    platform: suborbital_spin
+    reduced_gravity_duration_s: 150
+    measured_variable: chamber_o2_minimum_during_burn
+    value: {value: 14.3, unit: "%", dimension: fraction, uncertainty_kind: unknown}
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: low
+    confidence_rationale: "Chamber-average O2 from slides; the team does not report a lunar-g extinction limit on these slides."
+    caveats:
+      - "Not a flammability limit: the burn ended for several reasons, including the gravity drop at 125 s."
+      - "The matching 1-g PMMA burn went from 21% to 14.5% O2 (slide 31)."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [partial_gravity, lunar, oxygen]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 22
+      locator: "Slide 22"
+      quote: "O2% decreases from 20% to 14.3%."
+      extraction: llm_assisted_quote_verified
+
+  - id: LUCI2025-SIBAL-LONGER-SURVIVAL
+    claim: "The SIBAL flame in 1 g extinguished about 45 s sooner than the same material in simulated lunar gravity."
+    material: "SIBAL cotton-fiberglass composite fabric"
+    material_class: "cotton-fiberglass fabric (charring)"
+    geometry: fabric
+    flow_direction: buoyant_downward
+    gravity_range_g0: [0.165, 1.0]
+    platform: suborbital_spin
+    reduced_gravity_duration_s: 150
+    measured_variable: burn_duration_difference
+    value: {value: 45, unit: s, dimension: time, uncertainty_kind: unknown}
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: low
+    confidence_rationale: "Approximate (~) value from one flight and one 1-g comparison burn."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [partial_gravity, lunar, h2_evidence]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 34
+      locator: "Slide 34"
+      quote: "1-g extinction happens ~ 45 seconds sooner than partial-g extinction"
+      extraction: llm_assisted_quote_verified
+
+  - id: LUCI2025-FIRST-LONG-DURATION
+    claim: "LUCI's burns (over two and a half minutes) are described by the team as the first-ever extended-duration (greater than 25 s) combustion tests in simulated lunar gravity."
+    material: "SIBAL fabric and PMMA rod"
+    material_class: "multiple"
+    geometry: other
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: platform_jitter}
+    platform: suborbital_spin
+    reduced_gravity_duration_s: 150
+    measured_variable: test_duration_record
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Explicit statement by the investigation team."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [evidence_gap, long_duration, platform]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 12
+      locator: "Slide 12"
+      quote: "These are the first-ever, extended-duration (greater than 25 seconds) combustion tests performed in simulated Lunar gravity."
+      extraction: llm_assisted_quote_verified
+
+  - id: LUCI2025-CORIOLIS
+    claim: "On the rotating platform the Coriolis force pulls the flame away from the fuel axis, a known limitation of spin-simulated partial gravity."
+    material: "PMMA (acrylic) rod, 4 mm diameter"
+    material_class: "PMMA (non-charring, melting)"
+    geometry: rod
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: platform_jitter}
+    platform: suborbital_spin
+    measured_variable: methodological_limitation
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Directly observed in orthogonal camera views."
+    campaign_id: LUCI-NEW-SHEPARD-2025
+    tags: [limitation, coriolis]
+    provenance:
+      source_id: NTRS-20250010653
+      page: 17
+      locator: "Slide 17"
+      quote: "demonstrates how the Coriolis force pulls the flame away from the axis of the fuel"
+      extraction: llm_assisted_quote_verified
+
+  # ---------------------------------------------------------------- LPSC 2026 extended abstract
+  - id: LPSC2026-1G-NOT-WORST-CASE
+    claim: "NASA researchers state that microgravity research has shown normal gravity may not represent the most flammable condition, and that some materials that will not burn in 1 g will burn in 0 g with a low-speed flow or in partial gravity."
+    material: "spacecraft materials (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.0, 1.0]
+    platform: model
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Review statement by NASA Glenn researchers summarizing prior drop-tower, aircraft, sounding-rocket and modeling work."
+    campaign_id: LPSC-2026-REVIEW
+    tags: [h2_evidence, standards_stress_test]
+    provenance:
+      source_id: NTRS-20260000646
+      page: 1
+      locator: "Introduction"
+      quote: "Microgravity research over the last few decades has shown that normal gravity may not necessarily represent the most flammable condition for a material."
+      extraction: llm_assisted_quote_verified
+
+  - id: LPSC2026-SHORT-TEST-TIMES
+    claim: "Partial-gravity tests in drop towers (5 s) and aircraft (~25 s) are too short to provide significant flame development."
+    material: "solid materials (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.05, 0.9]
+    platform: parabolic_flight
+    measured_variable: methodological_limitation
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Explicit statement by NASA researchers about platform limits."
+    campaign_id: LPSC-2026-REVIEW
+    tags: [evidence_gap, short_duration, platform]
+    provenance:
+      source_id: NTRS-20260000646
+      page: 1
+      locator: "Discussion"
+      quote: "the available times are too short to provide significant flame development (5 s for drop tower and ~25 s for aircraft)"
+      extraction: llm_assisted_quote_verified
+
+  - id: LPSC2026-MIN-O2-NEAR-LUNAR
+    claim: "Related work suggests the oxygen concentration needed for flammability reaches a minimum near lunar gravity, and early work found flame spread rate versus gravity peaks there (Sacksteder & T'ien 1994)."
+    material: "thin solid fuels (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio}
+    platform: model
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Summary of earlier numerical and experimental evidence; the minimum location is suggested, not precisely measured."
+    campaign_id: LPSC-2026-REVIEW
+    tags: [partial_gravity, u_shaped_boundary, h2_evidence]
+    provenance:
+      source_id: NTRS-20260000646
+      page: 1
+      locator: "Current Knowledge"
+      quote: "Related work suggests that oxygen concentration for flammability reaches a minimum value in the vicinity of g = g Lunar."
+      extraction: llm_assisted_quote_verified
+
+  - id: LPSC2026-HABITAT-HAZARD
+    claim: "Because Moon and Mars habitats will likely use sub-atmospheric pressure with elevated oxygen, NASA researchers expect partial-g fire to be substantially worse than in 0 g and potentially worse than in 1 g. This is an expectation, not yet a measured result."
+    material: "habitat materials (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.165, 0.38]
+    platform: model
+    measured_variable: hazard_expectation
+    data_type: DERIVED
+    epistemic: HYPOTHESIS
+    confidence: low
+    confidence_rationale: "Stated as an expectation by the authors; long-duration partial-g data to confirm it do not yet exist."
+    campaign_id: LPSC-2026-REVIEW
+    tags: [h2_evidence, habitat, exploration_atmosphere]
+    provenance:
+      source_id: NTRS-20260000646
+      page: 1
+      locator: "Current Knowledge"
+      quote: "partial-g fire in an extraterrestrial habitat is a real hazard that is expected to be substantially worse than in 0-g and potentially worse than even 1-g."
+      extraction: llm_assisted_quote_verified
+
+  - id: LPSC2026-FM2-PLANNED
+    claim: "Flammability of Materials on the Moon (FM2), planned for launch in late 2026, will burn four solid fuel samples in quiescent habitable atmospheres in actual long-duration lunar gravity: the first combustion experiments on another world."
+    material: "four solid fuel samples (not specified in the abstract)"
+    material_class: "multiple"
+    geometry: thin_sheet
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio}
+    flow_direction: quiescent
+    platform: lunar_surface
+    measured_variable: planned_experiment
+    data_type: CONCEPTUAL
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Documented plan (CONCEPTUAL: no measurement yet); flight status after late 2026 is not verified by IGNIS."
+    caveats:
+      - "Planned experiment: no results exist yet in the IGNIS ledger."
+    campaign_id: FM2-LUNAR-SURFACE
+    tags: [next_experiment, lunar, planned]
+    provenance:
+      source_id: NTRS-20260000646
+      page: 1
+      locator: "Combustion on the Moon"
+      quote: "will burn a total of four solid fuel samples in quiescent habitable atmospheres in actual long duration Lunar gravity"
+      extraction: llm_assisted_quote_verified
+
+  - id: LPSC2026-ISS-CENTRIFUGE-CORIOLIS
+    claim: "Centrifuges currently available on the ISS have small radii of rotation, producing appreciable Coriolis effects at flame length scales, which complicates partial-g fire tests in orbit."
+    material: "solid materials (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.05, 0.9]
+    platform: centrifuge
+    measured_variable: methodological_limitation
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Explicit statement by NASA researchers."
+    campaign_id: LPSC-2026-REVIEW
+    tags: [evidence_gap, platform, coriolis]
+    provenance:
+      source_id: NTRS-20260000646
+      page: 1
+      locator: "Discussion"
+      quote: "those currently available have small radii of rotation producing appreciable Coriolis effects for the length scales necessary"
+      extraction: llm_assisted_quote_verified

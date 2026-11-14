@@ -1,0 +1,194 @@
+# Sacksteder K.R., Ferkul P.V., Feier I.I., Kumar A., T'ien J.S. (2003) "Upward and Downward Flame
+# Spreading and Extinction in Partial Gravity Environments", 7th International Workshop on
+# Microgravity Combustion and Chemically Reacting Systems, NASA/CP-2003-212376/REV1, pp. 141-144.
+# NTRS 20040053567 (GOV_PUBLIC_USE_PERMITTED). Page numbers below are PDF pages 1-4.
+
+cards:
+  - id: SACK2003-PLATFORM-LEVELS
+    claim: "Partial-gravity flame spread experiments over thin cellulose (Kimwipes) in 21% O2 air at 0.2-0.4 atm were flown on the NASA KC-135 aircraft at 0.1, 0.16 and 0.38 g."
+    material: "Kimwipes thin cellulosic tissue"
+    material_class: "thin cellulose"
+    geometry: thin_sheet
+    o2: {value: 21, unit: "%", dimension: fraction}
+    gravity_range_g0: [0.1, 0.38]
+    platform: parabolic_flight
+    measured_variable: test_matrix
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Experimental description by the investigators."
+    caveats:
+      - "Aircraft partial-g periods are short (about 25 s per parabola per NASA researchers, LPSC 2026)."
+    campaign_id: KC135-PARTIAL-G-GIFFTS
+    tags: [partial_gravity, platform, lunar, mars]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 2
+      locator: "Experiments"
+      quote: "Flight tests were performed onboard the NASA KC-135 aircraft providing partial-gravity environments of 0.1, 0.16, and 0.38 g/gEarth."
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-UPWARD-LINEAR-IN-G
+    claim: "Upward (concurrent buoyant) flame spread rate over thin cellulose varied linearly with gravity level for all pressures and sample widths tested between 0.1 and 1 g."
+    material: "Kimwipes thin cellulosic tissue"
+    material_class: "thin cellulose"
+    geometry: thin_sheet
+    o2: {value: 21, unit: "%", dimension: fraction}
+    flow_direction: buoyant_upward
+    gravity_range_g0: [0.1, 1.0]
+    platform: parabolic_flight
+    measured_variable: flame_spread_rate_trend
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Consistent across pressures and widths; short aircraft test times; numeric values only in a figure."
+    caveats:
+      - "Reduced-pressure air (0.2-0.4 atm), not exploration atmospheres."
+    campaign_id: KC135-PARTIAL-G-GIFFTS
+    tags: [partial_gravity, flame_spread, scaling]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 2
+      locator: "Experiments, Fig. 1 discussion"
+      quote: "The upward burning spread rate varied linearly with gravity level for all pressure environments and sample widths tested"
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-DOWNWARD-PEAK-NEAR-MARS
+    claim: "Downward (opposed buoyant) flame spread rate over 2-cm-wide thin cellulose in 27.6 kPa air is non-monotonic in gravity and peaks near Martian gravity (0.38 g)."
+    material: "Kimwipes thin cellulosic tissue"
+    material_class: "thin cellulose"
+    geometry: thin_sheet
+    o2: {value: 21, unit: "%", dimension: fraction}
+    pressure: {value: 27.6, unit: kPa, dimension: pressure}
+    flow_direction: buoyant_downward
+    gravity: {value: 0.38, unit: g, dimension: gravity_ratio}
+    platform: parabolic_flight
+    measured_variable: flame_spread_rate_peak_location
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Single fuel and apparatus; values in a figure only; aircraft test times are short."
+    caveats:
+      - "Peak location is condition-dependent: the earlier 1-atm study is summarized by NASA researchers (LPSC 2026) as peaking near lunar gravity."
+    campaign_id: KC135-PARTIAL-G-GIFFTS
+    tags: [partial_gravity, flame_spread, contradiction_candidate, mars]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 2
+      locator: "Fig. 1 discussion"
+      quote: "The downward spread rate is non-monotonic and peaks near the Martian gravity levels of 0.38 g/gEarth."
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-DOWNWARD-U-BOUNDARY
+    claim: "The downward-spread flammability boundary versus gravity is U-shaped, with two extinction limits: insufficient residence time at high gravity and radiative loss at low gravity."
+    material: "Kimwipes thin cellulosic tissue"
+    material_class: "thin cellulose"
+    geometry: thin_sheet
+    o2: {value: 21, unit: "%", dimension: fraction}
+    flow_direction: buoyant_downward
+    gravity_range_g0: [0.1, 1.5]
+    platform: parabolic_flight
+    measured_variable: flammability_boundary_shape
+    data_type: MEASURED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Boundary shape observed in aircraft tests; the two-mechanism explanation agrees with several diffusion-flame models."
+    campaign_id: KC135-PARTIAL-G-GIFFTS
+    tags: [u_shaped_boundary, partial_gravity, mechanism]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 3
+      locator: "Fig. 2 discussion"
+      quote: "The downward spreading boundary is U-shaped showing the dual extinction limits (insufficient residence time in high g, radiative loss in low g)"
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-UPWARD-WIDER-DOMAIN
+    claim: "Across the partial-gravity range tested, flames spread faster upward than downward, and the flammable domain for upward spread is wider than for downward spread."
+    material: "Kimwipes thin cellulosic tissue"
+    material_class: "thin cellulose"
+    geometry: thin_sheet
+    o2: {value: 21, unit: "%", dimension: fraction}
+    flow_direction: mixed
+    gravity_range_g0: [0.1, 1.0]
+    platform: parabolic_flight
+    measured_variable: flammable_domain_comparison
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Authors' conclusion from aircraft data; they note results require further study."
+    campaign_id: KC135-PARTIAL-G-GIFFTS
+    tags: [partial_gravity, concurrent_vs_opposed]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 4
+      locator: "Conclusions"
+      quote: "flames spread more quickly in the upward than the downward direction, and the flammable domain of upward spreading is wider than for downward spreading"
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-MODEL-0G-LOI-MIN
+    claim: "A 3-D model of a cotton-fiberglass fuel in an LOI-like tunnel predicts that, at zero gravity, the limiting oxygen index is non-monotonic in forced flow with a minimum around 5 cm/s, whereas at 1 g it is monotonic."
+    material: "cotton-fiberglass composite (simulated)"
+    material_class: "cotton-fiberglass fabric (charring)"
+    geometry: fabric
+    flow_direction: opposed
+    flow_velocity: {value: 5, unit: cm/s, dimension: velocity}
+    gravity: {value: 0, unit: g, dimension: gravity_ratio}
+    platform: model
+    measured_variable: limiting_oxygen_index_model
+    data_type: MODELED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: low
+    confidence_rationale: "Numerical result computed with as-yet uncalibrated kinetic constants (Fig. 3 caption)."
+    caveats:
+      - "Model with uncalibrated kinetic constants; not an experimental limit."
+    campaign_id: CWRU-3D-LOI-MODEL
+    tags: [model, u_shaped_boundary, ventilation]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 3
+      locator: "Three-dimensional modeling, Fig. 3"
+      quote: "the LOI at zero gravity is non-monotonic and has a minimum around 5 cm/s"
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-MODEL-CONCURRENT-LOWEST-O2
+    claim: "Two-dimensional modeling with gas radiation indicates that the lowest flammable oxygen percentage over thin solids is always found in concurrent flow rather than opposed flow (Kumar, Shih & T'ien 2003)."
+    material: "thin solid fuel (simulated)"
+    material_class: "thin cellulose"
+    geometry: thin_sheet
+    flow_direction: concurrent
+    gravity: {value: 0, unit: g, dimension: gravity_ratio}
+    platform: model
+    measured_variable: interpretation
+    data_type: MODELED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Published theoretical result summarized by the same group."
+    campaign_id: CWRU-2D-RADIATION-MODEL
+    tags: [model, concurrent_vs_opposed]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 2
+      locator: "Introduction"
+      quote: "the lowest flammable oxygen percentage is always in the concurrent flow case"
+      extraction: llm_assisted_quote_verified
+
+  - id: SACK2003-GAP-STATEMENT
+    claim: "As of 2003, NASA and university researchers stated that flame spreading and material flammability had not been studied under the partial-gravity conditions of the Moon and Mars, and described their aircraft work as the beginning of that research."
+    material: "solid materials (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.16, 0.38]
+    platform: parabolic_flight
+    measured_variable: evidence_gap_statement
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Explicit statement by the investigators (historical, 2003)."
+    campaign_id: KC135-PARTIAL-G-GIFFTS
+    tags: [evidence_gap, history]
+    provenance:
+      source_id: NTRS-20040053567
+      page: 1
+      locator: "Introduction"
+      quote: "flame spreading and material flammability behavior have not been studied under the partial gravity conditions that are the natural state in space exploration destinations such as the Moon and Mars"
+      extraction: llm_assisted_quote_verified

@@ -1,0 +1,359 @@
+# Olson S.L. & Ferkul P.V. (2012) "Evaluating Material Flammability in Microgravity and Martian
+# Gravity Compared to the NASA Standard Normal Gravity Test", 42nd ICES, AIAA. NTRS 20130010991.
+# Table I (page 6) transcribed row by row; each row quote is verified against the PDF page text.
+# Lunar-g and 0g rows are reproduced by the authors from Ferkul & Olson (2011), their ref. 8.
+
+tables:
+  - id_prefix: OF2012
+    source_id: NTRS-20130010991
+    page: 6
+    locator: "Table I"
+    extraction: llm_assisted_quote_verified
+    defaults:
+      tags: [upward_flammability_limit, nasa_std_6001_test1_modified, partial_gravity]
+      flow_direction: concurrent
+    columns:
+      - key: MYLAR
+        label: "Mylar G (10.2 psia)"
+        material: "Mylar G / Melinex 515 PET film"
+        material_class: "polyester film (non-charring, melting)"
+        geometry: thin_sheet
+        thickness: {value: 5, unit: mil, dimension: length}
+        pressure: {value: 10.2, unit: psi, dimension: pressure}
+      - key: ULTEM
+        label: "Ultem 1000 (10.2 psia)"
+        material: "Ultem 1000 polyetherimide film"
+        material_class: "fire-retarded polyetherimide film (charring)"
+        geometry: thin_sheet
+        thickness: {value: 10, unit: mil, dimension: length}
+        pressure: {value: 10.2, unit: psi, dimension: pressure}
+      - key: NOMEX
+        label: "Nomex HT90-40 (14.7 psia)"
+        material: "Nomex HT90-40 fabric"
+        material_class: "aramid fabric (charring)"
+        geometry: fabric
+        thickness: {value: 12, unit: mil, dimension: length}
+        pressure: {value: 14.7, unit: psi, dimension: pressure}
+    rows:
+      - key: 1G-ULOI
+        label: "1g ULOI"
+        quote: "1g ULOI 21.2 23.5 23.5"
+        values: [21.2, 23.5, 23.5]
+        unit: "%"
+        dimension: fraction
+        measured_variable: upward_limiting_oxygen_index
+        claim: "{material}: 1-g upward limiting oxygen index (ULOI) = {value}% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition, NASA White Sands Test Facility)."
+        gravity: {value: 1, unit: g, dimension: gravity_ratio}
+        platform: ground_1g
+        flow_direction: buoyant_upward
+        campaign_id: WSTF-1G-MODIFIED-TEST1
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: high
+        confidence_rationale: "Repeated 1-g tests under a documented modified Test 1 protocol (ULOI = O2 at which a material passes about half the time)."
+      - key: 1G-MOC
+        label: "1g MOC"
+        quote: "1g MOC 20.0 23.0 22.1"
+        values: [20.0, 23.0, 22.1]
+        unit: "%"
+        dimension: fraction
+        measured_variable: maximum_oxygen_concentration
+        claim: "{material}: 1-g maximum oxygen concentration (MOC) = {value}% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition)."
+        gravity: {value: 1, unit: g, dimension: gravity_ratio}
+        platform: ground_1g
+        flow_direction: buoyant_upward
+        campaign_id: WSTF-1G-MODIFIED-TEST1
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: high
+        confidence_rationale: "MOC defined as O2 where at least five samples pass and at least one fails at +1% O2 (p. 2)."
+      - key: MARS-ULOI
+        label: "Martian ULOI*"
+        quote: "Martian ULOI* 18.0 22.0 19.9"
+        values: [18.0, 22.0, 19.9]
+        unit: "%"
+        dimension: fraction
+        measured_variable: upward_limiting_oxygen_index
+        claim: "{material}: Martian-gravity ULOI* = {value}% O2 (lowest O2 at which the flame survived the full 5.18 s drop)."
+        gravity: {value: 0.38, unit: g, dimension: gravity_ratio}
+        platform: drop_tower_centrifuge
+        reduced_gravity_duration_s: 5.18
+        campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "5.18 s drop-tower centrifuge tests (30.8 rpm) at 1% O2 increments; low-g criteria differ from 1-g criteria."
+        caveats:
+          - "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6)."
+          - "Nomex and Ultem flames were shrinking at the end of the drop; the authors note they might have extinguished given more time (p. 4)."
+      - key: MARS-MOC
+        label: "Martian MOC*"
+        quote: "Martian MOC* 17.0 21.1 19.0"
+        values: [17.0, 21.1, 19.0]
+        unit: "%"
+        dimension: fraction
+        measured_variable: maximum_oxygen_concentration
+        claim: "{material}: Martian-gravity MOC* = {value}% O2 (highest O2 at which the flame self-extinguished during the 5.18 s drop)."
+        gravity: {value: 0.38, unit: g, dimension: gravity_ratio}
+        platform: drop_tower_centrifuge
+        reduced_gravity_duration_s: 5.18
+        campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "5.18 s drop-tower centrifuge tests at 1% O2 increments; low-g criteria differ from 1-g criteria."
+        caveats:
+          - "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6)."
+      - key: LUNAR-ULOI
+        label: "Lunar ULOI*"
+        quote: "Lunar ULOI* 15.6 21.0 21.0"
+        values: [15.6, 21.0, 21.0]
+        unit: "%"
+        dimension: fraction
+        measured_variable: upward_limiting_oxygen_index
+        claim: "{material}: lunar-gravity ULOI* = {value}% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012)."
+        gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: unknown}
+        platform: drop_tower_centrifuge
+        reduced_gravity_duration_s: 5.18
+        campaign_id: GRC-ZGF-CENTRIFUGE-LUNAR
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source."
+        caveats:
+          - "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g (NSSDC lunar gravity) is used for plotting."
+          - "ULOI*/MOC* are defined over the drop time, not the 1-g Test 1 criteria."
+      - key: LUNAR-MOC
+        label: "Lunar MOC*"
+        quote: "Lunar MOC* 14.1 19.9 19.9"
+        values: [14.1, 19.9, 19.9]
+        unit: "%"
+        dimension: fraction
+        measured_variable: maximum_oxygen_concentration
+        claim: "{material}: lunar-gravity MOC* = {value}% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012)."
+        gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: unknown}
+        platform: drop_tower_centrifuge
+        reduced_gravity_duration_s: 5.18
+        campaign_id: GRC-ZGF-CENTRIFUGE-LUNAR
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source."
+        caveats:
+          - "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g is used for plotting."
+      - key: 0G-ULOI
+        label: "0g* ULOI*"
+        quote: "0g* ULOI* 17.0 24.0 23.0"
+        values: [17.0, 24.0, 23.0]
+        unit: "%"
+        dimension: fraction
+        measured_variable: upward_limiting_oxygen_index
+        claim: "{material}: microgravity ULOI* = {value}% O2 with a 30 cm/s concurrent forced flow (drop tower)."
+        gravity: {value: 0, unit: g, dimension: gravity_ratio, uncertainty_kind: unknown}
+        flow_velocity: {value: 30, unit: cm/s, dimension: velocity}
+        platform: drop_tower
+        reduced_gravity_duration_s: 5.18
+        campaign_id: GRC-ZGF-0G-FORCED-FLOW
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Short drop tests with a forced concurrent flow of 30 cm/s, described by the authors as a reasonable maximum spacecraft ventilation velocity (p. 4)."
+      - key: 0G-MOC
+        label: "0g* MOC*"
+        quote: "0g* MOC* 16.0 23.0 22.0"
+        values: [16.0, 23.0, 22.0]
+        unit: "%"
+        dimension: fraction
+        measured_variable: maximum_oxygen_concentration
+        claim: "{material}: microgravity MOC* = {value}% O2 with a 30 cm/s concurrent forced flow (drop tower)."
+        gravity: {value: 0, unit: g, dimension: gravity_ratio, uncertainty_kind: unknown}
+        flow_velocity: {value: 30, unit: cm/s, dimension: velocity}
+        platform: drop_tower
+        reduced_gravity_duration_s: 5.18
+        campaign_id: GRC-ZGF-0G-FORCED-FLOW
+        data_type: MEASURED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Short drop tests with a forced concurrent flow of 30 cm/s."
+      - key: MARS-DO2
+        label: "Martian ∆O2 %"
+        quote: "Martian ∆O2 % -3.1 -1.7 -3.35"
+        values: [-3.1, -1.7, -3.35]
+        unit: "%"
+        dimension: fraction
+        measured_variable: oxygen_margin_of_safety
+        claim: "{material}: oxygen margin of safety at Martian gravity = {value}% O2 (mean low-g limit minus mean 1-g limit, Eq. 1; negative means burning at lower O2 than in 1 g)."
+        gravity: {value: 0.38, unit: g, dimension: gravity_ratio}
+        platform: drop_tower_centrifuge
+        campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+        data_type: DERIVED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently."
+      - key: LUNAR-DO2
+        label: "Lunar ∆O2 %"
+        quote: "Lunar ∆O2 % -5.75 -2.8 -2.35"
+        values: [-5.75, -2.8, -2.35]
+        unit: "%"
+        dimension: fraction
+        measured_variable: oxygen_margin_of_safety
+        claim: "{material}: oxygen margin of safety at lunar gravity = {value}% O2 (Eq. 1; negative means burning at lower O2 than in 1 g)."
+        gravity: {value: 0.165, unit: g, dimension: gravity_ratio, uncertainty_kind: unknown}
+        platform: drop_tower_centrifuge
+        campaign_id: GRC-ZGF-CENTRIFUGE-LUNAR
+        data_type: DERIVED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently."
+      - key: 0G-DO2
+        label: "0g ∆O2 %"
+        quote: "0g ∆O2 % -4.1 0.25 -0.3"
+        values: [-4.1, 0.25, -0.3]
+        unit: "%"
+        dimension: fraction
+        measured_variable: oxygen_margin_of_safety
+        claim: "{material}: oxygen margin of safety in microgravity with 30 cm/s concurrent flow = {value}% O2 (Eq. 1)."
+        gravity: {value: 0, unit: g, dimension: gravity_ratio, uncertainty_kind: unknown}
+        flow_velocity: {value: 30, unit: cm/s, dimension: velocity}
+        platform: drop_tower
+        campaign_id: GRC-ZGF-0G-FORCED-FLOW
+        data_type: DERIVED
+        epistemic: DOCUMENTED_FACT
+        confidence: medium
+        confidence_rationale: "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently."
+
+cards:
+  - id: OF2012-INTERP-NOT-CONSERVATIVE
+    claim: "The authors conclude that normal-gravity material flammability screening tests may not be conservative for low gravity, and that a 1-g factor of safety may be needed if the trend is proven for more materials."
+    material: "Mylar G, Ultem 1000, Nomex HT90-40"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.0, 0.38]
+    platform: drop_tower_centrifuge
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Three materials, short drop tests; the authors themselves condition the conclusion on testing more materials."
+    caveats:
+      - "Based on three materials only."
+      - "Low-g extinction criteria differ from 1-g criteria because of the 5.18 s drop time."
+    campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+    tags: [h2_evidence, standards_stress_test]
+    provenance:
+      source_id: NTRS-20130010991
+      page: 8
+      locator: "IV. Conclusions"
+      quote: "normal gravity material flammability screening tests may not be conservative and some materials tested to be safe for use in space may actually be flammable"
+      extraction: llm_assisted_quote_verified
+
+  - id: OF2012-CAVEAT-CRITERIA
+    claim: "Low-gravity extinction-limit criteria in these drop tests are not the same as the 1-g Test 1 criteria, because of the limited drop time."
+    material: "Mylar G, Ultem 1000, Nomex HT90-40"
+    material_class: "multiple"
+    geometry: other
+    gravity_range_g0: [0.0, 0.38]
+    platform: drop_tower_centrifuge
+    reduced_gravity_duration_s: 5.18
+    measured_variable: methodological_limitation
+    data_type: DERIVED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Explicit statement by the authors."
+    campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+    tags: [limitation, short_duration]
+    provenance:
+      source_id: NTRS-20130010991
+      page: 6
+      locator: "Section III, after Eq. (1)"
+      quote: "It should be noted that the low g extinction limit criteria are not the same as 1g due to time constraints in drop testing."
+      extraction: llm_assisted_quote_verified
+
+  - id: OF2012-INTERP-CHARRING
+    claim: "For the charring fuels (Nomex, Ultem) the microgravity oxygen margin is close to zero, while in lunar gravity it is about 2.5% O2 lower than in 1 g; the authors suggest adequate but not excessive convection makes materials burn better."
+    material: "Ultem 1000, Nomex HT90-40"
+    material_class: "charring polymers"
+    geometry: other
+    gravity_range_g0: [0.0, 0.165]
+    platform: drop_tower_centrifuge
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Mechanistic interpretation by the authors, consistent with flammability-map theory (T'ien 1986), not separately tested here."
+    campaign_id: GRC-ZGF-CENTRIFUGE-LUNAR
+    tags: [mechanism, partial_gravity]
+    provenance:
+      source_id: NTRS-20130010991
+      page: 7
+      locator: "Section III, discussion of Fig. 6"
+      quote: "In Lunar gravity, the oxygen margin of safety for these charring fuels is ~ 2.5% lower than 1g. It may be that with adequate but not excessive convection, materials burn better, as predicted by flammability maps."
+      extraction: llm_assisted_quote_verified
+
+  - id: OF2012-INTERP-DRIPPING
+    claim: "For non-charring, melting Mylar, the absence of gravity-induced dripping keeps molten fuel in the flame zone, giving a significantly negative oxygen margin (about 4-5% O2) at Martian, lunar and zero gravity."
+    material: "Mylar G"
+    material_class: "polyester film (non-charring, melting)"
+    geometry: thin_sheet
+    gravity_range_g0: [0.0, 0.38]
+    platform: drop_tower_centrifuge
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Mechanism proposed by the authors by analogy with metals combustion; not directly measured."
+    campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+    tags: [mechanism, dripping]
+    provenance:
+      source_id: NTRS-20130010991
+      page: 7
+      locator: "Section III"
+      quote: "the absence of gravitational-induced dripping keeps heated molten fuel in the flame zone rather than removing it, and the result is a significantly negative oxygen margin of safety (~4-5%) in Martian, Lunar, and 0g."
+      extraction: llm_assisted_quote_verified
+
+  - id: OF2012-INTERP-U-SHAPE
+    claim: "For Mylar, the limiting oxygen concentration versus gravity level suggests a range of g-levels within which a flame can survive (a U-shaped flammability boundary), but the exact curve shape and its minimum are not known because data are sparse."
+    material: "Mylar G"
+    material_class: "polyester film (non-charring, melting)"
+    geometry: thin_sheet
+    gravity_range_g0: [0.0, 1.0]
+    platform: drop_tower_centrifuge
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: low
+    confidence_rationale: "The authors state the curve shapes and absolute minimums are unknown given the sparsity of points (p. 8)."
+    caveats:
+      - "Given the sparsity of points, the exact shapes of the curves are not known, nor are the absolute minimums (p. 8)."
+    campaign_id: GRC-ZGF-CENTRIFUGE-MARS
+    tags: [u_shaped_boundary, partial_gravity, evidence_gap]
+    provenance:
+      source_id: NTRS-20130010991
+      page: 7
+      locator: "Fig. 7 discussion"
+      quote: "There appears to be a range of g-levels within which a flame can survive."
+      extraction: llm_assisted_quote_verified
+
+  - id: OF2012-ATMOS-TEST1-CONDITION
+    claim: "NASA-STD-6001 Test 1 is a pass/fail upward flame propagation test run in the most severe expected atmosphere; at the time, the ISS pre-EVA environment of 30% O2 at 10.2 psia."
+    material: "any spacecraft material"
+    material_class: "standard test"
+    geometry: other
+    gravity: {value: 1, unit: g, dimension: gravity_ratio}
+    o2: {value: 30, unit: "%", dimension: fraction}
+    pressure: {value: 10.2, unit: psi, dimension: pressure}
+    platform: ground_1g
+    flow_direction: buoyant_upward
+    measured_variable: test_condition
+    data_type: MEASURED
+    epistemic: DOCUMENTED_FACT
+    confidence: high
+    confidence_rationale: "Statement of the standard test practice by NASA authors."
+    campaign_id: NASA-STD-6001-TEST1
+    tags: [standards_stress_test, atmosphere]
+    provenance:
+      source_id: NTRS-20130010991
+      page: 1
+      locator: "I. Introduction"
+      quote: "currently 30% oxygen at 10.2 psia which is the pre-breath environment on the ISS for spacewalks"
+      extraction: llm_assisted_quote_verified

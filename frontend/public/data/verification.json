@@ -1,0 +1,427 @@
+{
+ "built_at": "2026-11-14T21:29:02+00:00",
+ "n_cards": 60,
+ "n_passed": 60,
+ "results": [
+  {
+   "card_id": "LUCI2025-SIBAL-BASE-SPREAD",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LUCI2025-SIBAL-TIP-SPREAD",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LUCI2025-PMMA-TIP-SPREAD",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LUCI2025-PMMA-O2-DEPLETION",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LUCI2025-FIRST-LONG-DURATION",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LUCI2025-CORIOLIS",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-1G-NOT-WORST-CASE",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-SHORT-TEST-TIMES",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-HABITAT-HAZARD",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-FM2-PLANNED",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-1G-ULOI-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-1G-ULOI-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-1G-ULOI-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-1G-MOC-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-1G-MOC-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-1G-MOC-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-ULOI-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-ULOI-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-ULOI-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-MOC-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-MOC-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-MOC-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-ULOI-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-ULOI-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-ULOI-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-MOC-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-MOC-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-MOC-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-ULOI-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-ULOI-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-ULOI-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-MOC-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-MOC-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-MOC-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-DO2-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-DO2-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MARS-DO2-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-DO2-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-DO2-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-LUNAR-DO2-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-DO2-MYLAR",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-DO2-ULTEM",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-0G-DO2-NOMEX",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-INTERP-NOT-CONSERVATIVE",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-CAVEAT-CRITERIA",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-INTERP-CHARRING",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-INTERP-DRIPPING",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-INTERP-U-SHAPE",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-ATMOS-TEST1-CONDITION",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-PLATFORM-LEVELS",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-UPWARD-LINEAR-IN-G",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-DOWNWARD-PEAK-NEAR-MARS",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-DOWNWARD-U-BOUNDARY",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-UPWARD-WIDER-DOMAIN",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-MODEL-0G-LOI-MIN",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-MODEL-CONCURRENT-LOWEST-O2",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK2003-GAP-STATEMENT",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+# IGNIS source registry. Every Finding Card must reference a source_id defined here or produced
+# by the harvesters (NTRS-<id>, PSI-<n>). Do not add a source you have not opened.
+
+ntrs:
+  # NTRS records opened during planning (2026-11-14). Role tags explain why each is included.
+  curated:
+    - {id: "20130010991", role: "partial-g & 1-g vs low-g limits (Olson & Ferkul 2012, Table I)"}
+    - {id: "20260000646", role: "lunar/Martian gravity flammability (Ferkul et al., LPSC 2026)"}
+    - {id: "20260001966", role: "LPSC 2026 slides"}
+    - {id: "20250010653", role: "LUCI lunar-gravity combustion on New Shepard (ASGSR 2025)"}
+    - {id: "20010059376", role: "upward flame spread, partial gravity (Feier et al., AIAA 2001)"}
+    - {id: "20010074003", role: "3-D upward flame spread, partial-gravity buoyant flows"}
+    - {id: "19990054085", role: "flame spread & extinction in partial gravity (workshop 1999)"}
+    - {id: "20040053567", role: "upward/downward spread & extinction, partial gravity (2003)"}
+    - {id: "19930040901", role: "downward spread in variable gravity incl. lunar (metadata)"}
+    - {id: "20240002981", role: "Saffire-VI preliminary results (ICES 2024)"}
+    - {id: "20210011521", role: "Saffire-IV and V preliminary results (ICES 2021)"}
+    - {id: "20200000361", role: "SoFIE project description, pre-flight (ASGSR 2019)"}
+    - {id: "20150023456", role: "FLEX results, NASA/TP-2015-216046 (burning-rate units)"}
+    - {id: "19740021777", role: "Skylab M479 zero-gravity flammability (1974)"}
+    - {id: "20220000524", role: "M2M habitation considerations: habitat atmospheres"}
+    - {id: "20150021491", role: "exploration atmosphere 8.2 psia / 34% O2"}
+    - {id: "20130013505", role: "NASA/TM-2013-217377 exploration atmospheres"}
+    - {id: "20070018274", role: "ISS materials test condition 24.1% O2"}
+    - {id: "20090012334", role: "Orion design-basis atmosphere and flammability"}
+    - {id: "19960008387", role: "Solid Surface Combustion Experiment (Shuttle)"}
+    - {id: "20040053569", role: "Droplet Combustion Experiment (Shuttle MSL-1)"}
+  # Documented search queries (systematic, reproducible). Top results per query are harvested.
+  queries:
+    - "partial gravity flame spread"
+    - "lunar gravity flammability"
+    - "Martian gravity flammability"
+    - "spacecraft fire safety"
+    - "Saffire flame spread"
+    - "Burning and Suppression of Solids"
+    - "microgravity flame spread oxygen concentration"
+    - "material flammability microgravity"
+    - "Solid Fuel Ignition and Extinction"
+    - "droplet flame extinguishment microgravity"
+    - "exploration atmosphere oxygen pressure flammability"
+  per_query: 25
+  # Public-use per NTRS, but the PDF itself carries an AIAA preprint notice asking not to cite or
+  # reproduce it without permission: kept as metadata only (not full-text indexed, never quoted).
+  exclude_full_text:
+    - {id: "20010059376", reason: "AIAA preprint notice on the PDF title page"}
+
+external:
+  # Non-NTRS documents. Full text is NOT redistributed unless the license allows it.
+  - id: "NASA-STD-6001B"
+    title: "NASA-STD-6001B w/ Change 2: Flammability, Offgassing, and Compatibility Requirements and Test Procedures"
+    url: "https://standards.nasa.gov/sites/default/files/standards/NASA/B-w/CHANGE-2/2/NASA-STD-6001B-w-Change-2_Admin-Change.pdf"
+    license: "US Government work"
+  - id: "OCHMO-TB-003"
+    title: "OCHMO Technical Brief: Habitable Atmosphere (Rev A, 2023)"
+    url: "https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-003-habitable-atmosphere.pdf"
+    license: "US Government work"
+  - id: "SPACEAPPS-2026-FLAME"
+    title: "Space Apps 2026 challenge: Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data"
+    url: "https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/"
+    license: "quoted for reference"
+  - id: "NSSDC-MOON"
+    title: "NASA NSSDC Moon Fact Sheet"
+    url: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    license: "US Government work"
+  - id: "NSSDC-MARS"
+    title: "NASA NSSDC Mars Fact Sheet"
+    url: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    license: "US Government work"
+  - id: "DOI-10.1038/s41598-017-18398-4"
+    title: "Link, Huang, Fernandez-Pello, Olson, Ferkul (2018) The Effect of Gravity on Flame Spread over PMMA Cylinders, Sci. Rep. 8:120"
+    url: "https://doi.org/10.1038/s41598-017-18398-4"
+    license: "CC-BY-4.0"
+  - id: "DOI-10.1016/j.proci.2022.07.002"
+    title: "Konno et al. (2023) Proc. Combust. Inst. 39(3):3785-3794 (partial-gravity wire flammability, Novespace)"
+    url: "https://doi.org/10.1016/j.proci.2022.07.002"
+    license: "publisher copyright; metadata and short quotes only"
+  - id: "DOI-10.1016/j.proci.2024.105199"
+    title: "Konno, Ishikawa, Hashimoto, Fujita (2024) Proc. Combust. Inst. 40:105199 (buoyant velocity scaling)"
+    url: "https://doi.org/10.1016/j.proci.2024.105199"
+    license: "publisher copyright; metadata and short quotes only"
+  - id: "KAKEN-21K18775"
+    title: "Nakaya S., KAKEN 21K18775 final report (PMMA rod flammability vs gravity, model)"
+    url: "https://kaken.nii.ac.jp/file/KAKENHI-PROJECT-21K18775/21K18775seika.pdf"
+    license: "metadata and short quotes only"
+  - id: "DOI-10.1016/j.combustflame.2008.05.023"
+    title: "Kleinhenz et al. (2008) Pressure modeling of upward flame spread and burning rates over solids in partial gravity, Combust. Flame 154:637-643"
+    url: "https://doi.org/10.1016/j.combustflame.2008.05.023"
+    license: "publisher copyright; metadata only"
+
+psi:
+  # Harvested automatically: every PSI investigation with Research Area == "Combustion Science".
+  license: "CC0-1.0 (per PSI investigation record)"

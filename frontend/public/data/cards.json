@@ -1,0 +1,3986 @@
+{
+ "built_at": "2026-11-14T21:29:02+00:00",
+ "cards": [
+  {
+   "id": "LUCI2025-SIBAL-BASE-SPREAD",
+   "claim": "In simulated lunar gravity (spinning New Shepard), the flame base of SIBAL cotton-fiberglass fabric burning downward in air spread at 0.9 mm/s versus 1.5 mm/s in the matching 1-g burn (ratio 0.6), from linear fits.",
+   "material": "SIBAL cotton-fiberglass composite fabric",
+   "material_class": "cotton-fiberglass fabric (charring)",
+   "geometry": "fabric",
+   "thickness": null,
+   "o2": {
+    "value": 20.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.2,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 1.0,
+    "unit": "atm",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101325.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "platform_jitter",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": 150.0,
+   "measured_variable": "flame_spread_rate",
+   "value": {
+    "value": 0.9,
+    "unit": "mm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0009000000000000001,
+    "uncertainty_si": null
+   },
+   "comparison_1g": {
+    "value": 1.5,
+    "unit": "mm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0015,
+    "uncertainty_si": null
+   },
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Single flight; rates from linear fits shown on slides; Coriolis effects acknowledged by the team.",
+   "caveats": [
+    "One flight, one sample per material; no repeat tests.",
+    "Rotating platform: Coriolis force distorts the flame (slide 17).",
+    "O2 fell from ~20% to ~18% during the burn (slide 42)."
+   ],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "partial_gravity",
+    "lunar",
+    "long_duration",
+    "flame_spread"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 33,
+    "locator": "Slide 33, SIBAL flame spread fit comparison",
+    "quote": "Flame Base .9 1.5 .6",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LUCI2025-SIBAL-TIP-SPREAD",
+   "claim": "SIBAL fabric flame tip spread rate was 1.1 mm/s in simulated lunar gravity versus 2.8 mm/s in 1 g (ratio 0.39), from linear fits.",
+   "material": "SIBAL cotton-fiberglass composite fabric",
+   "material_class": "cotton-fiberglass fabric (charring)",
+   "geometry": "fabric",
+   "thickness": null,
+   "o2": {
+    "value": 20.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.2,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 1.0,
+    "unit": "atm",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101325.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "platform_jitter",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": 150.0,
+   "measured_variable": "flame_tip_spread_rate",
+   "value": {
+    "value": 1.1,
+    "unit": "mm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0011,
+    "uncertainty_si": null
+   },
+   "comparison_1g": {
+    "value": 2.8,
+    "unit": "mm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0028,
+    "uncertainty_si": null
+   },
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Single flight; linear fits; 1-g tracking noted as less clean by the team (slide 23).",
+   "caveats": [
+    "1-g spread fits are approximate because of tracking fluctuations (slide 25)."
+   ],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "partial_gravity",
+    "lunar",
+    "long_duration",
+    "flame_spread"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 33,
+    "locator": "Slide 33, SIBAL flame spread fit comparison",
+    "quote": "Flame Tip 1.1 2.8 .39",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LUCI2025-PMMA-TIP-SPREAD",
+   "claim": "A 4-mm PMMA rod burning upward in air had a flame tip spread rate of 0.15 cm/s in simulated lunar gravity versus 0.40 cm/s in 1 g (ratio 0.38), from linear fits.",
+   "material": "PMMA (acrylic) rod, 4 mm diameter",
+   "material_class": "PMMA (non-charring, melting)",
+   "geometry": "rod",
+   "thickness": {
+    "value": 4.0,
+    "unit": "mm",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.004,
+    "uncertainty_si": null
+   },
+   "o2": {
+    "value": 20.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.2,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 1.0,
+    "unit": "atm",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101325.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "platform_jitter",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": 150.0,
+   "measured_variable": "flame_tip_spread_rate",
+   "value": {
+    "value": 0.15,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0015,
+    "uncertainty_si": null
+   },
+   "comparison_1g": {
+    "value": 0.4,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.004,
+    "uncertainty_si": null
+   },
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Single flight; Coriolis force pulls the flame off the rod axis (slide 17).",
+   "caveats": [
+    "Coriolis force pulls the flame away from the fuel axis (slide 17).",
+    "Gravity level started dropping at t = 125 s (slide 43)."
+   ],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "partial_gravity",
+    "lunar",
+    "long_duration",
+    "flame_spread"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 36,
+    "locator": "Slide 36, PMMA flame tip comparison",
+    "quote": "Ratio .15 .40 .38",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LUCI2025-PMMA-O2-DEPLETION",
+   "claim": "During the lunar-gravity PMMA burn the chamber O2 fell from 20% to 14.3% while the flame was still present, then rose back to 15.8% as gravity (and buoyant flow) decreased at 125 s. This is an O2 history, not an extinction limit.",
+   "material": "PMMA (acrylic) rod, 4 mm diameter",
+   "material_class": "PMMA (non-charring, melting)",
+   "geometry": "rod",
+   "thickness": null,
+   "o2": null,
+   "pressure": {
+    "value": 1.0,
+    "unit": "atm",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101325.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "platform_jitter",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": 150.0,
+   "measured_variable": "chamber_o2_minimum_during_burn",
+   "value": {
+    "value": 14.3,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.14300000000000002,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "low",
+   "confidence_rationale": "Chamber-average O2 from slides; the team does not report a lunar-g extinction limit on these slides.",
+   "caveats": [
+    "Not a flammability limit: the burn ended for several reasons, including the gravity drop at 125 s.",
+    "The matching 1-g PMMA burn went from 21% to 14.5% O2 (slide 31)."
+   ],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "partial_gravity",
+    "lunar",
+    "oxygen"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 22,
+    "locator": "Slide 22",
+    "quote": "O2% decreases from 20% to 14.3%.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "claim": "The SIBAL flame in 1 g extinguished about 45 s sooner than the same material in simulated lunar gravity.",
+   "material": "SIBAL cotton-fiberglass composite fabric",
+   "material_class": "cotton-fiberglass fabric (charring)",
+   "geometry": "fabric",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.165,
+    1.0
+   ],
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": 150.0,
+   "measured_variable": "burn_duration_difference",
+   "value": {
+    "value": 45.0,
+    "unit": "s",
+    "dimension": "time",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 45.0,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "low",
+   "confidence_rationale": "Approximate (~) value from one flight and one 1-g comparison burn.",
+   "caveats": [],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "partial_gravity",
+    "lunar",
+    "h2_evidence"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 34,
+    "locator": "Slide 34",
+    "quote": "1-g extinction happens ~ 45 seconds sooner than partial-g extinction",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "LUCI2025-FIRST-LONG-DURATION",
+   "claim": "LUCI's burns (over two and a half minutes) are described by the team as the first-ever extended-duration (greater than 25 s) combustion tests in simulated lunar gravity.",
+   "material": "SIBAL fabric and PMMA rod",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "platform_jitter",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": 150.0,
+   "measured_variable": "test_duration_record",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit statement by the investigation team.",
+   "caveats": [],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "evidence_gap",
+    "long_duration",
+    "platform"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 12,
+    "locator": "Slide 12",
+    "quote": "These are the first-ever, extended-duration (greater than 25 seconds) combustion tests performed in simulated Lunar gravity.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LUCI2025-CORIOLIS",
+   "claim": "On the rotating platform the Coriolis force pulls the flame away from the fuel axis, a known limitation of spin-simulated partial gravity.",
+   "material": "PMMA (acrylic) rod, 4 mm diameter",
+   "material_class": "PMMA (non-charring, melting)",
+   "geometry": "rod",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "platform_jitter",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "suborbital_spin",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "methodological_limitation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Directly observed in orthogonal camera views.",
+   "caveats": [],
+   "campaign_id": "LUCI-NEW-SHEPARD-2025",
+   "tags": [
+    "limitation",
+    "coriolis"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20250010653",
+    "page": 17,
+    "locator": "Slide 17",
+    "quote": "demonstrates how the Coriolis force pulls the flame away from the axis of the fuel",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LPSC2026-1G-NOT-WORST-CASE",
+   "claim": "NASA researchers state that microgravity research has shown normal gravity may not represent the most flammable condition, and that some materials that will not burn in 1 g will burn in 0 g with a low-speed flow or in partial gravity.",
+   "material": "spacecraft materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    1.0
+   ],
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Review statement by NASA Glenn researchers summarizing prior drop-tower, aircraft, sounding-rocket and modeling work.",
+   "caveats": [],
+   "campaign_id": "LPSC-2026-REVIEW",
+   "tags": [
+    "h2_evidence",
+    "standards_stress_test"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": "Introduction",
+    "quote": "Microgravity research over the last few decades has shown that normal gravity may not necessarily represent the most flammable condition for a material.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "LPSC2026-SHORT-TEST-TIMES",
+   "claim": "Partial-gravity tests in drop towers (5 s) and aircraft (~25 s) are too short to provide significant flame development.",
+   "material": "solid materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.05,
+    0.9
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "methodological_limitation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit statement by NASA researchers about platform limits.",
+   "caveats": [],
+   "campaign_id": "LPSC-2026-REVIEW",
+   "tags": [
+    "evidence_gap",
+    "short_duration",
+    "platform"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": "Discussion",
+    "quote": "the available times are too short to provide significant flame development (5 s for drop tower and ~25 s for aircraft)",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.05,
+   "gravity_hi": 0.9
+  },
+  {
+   "id": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "claim": "Related work suggests the oxygen concentration needed for flammability reaches a minimum near lunar gravity, and early work found flame spread rate versus gravity peaks there (Sacksteder & T'ien 1994).",
+   "material": "thin solid fuels (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Summary of earlier numerical and experimental evidence; the minimum location is suggested, not precisely measured.",
+   "caveats": [],
+   "campaign_id": "LPSC-2026-REVIEW",
+   "tags": [
+    "partial_gravity",
+    "u_shaped_boundary",
+    "h2_evidence"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": "Current Knowledge",
+    "quote": "Related work suggests that oxygen concentration for flammability reaches a minimum value in the vicinity of g = g Lunar.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LPSC2026-HABITAT-HAZARD",
+   "claim": "Because Moon and Mars habitats will likely use sub-atmospheric pressure with elevated oxygen, NASA researchers expect partial-g fire to be substantially worse than in 0 g and potentially worse than in 1 g. This is an expectation, not yet a measured result.",
+   "material": "habitat materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.165,
+    0.38
+   ],
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "hazard_expectation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "HYPOTHESIS",
+   "confidence": "low",
+   "confidence_rationale": "Stated as an expectation by the authors; long-duration partial-g data to confirm it do not yet exist.",
+   "caveats": [],
+   "campaign_id": "LPSC-2026-REVIEW",
+   "tags": [
+    "h2_evidence",
+    "habitat",
+    "exploration_atmosphere"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": "Current Knowledge",
+    "quote": "partial-g fire in an extraterrestrial habitat is a real hazard that is expected to be substantially worse than in 0-g and potentially worse than even 1-g.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "LPSC2026-FM2-PLANNED",
+   "claim": "Flammability of Materials on the Moon (FM2), planned for launch in late 2026, will burn four solid fuel samples in quiescent habitable atmospheres in actual long-duration lunar gravity: the first combustion experiments on another world.",
+   "material": "four solid fuel samples (not specified in the abstract)",
+   "material_class": "multiple",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "quiescent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "lunar_surface",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "planned_experiment",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "CONCEPTUAL",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Documented plan (CONCEPTUAL: no measurement yet); flight status after late 2026 is not verified by IGNIS.",
+   "caveats": [
+    "Planned experiment: no results exist yet in the IGNIS ledger."
+   ],
+   "campaign_id": "FM2-LUNAR-SURFACE",
+   "tags": [
+    "next_experiment",
+    "lunar",
+    "planned"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": "Combustion on the Moon",
+    "quote": "will burn a total of four solid fuel samples in quiescent habitable atmospheres in actual long duration Lunar gravity",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "claim": "Centrifuges currently available on the ISS have small radii of rotation, producing appreciable Coriolis effects at flame length scales, which complicates partial-g fire tests in orbit.",
+   "material": "solid materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.05,
+    0.9
+   ],
+   "platform": "centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "methodological_limitation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit statement by NASA researchers.",
+   "caveats": [],
+   "campaign_id": "LPSC-2026-REVIEW",
+   "tags": [
+    "evidence_gap",
+    "platform",
+    "coriolis"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": "Discussion",
+    "quote": "those currently available have small radii of rotation producing appreciable Coriolis effects for the length scales necessary",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.05,
+   "gravity_hi": 0.9
+  },
+  {
+   "id": "OF2012-1G-ULOI-MYLAR",
+   "claim": "Mylar G (10.2 psia): 1-g upward limiting oxygen index (ULOI) = 21.2% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition, NASA White Sands Test Facility).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 21.2,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.212,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Repeated 1-g tests under a documented modified Test 1 protocol (ULOI = O2 at which a material passes about half the time).",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '1g ULOI', column 'Mylar G (10.2 psia)'",
+    "quote": "1g ULOI 21.2 23.5 23.5",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-1G-ULOI-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): 1-g upward limiting oxygen index (ULOI) = 23.5% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition, NASA White Sands Test Facility).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 23.5,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.23500000000000001,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Repeated 1-g tests under a documented modified Test 1 protocol (ULOI = O2 at which a material passes about half the time).",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '1g ULOI', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "1g ULOI 21.2 23.5 23.5",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-1G-ULOI-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): 1-g upward limiting oxygen index (ULOI) = 23.5% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition, NASA White Sands Test Facility).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 23.5,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.23500000000000001,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Repeated 1-g tests under a documented modified Test 1 protocol (ULOI = O2 at which a material passes about half the time).",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '1g ULOI', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "1g ULOI 21.2 23.5 23.5",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-1G-MOC-MYLAR",
+   "claim": "Mylar G (10.2 psia): 1-g maximum oxygen concentration (MOC) = 20.0% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 20.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.2,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "MOC defined as O2 where at least five samples pass and at least one fails at +1% O2 (p. 2).",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '1g MOC', column 'Mylar G (10.2 psia)'",
+    "quote": "1g MOC 20.0 23.0 22.1",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-1G-MOC-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): 1-g maximum oxygen concentration (MOC) = 23.0% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 23.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.23,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "MOC defined as O2 where at least five samples pass and at least one fails at +1% O2 (p. 2).",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '1g MOC', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "1g MOC 20.0 23.0 22.1",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-1G-MOC-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): 1-g maximum oxygen concentration (MOC) = 22.1% O2 (modified NASA-STD-6001 Test 1, hot-wire ignition).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 22.1,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.22100000000000003,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "MOC defined as O2 where at least five samples pass and at least one fails at +1% O2 (p. 2).",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '1g MOC', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "1g MOC 20.0 23.0 22.1",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-MARS-ULOI-MYLAR",
+   "claim": "Mylar G (10.2 psia): Martian-gravity ULOI* = 18.0% O2 (lowest O2 at which the flame survived the full 5.18 s drop).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 18.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.18,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "5.18 s drop-tower centrifuge tests (30.8 rpm) at 1% O2 increments; low-g criteria differ from 1-g criteria.",
+   "caveats": [
+    "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6).",
+    "Nomex and Ultem flames were shrinking at the end of the drop; the authors note they might have extinguished given more time (p. 4)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian ULOI*', column 'Mylar G (10.2 psia)'",
+    "quote": "Martian ULOI* 18.0 22.0 19.9",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-ULOI-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): Martian-gravity ULOI* = 22.0% O2 (lowest O2 at which the flame survived the full 5.18 s drop).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 22.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.22,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "5.18 s drop-tower centrifuge tests (30.8 rpm) at 1% O2 increments; low-g criteria differ from 1-g criteria.",
+   "caveats": [
+    "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6).",
+    "Nomex and Ultem flames were shrinking at the end of the drop; the authors note they might have extinguished given more time (p. 4)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian ULOI*', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "Martian ULOI* 18.0 22.0 19.9",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-ULOI-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): Martian-gravity ULOI* = 19.9% O2 (lowest O2 at which the flame survived the full 5.18 s drop).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 19.9,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.19899999999999998,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "5.18 s drop-tower centrifuge tests (30.8 rpm) at 1% O2 increments; low-g criteria differ from 1-g criteria.",
+   "caveats": [
+    "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6).",
+    "Nomex and Ultem flames were shrinking at the end of the drop; the authors note they might have extinguished given more time (p. 4)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian ULOI*', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "Martian ULOI* 18.0 22.0 19.9",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-MOC-MYLAR",
+   "claim": "Mylar G (10.2 psia): Martian-gravity MOC* = 17.0% O2 (highest O2 at which the flame self-extinguished during the 5.18 s drop).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 17.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.17,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "5.18 s drop-tower centrifuge tests at 1% O2 increments; low-g criteria differ from 1-g criteria.",
+   "caveats": [
+    "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian MOC*', column 'Mylar G (10.2 psia)'",
+    "quote": "Martian MOC* 17.0 21.1 19.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-MOC-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): Martian-gravity MOC* = 21.1% O2 (highest O2 at which the flame self-extinguished during the 5.18 s drop).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 21.1,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21100000000000002,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "5.18 s drop-tower centrifuge tests at 1% O2 increments; low-g criteria differ from 1-g criteria.",
+   "caveats": [
+    "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian MOC*', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "Martian MOC* 17.0 21.1 19.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-MOC-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): Martian-gravity MOC* = 19.0% O2 (highest O2 at which the flame self-extinguished during the 5.18 s drop).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 19.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.19,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "5.18 s drop-tower centrifuge tests at 1% O2 increments; low-g criteria differ from 1-g criteria.",
+   "caveats": [
+    "ULOI*/MOC* are defined over the 5.18 s drop time, not the 1-g Test 1 criteria (p. 4, p. 6)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian MOC*', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "Martian MOC* 17.0 21.1 19.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-LUNAR-ULOI-MYLAR",
+   "claim": "Mylar G (10.2 psia): lunar-gravity ULOI* = 15.6% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 15.6,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.156,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source.",
+   "caveats": [
+    "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g (NSSDC lunar gravity) is used for plotting.",
+    "ULOI*/MOC* are defined over the drop time, not the 1-g Test 1 criteria."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar ULOI*', column 'Mylar G (10.2 psia)'",
+    "quote": "Lunar ULOI* 15.6 21.0 21.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-ULOI-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): lunar-gravity ULOI* = 21.0% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source.",
+   "caveats": [
+    "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g (NSSDC lunar gravity) is used for plotting.",
+    "ULOI*/MOC* are defined over the drop time, not the 1-g Test 1 criteria."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar ULOI*', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "Lunar ULOI* 15.6 21.0 21.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-ULOI-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): lunar-gravity ULOI* = 21.0% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source.",
+   "caveats": [
+    "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g (NSSDC lunar gravity) is used for plotting.",
+    "ULOI*/MOC* are defined over the drop time, not the 1-g Test 1 criteria."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar ULOI*', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "Lunar ULOI* 15.6 21.0 21.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-MOC-MYLAR",
+   "claim": "Mylar G (10.2 psia): lunar-gravity MOC* = 14.1% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 14.1,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.141,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source.",
+   "caveats": [
+    "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g is used for plotting."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar MOC*', column 'Mylar G (10.2 psia)'",
+    "quote": "Lunar MOC* 14.1 19.9 19.9",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-MOC-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): lunar-gravity MOC* = 19.9% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 19.9,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.19899999999999998,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source.",
+   "caveats": [
+    "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g is used for plotting."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar MOC*', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "Lunar MOC* 14.1 19.9 19.9",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-MOC-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): lunar-gravity MOC* = 19.9% O2 (drop-tower centrifuge; data from Ferkul & Olson 2011 as tabulated by Olson & Ferkul 2012).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 19.9,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.19899999999999998,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short (5.18 s) drop tests; values reproduced from ref. 8 of the source.",
+   "caveats": [
+    "Exact centrifuge g-level of the lunar tests is not stated in this source; 0.165 g is used for plotting."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar MOC*', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "Lunar MOC* 14.1 19.9 19.9",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-0G-ULOI-MYLAR",
+   "claim": "Mylar G (10.2 psia): microgravity ULOI* = 17.0% O2 with a 30 cm/s concurrent forced flow (drop tower).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 17.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.17,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short drop tests with a forced concurrent flow of 30 cm/s, described by the authors as a reasonable maximum spacecraft ventilation velocity (p. 4).",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g* ULOI*', column 'Mylar G (10.2 psia)'",
+    "quote": "0g* ULOI* 17.0 24.0 23.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-ULOI-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): microgravity ULOI* = 24.0% O2 with a 30 cm/s concurrent forced flow (drop tower).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 24.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.24,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short drop tests with a forced concurrent flow of 30 cm/s, described by the authors as a reasonable maximum spacecraft ventilation velocity (p. 4).",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g* ULOI*', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "0g* ULOI* 17.0 24.0 23.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-ULOI-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): microgravity ULOI* = 23.0% O2 with a 30 cm/s concurrent forced flow (drop tower).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "upward_limiting_oxygen_index",
+   "value": {
+    "value": 23.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.23,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short drop tests with a forced concurrent flow of 30 cm/s, described by the authors as a reasonable maximum spacecraft ventilation velocity (p. 4).",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g* ULOI*', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "0g* ULOI* 17.0 24.0 23.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-MOC-MYLAR",
+   "claim": "Mylar G (10.2 psia): microgravity MOC* = 16.0% O2 with a 30 cm/s concurrent forced flow (drop tower).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 16.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.16,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short drop tests with a forced concurrent flow of 30 cm/s.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g* MOC*', column 'Mylar G (10.2 psia)'",
+    "quote": "0g* MOC* 16.0 23.0 22.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-MOC-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): microgravity MOC* = 23.0% O2 with a 30 cm/s concurrent forced flow (drop tower).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 23.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.23,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short drop tests with a forced concurrent flow of 30 cm/s.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g* MOC*', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "0g* MOC* 16.0 23.0 22.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-MOC-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): microgravity MOC* = 22.0% O2 with a 30 cm/s concurrent forced flow (drop tower).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "maximum_oxygen_concentration",
+   "value": {
+    "value": 22.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.22,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Short drop tests with a forced concurrent flow of 30 cm/s.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g* MOC*', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "0g* MOC* 16.0 23.0 22.0",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-MARS-DO2-MYLAR",
+   "claim": "Mylar G (10.2 psia): oxygen margin of safety at Martian gravity = -3.1% O2 (mean low-g limit minus mean 1-g limit, Eq. 1; negative means burning at lower O2 than in 1 g).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -3.1,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.031000000000000003,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian ∆O2 %', column 'Mylar G (10.2 psia)'",
+    "quote": "Martian ∆O2 % -3.1 -1.7 -3.35",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-DO2-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): oxygen margin of safety at Martian gravity = -1.7% O2 (mean low-g limit minus mean 1-g limit, Eq. 1; negative means burning at lower O2 than in 1 g).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -1.7,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.017,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian ∆O2 %', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "Martian ∆O2 % -3.1 -1.7 -3.35",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-MARS-DO2-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): oxygen margin of safety at Martian gravity = -3.35% O2 (mean low-g limit minus mean 1-g limit, Eq. 1; negative means burning at lower O2 than in 1 g).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -3.35,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.0335,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Martian ∆O2 %', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "Martian ∆O2 % -3.1 -1.7 -3.35",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-LUNAR-DO2-MYLAR",
+   "claim": "Mylar G (10.2 psia): oxygen margin of safety at lunar gravity = -5.75% O2 (Eq. 1; negative means burning at lower O2 than in 1 g).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -5.75,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.0575,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar ∆O2 %', column 'Mylar G (10.2 psia)'",
+    "quote": "Lunar ∆O2 % -5.75 -2.8 -2.35",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-DO2-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): oxygen margin of safety at lunar gravity = -2.8% O2 (Eq. 1; negative means burning at lower O2 than in 1 g).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -2.8,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.027999999999999997,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar ∆O2 %', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "Lunar ∆O2 % -5.75 -2.8 -2.35",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-LUNAR-DO2-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): oxygen margin of safety at lunar gravity = -2.35% O2 (Eq. 1; negative means burning at lower O2 than in 1 g).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -2.35,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.0235,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row 'Lunar ∆O2 %', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "Lunar ∆O2 % -5.75 -2.8 -2.35",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-0G-DO2-MYLAR",
+   "claim": "Mylar G (10.2 psia): oxygen margin of safety in microgravity with 30 cm/s concurrent flow = -4.1% O2 (Eq. 1).",
+   "material": "Mylar G / Melinex 515 PET film",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 5.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000127,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -4.1,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.040999999999999995,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g ∆O2 %', column 'Mylar G (10.2 psia)'",
+    "quote": "0g ∆O2 % -4.1 0.25 -0.3",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-DO2-ULTEM",
+   "claim": "Ultem 1000 (10.2 psia): oxygen margin of safety in microgravity with 30 cm/s concurrent flow = 0.25% O2 (Eq. 1).",
+   "material": "Ultem 1000 polyetherimide film",
+   "material_class": "fire-retarded polyetherimide film (charring)",
+   "geometry": "thin_sheet",
+   "thickness": {
+    "value": 10.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.000254,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": 0.25,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0025,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g ∆O2 %', column 'Ultem 1000 (10.2 psia)'",
+    "quote": "0g ∆O2 % -4.1 0.25 -0.3",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-0G-DO2-NOMEX",
+   "claim": "Nomex HT90-40 (14.7 psia): oxygen margin of safety in microgravity with 30 cm/s concurrent flow = -0.3% O2 (Eq. 1).",
+   "material": "Nomex HT90-40 fabric",
+   "material_class": "aramid fabric (charring)",
+   "geometry": "fabric",
+   "thickness": {
+    "value": 12.0,
+    "unit": "mil",
+    "dimension": "length",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0003048,
+    "uncertainty_si": null
+   },
+   "o2": null,
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": {
+    "value": 30.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "drop_tower",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "oxygen_margin_of_safety",
+   "value": {
+    "value": -0.3,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": -0.003,
+    "uncertainty_si": null
+   },
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Derived by the authors from Table I limits with Eq. (1); IGNIS recomputes it independently.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-0G-FORCED-FLOW",
+   "tags": [
+    "upward_flammability_limit",
+    "nasa_std_6001_test1_modified",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Table I, row '0g ∆O2 %', column 'Nomex HT90-40 (14.7 psia)'",
+    "quote": "0g ∆O2 % -4.1 0.25 -0.3",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-INTERP-NOT-CONSERVATIVE",
+   "claim": "The authors conclude that normal-gravity material flammability screening tests may not be conservative for low gravity, and that a 1-g factor of safety may be needed if the trend is proven for more materials.",
+   "material": "Mylar G, Ultem 1000, Nomex HT90-40",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    0.38
+   ],
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Three materials, short drop tests; the authors themselves condition the conclusion on testing more materials.",
+   "caveats": [
+    "Based on three materials only.",
+    "Low-g extinction criteria differ from 1-g criteria because of the 5.18 s drop time."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "h2_evidence",
+    "standards_stress_test"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 8,
+    "locator": "IV. Conclusions",
+    "quote": "normal gravity material flammability screening tests may not be conservative and some materials tested to be safe for use in space may actually be flammable",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-CAVEAT-CRITERIA",
+   "claim": "Low-gravity extinction-limit criteria in these drop tests are not the same as the 1-g Test 1 criteria, because of the limited drop time.",
+   "material": "Mylar G, Ultem 1000, Nomex HT90-40",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    0.38
+   ],
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": 5.18,
+   "measured_variable": "methodological_limitation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit statement by the authors.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "limitation",
+    "short_duration"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 6,
+    "locator": "Section III, after Eq. (1)",
+    "quote": "It should be noted that the low g extinction limit criteria are not the same as 1g due to time constraints in drop testing.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-INTERP-CHARRING",
+   "claim": "For the charring fuels (Nomex, Ultem) the microgravity oxygen margin is close to zero, while in lunar gravity it is about 2.5% O2 lower than in 1 g; the authors suggest adequate but not excessive convection makes materials burn better.",
+   "material": "Ultem 1000, Nomex HT90-40",
+   "material_class": "charring polymers",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    0.165
+   ],
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Mechanistic interpretation by the authors, consistent with flammability-map theory (T'ien 1986), not separately tested here.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "tags": [
+    "mechanism",
+    "partial_gravity"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 7,
+    "locator": "Section III, discussion of Fig. 6",
+    "quote": "In Lunar gravity, the oxygen margin of safety for these charring fuels is ~ 2.5% lower than 1g. It may be that with adequate but not excessive convection, materials burn better, as predicted by flammability maps.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "OF2012-INTERP-DRIPPING",
+   "claim": "For non-charring, melting Mylar, the absence of gravity-induced dripping keeps molten fuel in the flame zone, giving a significantly negative oxygen margin (about 4-5% O2) at Martian, lunar and zero gravity.",
+   "material": "Mylar G",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    0.38
+   ],
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Mechanism proposed by the authors by analogy with metals combustion; not directly measured.",
+   "caveats": [],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "mechanism",
+    "dripping"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 7,
+    "locator": "Section III",
+    "quote": "the absence of gravitational-induced dripping keeps heated molten fuel in the flame zone rather than removing it, and the result is a significantly negative oxygen margin of safety (~4-5%) in Martian, Lunar, and 0g.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "OF2012-INTERP-U-SHAPE",
+   "claim": "For Mylar, the limiting oxygen concentration versus gravity level suggests a range of g-levels within which a flame can survive (a U-shaped flammability boundary), but the exact curve shape and its minimum are not known because data are sparse.",
+   "material": "Mylar G",
+   "material_class": "polyester film (non-charring, melting)",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    1.0
+   ],
+   "platform": "drop_tower_centrifuge",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "low",
+   "confidence_rationale": "The authors state the curve shapes and absolute minimums are unknown given the sparsity of points (p. 8).",
+   "caveats": [
+    "Given the sparsity of points, the exact shapes of the curves are not known, nor are the absolute minimums (p. 8)."
+   ],
+   "campaign_id": "GRC-ZGF-CENTRIFUGE-MARS",
+   "tags": [
+    "u_shaped_boundary",
+    "partial_gravity",
+    "evidence_gap"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 7,
+    "locator": "Fig. 7 discussion",
+    "quote": "There appears to be a range of g-levels within which a flame can survive.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "OF2012-ATMOS-TEST1-CONDITION",
+   "claim": "NASA-STD-6001 Test 1 is a pass/fail upward flame propagation test run in the most severe expected atmosphere; at the time, the ISS pre-EVA environment of 30% O2 at 10.2 psia.",
+   "material": "any spacecraft material",
+   "material_class": "standard test",
+   "geometry": "other",
+   "thickness": null,
+   "o2": {
+    "value": 30.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.3,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 70326.5243903173,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "test_condition",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Statement of the standard test practice by NASA authors.",
+   "caveats": [],
+   "campaign_id": "NASA-STD-6001-TEST1",
+   "tags": [
+    "standards_stress_test",
+    "atmosphere"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 1,
+    "locator": "I. Introduction",
+    "quote": "currently 30% oxygen at 10.2 psia which is the pre-breath environment on the ISS for spacewalks",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "SACK2003-PLATFORM-LEVELS",
+   "claim": "Partial-gravity flame spread experiments over thin cellulose (Kimwipes) in 21% O2 air at 0.2-0.4 atm were flown on the NASA KC-135 aircraft at 0.1, 0.16 and 0.38 g.",
+   "material": "Kimwipes thin cellulosic tissue",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.1,
+    0.38
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "test_matrix",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Experimental description by the investigators.",
+   "caveats": [
+    "Aircraft partial-g periods are short (about 25 s per parabola per NASA researchers, LPSC 2026)."
+   ],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "partial_gravity",
+    "platform",
+    "lunar",
+    "mars"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 2,
+    "locator": "Experiments",
+    "quote": "Flight tests were performed onboard the NASA KC-135 aircraft providing partial-gravity environments of 0.1, 0.16, and 0.38 g/gEarth.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.1,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "SACK2003-UPWARD-LINEAR-IN-G",
+   "claim": "Upward (concurrent buoyant) flame spread rate over thin cellulose varied linearly with gravity level for all pressures and sample widths tested between 0.1 and 1 g.",
+   "material": "Kimwipes thin cellulosic tissue",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "buoyant_upward",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.1,
+    1.0
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "flame_spread_rate_trend",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Consistent across pressures and widths; short aircraft test times; numeric values only in a figure.",
+   "caveats": [
+    "Reduced-pressure air (0.2-0.4 atm), not exploration atmospheres."
+   ],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "partial_gravity",
+    "flame_spread",
+    "scaling"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 2,
+    "locator": "Experiments, Fig. 1 discussion",
+    "quote": "The upward burning spread rate varied linearly with gravity level for all pressure environments and sample widths tested",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.1,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "SACK2003-DOWNWARD-PEAK-NEAR-MARS",
+   "claim": "Downward (opposed buoyant) flame spread rate over 2-cm-wide thin cellulose in 27.6 kPa air is non-monotonic in gravity and peaks near Martian gravity (0.38 g).",
+   "material": "Kimwipes thin cellulosic tissue",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 27.6,
+    "unit": "kPa",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 27600.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": {
+    "value": 0.38,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.38,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "flame_spread_rate_peak_location",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Single fuel and apparatus; values in a figure only; aircraft test times are short.",
+   "caveats": [
+    "Peak location is condition-dependent: the earlier 1-atm study is summarized by NASA researchers (LPSC 2026) as peaking near lunar gravity."
+   ],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "partial_gravity",
+    "flame_spread",
+    "contradiction_candidate",
+    "mars"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 2,
+    "locator": "Fig. 1 discussion",
+    "quote": "The downward spread rate is non-monotonic and peaks near the Martian gravity levels of 0.38 g/gEarth.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.38,
+   "gravity_hi": 0.38
+  },
+  {
+   "id": "SACK2003-DOWNWARD-U-BOUNDARY",
+   "claim": "The downward-spread flammability boundary versus gravity is U-shaped, with two extinction limits: insufficient residence time at high gravity and radiative loss at low gravity.",
+   "material": "Kimwipes thin cellulosic tissue",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.1,
+    1.5
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "flammability_boundary_shape",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Boundary shape observed in aircraft tests; the two-mechanism explanation agrees with several diffusion-flame models.",
+   "caveats": [],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "u_shaped_boundary",
+    "partial_gravity",
+    "mechanism"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 3,
+    "locator": "Fig. 2 discussion",
+    "quote": "The downward spreading boundary is U-shaped showing the dual extinction limits (insufficient residence time in high g, radiative loss in low g)",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.1,
+   "gravity_hi": 1.5
+  },
+  {
+   "id": "SACK2003-UPWARD-WIDER-DOMAIN",
+   "claim": "Across the partial-gravity range tested, flames spread faster upward than downward, and the flammable domain for upward spread is wider than for downward spread.",
+   "material": "Kimwipes thin cellulosic tissue",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "mixed",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.1,
+    1.0
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "flammable_domain_comparison",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Authors' conclusion from aircraft data; they note results require further study.",
+   "caveats": [],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "partial_gravity",
+    "concurrent_vs_opposed"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 4,
+    "locator": "Conclusions",
+    "quote": "flames spread more quickly in the upward than the downward direction, and the flammable domain of upward spreading is wider than for downward spreading",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.1,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "SACK2003-MODEL-0G-LOI-MIN",
+   "claim": "A 3-D model of a cotton-fiberglass fuel in an LOI-like tunnel predicts that, at zero gravity, the limiting oxygen index is non-monotonic in forced flow with a minimum around 5 cm/s, whereas at 1 g it is monotonic.",
+   "material": "cotton-fiberglass composite (simulated)",
+   "material_class": "cotton-fiberglass fabric (charring)",
+   "geometry": "fabric",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": {
+    "value": 5.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.05,
+    "uncertainty_si": null
+   },
+   "flow_direction": "opposed",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "limiting_oxygen_index_model",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MODELED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "low",
+   "confidence_rationale": "Numerical result computed with as-yet uncalibrated kinetic constants (Fig. 3 caption).",
+   "caveats": [
+    "Model with uncalibrated kinetic constants; not an experimental limit."
+   ],
+   "campaign_id": "CWRU-3D-LOI-MODEL",
+   "tags": [
+    "model",
+    "u_shaped_boundary",
+    "ventilation"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 3,
+    "locator": "Three-dimensional modeling, Fig. 3",
+    "quote": "the LOI at zero gravity is non-monotonic and has a minimum around 5 cm/s",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "SACK2003-MODEL-CONCURRENT-LOWEST-O2",
+   "claim": "Two-dimensional modeling with gas radiation indicates that the lowest flammable oxygen percentage over thin solids is always found in concurrent flow rather than opposed flow (Kumar, Shih & T'ien 2003).",
+   "material": "thin solid fuel (simulated)",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "concurrent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MODELED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Published theoretical result summarized by the same group.",
+   "caveats": [],
+   "campaign_id": "CWRU-2D-RADIATION-MODEL",
+   "tags": [
+    "model",
+    "concurrent_vs_opposed"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 2,
+    "locator": "Introduction",
+    "quote": "the lowest flammable oxygen percentage is always in the concurrent flow case",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "SACK2003-GAP-STATEMENT",
+   "claim": "As of 2003, NASA and university researchers stated that flame spreading and material flammability had not been studied under the partial-gravity conditions of the Moon and Mars, and described their aircraft work as the beginning of that research.",
+   "material": "solid materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.16,
+    0.38
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "evidence_gap_statement",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit statement by the investigators (historical, 2003).",
+   "caveats": [],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "evidence_gap",
+    "history"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040053567",
+    "page": 1,
+    "locator": "Introduction",
+    "quote": "flame spreading and material flammability behavior have not been studied under the partial gravity conditions that are the natural state in space exploration destinations such as the Moon and Mars",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.16,
+   "gravity_hi": 0.38
+  }
+ ]
+}

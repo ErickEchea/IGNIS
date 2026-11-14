@@ -1,0 +1,205 @@
+{
+ "built_at": "2026-11-14T21:29:02+00:00",
+ "scenarios": [
+  {
+   "id": "ISS-NOMINAL",
+   "name": "ISS cabin (nominal)",
+   "gravity_g0": 0.0,
+   "gravity_note": "Orbital microgravity (free fall).",
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi"
+   },
+   "o2_percent": 21.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20150021491",
+    "page": 5,
+    "quote": "(ISS) program have operated at an Earth-equivalent sea level atmosphere of 14.7 psia and 21%"
+   },
+   "derived": {
+    "pressure_kpa": 101.35,
+    "o2_mole_fraction": 0.21,
+    "o2_partial_pressure_kpa": 21.28
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "ISS-USOS-MATERIALS",
+   "name": "ISS USOS materials test condition",
+   "gravity_g0": 0.0,
+   "gravity_note": "Orbital microgravity (free fall).",
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi"
+   },
+   "o2_percent": 24.1,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20070018274",
+    "page": 1,
+    "quote": "evaluated against a 24.1% oxygen, 14.7 psia test condition"
+   },
+   "derived": {
+    "pressure_kpa": 101.35,
+    "o2_mole_fraction": 0.24100000000000002,
+    "o2_partial_pressure_kpa": 24.43
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "ISS-AIRLOCK-PREBREATHE",
+   "name": "ISS airlock / pre-EVA test condition",
+   "gravity_g0": 0.0,
+   "gravity_note": "Orbital microgravity (free fall).",
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi"
+   },
+   "o2_percent": 30.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20070018274",
+    "page": 1,
+    "quote": "Hardware associated with the Airlock interior was evaluated against a 30% oxygen, 10.2 psia test condition."
+   },
+   "derived": {
+    "pressure_kpa": 70.33,
+    "o2_mole_fraction": 0.3,
+    "o2_partial_pressure_kpa": 21.1
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "GATEWAY-NOMINAL",
+   "name": "Gateway (nominal, as assumed for transit-habitat planning)",
+   "gravity_g0": 0.0,
+   "gravity_note": "Lunar orbit, free fall.",
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi"
+   },
+   "o2_percent": 26.5,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20220000524",
+    "page": 20,
+    "quote": "(assuming 10.2 psia (70.3 kPa), 26.5% O2 atmosphere)"
+   },
+   "derived": {
+    "pressure_kpa": 70.33,
+    "o2_mole_fraction": 0.265,
+    "o2_partial_pressure_kpa": 18.64
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "LUNAR-SURFACE-HABITAT",
+   "name": "Lunar surface habitat (nominal)",
+   "gravity_g0": 0.165,
+   "gravity_note": "Lunar surface gravity 1.62 m/s^2 (NSSDC).",
+   "pressure": {
+    "value": 10.2,
+    "unit": "psi"
+   },
+   "o2_percent": 26.5,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20220000524",
+    "page": 14,
+    "quote": "nominal operating pressure of 10.2 psia (70.3 kPa) and 26.5% Oxygen concentration"
+   },
+   "derived": {
+    "pressure_kpa": 70.33,
+    "o2_mole_fraction": 0.265,
+    "o2_partial_pressure_kpa": 18.64
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "LUNAR-SURFACE-HABITAT-EVA",
+   "name": "Lunar surface habitat (8.2 psi / 34% capability)",
+   "gravity_g0": 0.165,
+   "gravity_note": "Lunar surface gravity 1.62 m/s^2 (NSSDC).",
+   "pressure": {
+    "value": 8.2,
+    "unit": "psi"
+   },
+   "o2_percent": 34.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20220000524",
+    "page": 14,
+    "quote": "the capability to operate at 8.2 psi (56.5 kPa)and 34% Oxygen"
+   },
+   "derived": {
+    "pressure_kpa": 56.54,
+    "o2_mole_fraction": 0.34,
+    "o2_partial_pressure_kpa": 19.22
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "EXPLORATION-ATMOSPHERE-8.2-34",
+   "name": "NASA exploration atmosphere 8.2 psia / 34% O2 (EVA-intensive phases)",
+   "gravity_g0": null,
+   "gravity_note": "Atmosphere definition; applies to vehicles at any gravity level.",
+   "pressure": {
+    "value": 8.2,
+    "unit": "psi"
+   },
+   "o2_percent": 34.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20150021491",
+    "page": 4,
+    "quote": "After re-evaluation in 2012, the 8/32 environment was altered to 8.2 psia and 34% O2"
+   },
+   "derived": {
+    "pressure_kpa": 56.54,
+    "o2_mole_fraction": 0.34,
+    "o2_partial_pressure_kpa": 19.22
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "MARS-TRANSIT-HABITAT",
+   "name": "Mars transit habitat",
+   "gravity_g0": 0.0,
+   "gravity_note": "Interplanetary cruise, free fall.",
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi"
+   },
+   "o2_percent": null,
+   "unknown_note": "O2 concentration not stated in the cited source: UNKNOWN.",
+   "provenance": {
+    "source_id": "NTRS-20220000524",
+    "page": 20,
+    "quote": "Mars Transit conditions (14.7 psia (101.4 kPa), reliant on TH subsystems)"
+   },
+   "derived": {
+    "pressure_kpa": 101.35,
+    "o2_mole_fraction": null,
+    "o2_partial_pressure_kpa": null
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "MARS-SURFACE-HABITAT",
+   "name": "Mars surface habitat",
+   "gravity_g0": 0.38,
+   "gravity_note": "Mars surface gravity 3.73 m/s^2 (NSSDC).",
+   "pressure": null,
+   "o2_percent": null,
+   "unknown_note": "IGNIS found no NASA document specifying a Mars surface habitat atmosphere: UNKNOWN.",
+   "provenance": null,
+   "derived": {
+    "pressure_kpa": null,
+    "o2_mole_fraction": null,
+    "o2_partial_pressure_kpa": null
+   },
+   "verification": "no source: values must be UNKNOWN"
+  }
+ ]
+}
