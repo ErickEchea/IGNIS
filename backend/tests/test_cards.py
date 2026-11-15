@@ -42,8 +42,9 @@ def test_numbers_extraction() -> None:
 
 def test_fabricated_quote_is_rejected(cards) -> None:  # type: ignore[no-untyped-def]
     card = next(c for c in cards if c.id == "OF2012-LUNAR-MOC-MYLAR")
-    fake = card.model_copy(update={"provenance": card.provenance.model_copy(
-        update={"quote": "Lunar MOC* 12.0 19.9 19.9"})})
+    fake = card.model_copy(
+        update={"provenance": card.provenance.model_copy(update={"quote": "Lunar MOC* 12.0 19.9 19.9"})}
+    )
     page = "Table I ... Lunar MOC* 14.1 19.9 19.9 ..."
     res = verify_card(fake, {"NTRS-20130010991"}, lambda _s, _p: page)
     assert res.quote_on_page is False

@@ -93,9 +93,7 @@ def catalog_record(detail: dict[str, Any], tables: list[str]) -> dict[str, Any]:
         "url": PSI_PAGE.format(acc=acc),
         # Gravity coverage, derived from platform metadata. PSI flight data are low-gravity
         # (ISS / Cygnus); ground investigations are 1 g or computational.
-        "gravity_regime": (
-            "microgravity" if project_type == "Microgravity Investigation" else "ground_or_model"
-        ),
+        "gravity_regime": ("microgravity" if project_type == "Microgravity Investigation" else "ground_or_model"),
     }
 
 

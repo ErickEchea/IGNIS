@@ -94,9 +94,7 @@ def _expand_table(spec: dict[str, Any]) -> list[dict[str, Any]]:
     for row in spec["rows"]:
         values = row["values"]
         if len(values) != len(cols):
-            raise ValueError(
-                f"{spec['id_prefix']}/{row['key']}: {len(values)} values for {len(cols)} columns"
-            )
+            raise ValueError(f"{spec['id_prefix']}/{row['key']}: {len(values)} values for {len(cols)} columns")
         for col, val in zip(cols, values, strict=True):
             if val is None:
                 continue
@@ -119,10 +117,7 @@ def _expand_table(spec: dict[str, Any]) -> list[dict[str, Any]]:
             card["provenance"] = {
                 "source_id": spec["source_id"],
                 "page": spec["page"],
-                "locator": (
-                    f"{spec['locator']}, row '{row['label']}', "
-                    f"column '{col.get('label', col['material'])}'"
-                ),
+                "locator": (f"{spec['locator']}, row '{row['label']}', column '{col.get('label', col['material'])}'"),
                 "quote": row["quote"],
                 "extraction": spec.get("extraction", "llm_assisted_quote_verified"),
             }

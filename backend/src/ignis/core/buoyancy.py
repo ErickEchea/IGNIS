@@ -66,9 +66,7 @@ def buoyant_velocity(gravity_g0: float) -> BuoyantVelocity:
     """Interval estimate of the characteristic buoyant velocity at ``gravity_g0`` (multiples of g0)."""
     ratio = buoyant_velocity_ratio(gravity_g0)
     lo, hi = ANCHOR_1G_CM_S
-    return BuoyantVelocity(
-        gravity_g0=gravity_g0, low_cm_s=lo * ratio, high_cm_s=hi * ratio, ratio_to_1g=ratio
-    )
+    return BuoyantVelocity(gravity_g0=gravity_g0, low_cm_s=lo * ratio, high_cm_s=hi * ratio, ratio_to_1g=ratio)
 
 
 def equivalent_gravity_for_flow(flow_cm_s: float) -> tuple[float, float]:

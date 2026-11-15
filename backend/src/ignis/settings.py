@@ -29,12 +29,14 @@ class Settings(BaseSettings):
 
     llm_mode: LLMMode = LLMMode.AUTO
     gemini_api_key: SecretStr | None = Field(default=None, alias="GEMINI_API_KEY")
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = ""  # empty = auto-select a text "flash" model enabled on the key
     ollama_base_url: str = "http://127.0.0.1:11434"
     ollama_model: str = "qwen3:8b"
     llm_timeout_s: float = 60.0
 
     data_dir: Path = REPO_ROOT / "data"
+    models_dir: Path = REPO_ROOT / "models_cache"  # ONNX models (embeddings, reranker, NLI)
+    rerank: bool = True
     allowed_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
 
     @property

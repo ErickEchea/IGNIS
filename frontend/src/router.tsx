@@ -7,6 +7,8 @@ const Bridge = lazy(() => import('./pages/Bridge'))
 const Gaps = lazy(() => import('./pages/Gaps'))
 const Evidence = lazy(() => import('./pages/Evidence'))
 const Methods = lazy(() => import('./pages/Methods'))
+const Copilot = lazy(() => import('./pages/Copilot'))
+const System = lazy(() => import('./pages/System'))
 const Placeholder = lazy(() => import('./pages/Placeholder'))
 
 function page(node: ReactNode) {
@@ -22,9 +24,9 @@ export const router = createBrowserRouter([
       { path: 'bridge', element: page(<Bridge />) },
       { path: 'gaps', element: page(<Gaps />) },
       { path: 'evidence', element: page(<Evidence />) },
-      { path: 'copilot', element: page(<Placeholder title="Scientific Copilot" />) },
+      { path: 'copilot', element: page(<Copilot />) },
       { path: 'methods', element: page(<Methods />) },
-      { path: 'system', element: page(<Placeholder title="System" />) },
+      { path: 'system', element: page(<System />) },
       { path: '*', element: page(<Placeholder title="Not found" />) },
     ],
   },

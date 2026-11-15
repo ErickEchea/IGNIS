@@ -68,12 +68,18 @@ class FlowDirection(StrEnum):
 
 
 Dimension = Literal[
-    "length", "velocity", "pressure", "fraction", "gravity_ratio", "time", "area_rate", "power",
-    "temperature", "mass_per_area",
+    "length",
+    "velocity",
+    "pressure",
+    "fraction",
+    "gravity_ratio",
+    "time",
+    "area_rate",
+    "power",
+    "temperature",
+    "mass_per_area",
 ]
-UncertaintyKind = Literal[
-    "reported_sd", "reported_range", "instrument", "platform_jitter", "digitization", "unknown"
-]
+UncertaintyKind = Literal["reported_sd", "reported_range", "instrument", "platform_jitter", "digitization", "unknown"]
 
 
 class Quantity(Strict):
@@ -109,8 +115,11 @@ class Provenance(Strict):
     locator: str | None = None  # "Table I", "Fig. 7", "Abstract"
     quote: str = Field(min_length=8, max_length=600)
     extraction: Literal[
-        "manual", "llm_assisted_human_verified", "llm_assisted_quote_verified",
-        "digitized_plot", "dataset_file",
+        "manual",
+        "llm_assisted_human_verified",
+        "llm_assisted_quote_verified",
+        "digitized_plot",
+        "dataset_file",
     ]
     verified_by: str | None = None
     verified_at: date | None = None

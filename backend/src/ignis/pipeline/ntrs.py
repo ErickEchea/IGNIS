@@ -31,9 +31,7 @@ def record_url(ntrs_id: str) -> str:
 
 def fetch_record(fetcher: Fetcher, ntrs_id: str) -> dict[str, Any] | None:
     try:
-        path = fetcher.download(
-            f"{NTRS}/api/citations/{ntrs_id}", f"ntrs/records/{ntrs_id}.json", "NASA-STI-metadata"
-        )
+        path = fetcher.download(f"{NTRS}/api/citations/{ntrs_id}", f"ntrs/records/{ntrs_id}.json", "NASA-STI-metadata")
     except httpx.HTTPStatusError as exc:
         if exc.response.status_code == 404:
             return None
@@ -120,8 +118,7 @@ def harvest(
         records.append(summarize(rec, pdf_rel))
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
-        json.dumps({"records": records, "missing_ids": missing}, indent=1, ensure_ascii=False)
-        + "\n",
+        json.dumps({"records": records, "missing_ids": missing}, indent=1, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
     return records

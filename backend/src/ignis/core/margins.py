@@ -53,22 +53,17 @@ def recompute_margins(cards: Iterable[FindingCard], tolerance: float = 0.005) ->
 
     checks: list[MarginCheck] = []
     for (_, material, _), group in sorted(groups.items(), key=lambda kv: kv[0][1]):
+
         def find(var: str, g: float, group: list[FindingCard] = group) -> FindingCard | None:
             for c in group:
-                if (
-                    c.measured_variable == var
-                    and c.gravity is not None
-                    and abs(c.gravity.value_si - g) < 1e-9
-                ):
+                if c.measured_variable == var and c.gravity is not None and abs(c.gravity.value_si - g) < 1e-9:
                     return c
             return None
 
         u1, m1 = find(ULOI, 1.0), find(MOC, 1.0)
         if u1 is None or m1 is None or u1.value is None or m1.value is None:
             continue
-        levels = sorted(
-            {c.gravity.value_si for c in group if c.gravity is not None and c.gravity.value_si < 1.0}
-        )
+        levels = sorted({c.gravity.value_si for c in group if c.gravity is not None and c.gravity.value_si < 1.0})
         for g in levels:
             ul, ml = find(ULOI, g), find(MOC, g)
             if ul is None or ml is None or ul.value is None or ml.value is None:

@@ -117,7 +117,8 @@ class Fetcher:
                 response = self.client.get(url)
                 if response.status_code in (429, 502, 503, 504):
                     raise httpx.HTTPStatusError(
-                        f"retryable {response.status_code}", request=response.request,
+                        f"retryable {response.status_code}",
+                        request=response.request,
                         response=response,
                     )
                 response.raise_for_status()

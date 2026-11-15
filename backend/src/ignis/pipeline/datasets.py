@@ -126,12 +126,21 @@ class FlexRow:
             "identifier": self.identifier,
             "date": self.date,
             "fuel": self.fuel,
-            "pressure_kpa": None if self.pressure_mmhg is None
+            "pressure_kpa": None
+            if self.pressure_mmhg is None
             else round(to_si(self.pressure_mmhg, "mmHg", "pressure") / 1000, 3),
-            "x_o2": self.x_o2, "x_n2": self.x_n2, "x_co2": self.x_co2, "x_he": self.x_he,
-            "d0_mm": self.d0_mm, "d_ext_mm": self.d_ext_mm, "k_mm2_s": self.k_mm2_s,
-            "burn_time_s": self.burn_time_s, "test_end": self.test_end,
-            "gravity_g0": 0.0, "platform": "ISS", "data_type": "MEASURED",
+            "x_o2": self.x_o2,
+            "x_n2": self.x_n2,
+            "x_co2": self.x_co2,
+            "x_he": self.x_he,
+            "d0_mm": self.d0_mm,
+            "d_ext_mm": self.d_ext_mm,
+            "k_mm2_s": self.k_mm2_s,
+            "burn_time_s": self.burn_time_s,
+            "test_end": self.test_end,
+            "gravity_g0": 0.0,
+            "platform": "ISS",
+            "data_type": "MEASURED",
         }
 
 
@@ -139,12 +148,24 @@ def parse_flex(raw_dir: Path) -> list[FlexRow]:
     rows = []
     for r in _read_csv(raw_dir / FLEX_CSV):
         vals = list(r.values())
-        rows.append(FlexRow(
-            test=int(vals[0]), identifier=vals[1].strip(), date=vals[2].strip(), fuel=vals[4].strip(),
-            pressure_mmhg=_num(vals[5]), x_o2=_num(vals[6]), x_n2=_num(vals[7]), x_co2=_num(vals[8]),
-            x_he=_num(vals[9]), d0_mm=_num(vals[10]), d_ext_mm=_num(vals[11]), k_mm2_s=_num(vals[12]),
-            burn_time_s=_num(vals[13]), test_end=vals[14].strip(),
-        ))
+        rows.append(
+            FlexRow(
+                test=int(vals[0]),
+                identifier=vals[1].strip(),
+                date=vals[2].strip(),
+                fuel=vals[4].strip(),
+                pressure_mmhg=_num(vals[5]),
+                x_o2=_num(vals[6]),
+                x_n2=_num(vals[7]),
+                x_co2=_num(vals[8]),
+                x_he=_num(vals[9]),
+                d0_mm=_num(vals[10]),
+                d_ext_mm=_num(vals[11]),
+                k_mm2_s=_num(vals[12]),
+                burn_time_s=_num(vals[13]),
+                test_end=vals[14].strip(),
+            )
+        )
     return rows
 
 
@@ -197,13 +218,21 @@ def crosscheck_flex(csv_rows: list[FlexRow], tp_pages: tuple[str, ...]) -> Cross
             "d0_mm": (r.d0_mm, _num(g[10])),
             "k_mm2_s": (r.k_mm2_s, _num(g[12])),
         }
-        diffs = {f: v for f, v in pairs.items()
-                 if not (v[0] is None and v[1] is None)
-                 and (v[0] is None or v[1] is None or abs(v[0] - v[1]) > 1e-9)}
+        diffs = {
+            f: v
+            for f, v in pairs.items()
+            if not (v[0] is None and v[1] is None) and (v[0] is None or v[1] is None or abs(v[0] - v[1]) > 1e-9)
+        }
         check.n_compared += 1
         if diffs:
-            check.mismatches.append({"identifier": r.identifier, "csv_test": r.test, "tp_test": int(g[0]),
-                                     "fields": {f: list(v) for f, v in diffs.items()}})
+            check.mismatches.append(
+                {
+                    "identifier": r.identifier,
+                    "csv_test": r.test,
+                    "tp_test": int(g[0]),
+                    "fields": {f: list(v) for f, v in diffs.items()},
+                }
+            )
         else:
             check.n_identical += 1
     return check
@@ -217,11 +246,19 @@ def parse_bass2(raw_dir: Path) -> list[dict[str, Any]]:
     for r in _read_csv(raw_dir / BASS2_CSV):
         vals = list(r.values())
         o2 = _num(vals[11])
-        out.append({
-            "dataset": "PSI-25", "campaign_id": "PSI-25-BASS-II", "test": vals[1].strip(),
-            "material_text": " ".join(vals[5].split()), "o2_percent_initial": o2,
-            "gravity_g0": 0.0, "platform": "ISS", "pressure_kpa": None, "data_type": "MEASURED",
-        })
+        out.append(
+            {
+                "dataset": "PSI-25",
+                "campaign_id": "PSI-25-BASS-II",
+                "test": vals[1].strip(),
+                "material_text": " ".join(vals[5].split()),
+                "o2_percent_initial": o2,
+                "gravity_g0": 0.0,
+                "platform": "ISS",
+                "pressure_kpa": None,
+                "data_type": "MEASURED",
+            }
+        )
     return out
 
 
@@ -236,13 +273,21 @@ def parse_saffire(raw_dir: Path) -> list[dict[str, Any]]:
                 continue
             flow = _num(vals.get("air flow (cm/s)") or vals.get("air flow"))
             o2 = _num(vals.get("percent o2") or vals.get("percent o2 (note 1)"))
-            out.append({
-                "dataset": acc, "campaign_id": f"{acc}-SAFFIRE", "test": sample, "material_text": material,
-                "flow_cm_s": flow, "o2_percent": o2,
-                "flow_direction": (vals.get("flow direction") or vals.get("direction") or "").lower(),
-                "ug_burn_length": vals.get("?-g burn length"),
-                "one_g_spread_rate": vals.get("1-g spread rate"),
-                "gravity_g0": 0.0, "platform": "Cygnus_Saffire", "pressure_kpa": None,
-                "data_type": "MEASURED",
-            })
+            out.append(
+                {
+                    "dataset": acc,
+                    "campaign_id": f"{acc}-SAFFIRE",
+                    "test": sample,
+                    "material_text": material,
+                    "flow_cm_s": flow,
+                    "o2_percent": o2,
+                    "flow_direction": (vals.get("flow direction") or vals.get("direction") or "").lower(),
+                    "ug_burn_length": vals.get("?-g burn length"),
+                    "one_g_spread_rate": vals.get("1-g spread rate"),
+                    "gravity_g0": 0.0,
+                    "platform": "Cygnus_Saffire",
+                    "pressure_kpa": None,
+                    "data_type": "MEASURED",
+                }
+            )
     return out
