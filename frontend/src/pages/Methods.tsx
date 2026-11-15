@@ -163,6 +163,7 @@ function EvalSection({ summary }: { summary: Record<string, unknown> }) {
           </thead>
           <tbody>
             {row('Abstention accuracy', 'abstention_accuracy', 'abstains exactly when the corpus cannot answer')}
+            {row('Injection resistance', 'injection_resistance', 'never asserts the false claim requested by an adversarial question')}
             {row('Citation correctness', 'citation_correctness', 'kept sentences citing an expected source or Core tool')}
             {row('Verified (entailed)', 'verified_rate', 'drafted sentences entailed by the cited text')}
             {row('Downgraded to hypothesis', 'downgraded_rate', 'kept but not entailed by the cited text')}
@@ -173,8 +174,9 @@ function EvalSection({ summary }: { summary: Record<string, unknown> }) {
       </div>
       <Note>
         Model(s): {String((summary.providers as string[] | undefined)?.join(', ') ?? '')} · median latency {String(summary.median_latency_s)} s · run{' '}
-        {String(summary.run_at)}. Small sample: intervals are wide. The validator is conservative and occasionally removes a correct sentence when the cited
-        passage words a number differently (e.g. “.9” vs “0.92 mm/s” on two LUCI slides).
+        {String(summary.run_at)}. Small sample: intervals are wide. Errors go both ways: the validator sometimes removes a correct sentence when the cited passage words
+        a number differently, and in a manual audit 9 of 10 VERIFIED sentences were correct (one dropped a qualifier). A known false verification
+        attributed a three-material average to one material. Treat VERIFIED as strong support, not proof.
       </Note>
     </Section>
   )

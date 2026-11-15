@@ -20,7 +20,7 @@ from ignis.evidence.validator.validator import DraftSentence, Evidence, validate
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 sys.path.insert(0, str(HERE))
-from run_eval import wilson  # noqa: E402
+from run_eval import score_row, summarize  # noqa: E402
 
 
 def revalidate_answer(ans: dict[str, Any], registry: set[str], dois: dict[str, str], nli: Any) -> dict[str, Any]:
@@ -52,39 +52,15 @@ def main(mode: str, demo: bool) -> None:
     data = json.loads(path.read_text(encoding="utf-8"))
     cp = get_copilot()
     rows = data["rows"]
+    golden = {q["id"]: q for q in __import__("yaml").safe_load((HERE / "golden.yaml").read_text(encoding="utf-8"))["questions"]}
     for r in rows:
-        exp = set()
         r["answer"] = revalidate_answer(r["answer"], cp.registry, cp.registry_dois, cp.nli)
-        a = r["answer"]
-        label_src = {e["label"]: e["source_id"] for e in a["evidence"]}
-        tool_labels = {t["label"] for t in a["tools"]}
-        golden = {q["id"]: q for q in __import__("yaml").safe_load((HERE / "golden.yaml").read_text(encoding="utf-8"))["questions"]}
-        q = golden[r["id"]]
-        exp = set(q.get("expected_sources") or [])
-        kept = [s for s in a["sentences"] if s["verdict"] != "REMOVED"]
-        r["status"] = a["status"]
-        r["n_drafted"], r["n_kept"] = len(a["sentences"]), len(kept)
-        r["n_verified"] = sum(1 for s in a["sentences"] if s["verdict"] == "VERIFIED")
-        r["n_removed"] = sum(1 for s in a["sentences"] if s["verdict"] == "REMOVED")
-        r["n_well_cited"] = sum(
-            1 for s in kept
-            if (q.get("expect_tool") and any(c in tool_labels for c in s["citations"]))
-            or any(label_src.get(c) in exp for c in s["citations"])
-        )
-        abstained = a["status"] in ("ABSTAINED", "NO_LLM")
-        r["abstention_correct"] = abstained == r["must_abstain"]
-    answerable = [r for r in rows if not r["must_abstain"]]
-    drafted = sum(r["n_drafted"] for r in answerable)
-    kept_n = sum(r["n_kept"] for r in answerable)
-    s = data["summary"]
-    s.update({
-        "abstention_accuracy": wilson(sum(1 for r in rows if r["abstention_correct"]), len(rows)),
-        "citation_correctness": wilson(sum(r["n_well_cited"] for r in answerable), kept_n),
-        "verified_rate": wilson(sum(r["n_verified"] for r in answerable), drafted),
-        "downgraded_rate": wilson(kept_n - sum(r["n_verified"] for r in answerable), drafted),
-        "removed_rate": wilson(sum(r["n_removed"] for r in answerable), drafted),
-        "revalidated_at": time.strftime("%Y-%m-%d %H:%M"),
-    })
+        score_row(r, golden[r["id"]])
+    run_at = data["summary"].get("run_at")
+    s = summarize(rows, data["summary"]["mode"])
+    s["run_at"] = run_at
+    s["revalidated_at"] = time.strftime("%Y-%m-%d %H:%M")
+    data["summary"] = s
     path.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
     print(json.dumps({k: v for k, v in s.items() if k != "providers"}, indent=1))
     if demo:

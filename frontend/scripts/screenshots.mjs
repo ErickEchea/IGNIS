@@ -5,7 +5,7 @@ import { chromium } from 'playwright-core'
 const out = process.argv[2] ?? 'screenshots'
 const base = process.argv[3] ?? 'http://localhost:5173'
 const scheme = process.argv[4] ?? 'dark'
-const routes = ['/', '/bridge', '/gaps', '/evidence', '/methods']
+const routes = ['/', '/bridge', '/gaps', '/evidence', '/copilot', '/methods', '/system']
 const browser = await chromium.launch({ channel: 'msedge', headless: true })
 const errors = []
 for (const [w, h, tag] of [[1440, 900, 'desktop'], [390, 844, 'mobile']]) {

@@ -4,6 +4,7 @@ import { Note, Section, SourceRef } from '../components/ui'
 import { askCopilot, LIVE_BACKEND, type CopilotAnswer, type Mode } from '../lib/api'
 
 const EXAMPLES = [
+  'What were the Martian-gravity MOC* values for Mylar, Ultem and Nomex?',
   'Are NASA-STD-6001 Test 1 flammability limits conservative at lunar gravity?',
   'How did the SIBAL fabric flame spread rate in lunar gravity compare with 1 g in LUCI?',
   'What is the characteristic buoyant flow velocity on Mars?',
@@ -35,13 +36,15 @@ export default function Copilot() {
   const [answer, setAnswer] = useState<CopilotAnswer | null>(null)
   const [busy, setBusy] = useState(false)
   const [offline, setOffline] = useState(false)
+  const [noDemo, setNoDemo] = useState(false)
 
   const fromDemo = (question: string) => demo.data?.answers.find((a) => a.question === question) ?? null
 
   async function ask(question: string) {
     if (!LIVE_BACKEND) {
-      setOffline(true)
-      setAnswer(fromDemo(question))
+      const a = fromDemo(question)
+      setAnswer(a)
+      setNoDemo(a === null)
       return
     }
     setBusy(true)
@@ -96,7 +99,7 @@ export default function Copilot() {
             <button type="submit" disabled={busy} className="rounded-md bg-accent px-4 py-1.5 text-sm font-medium text-[#1b1d20] disabled:opacity-50">
               {busy ? 'Checking evidence…' : 'Ask'}
             </button>
-            <label className="text-xs text-muted">
+            <label className={`text-xs text-muted ${LIVE_BACKEND ? '' : 'hidden'}`}>
               Model routing{' '}
               <select value={mode} onChange={(e) => setMode(e.target.value as Mode)} className="ml-1 rounded border border-line bg-surface-2 px-1.5 py-1 text-xs text-ink">
                 <option value="AUTO">AUTO (Gemini → Ollama → none)</option>
@@ -129,6 +132,13 @@ export default function Copilot() {
           <span className="text-ink">Static deployment.</span> This public site runs without a backend, so it shows the precomputed answers that the
           validated pipeline produced for the {demo.data?.answers.length ?? 25} golden-set questions above (model and date on each answer). Run IGNIS locally
           with Gemini or Ollama for live answers to new questions.
+        </p>
+      )}
+
+      {noDemo && !LIVE_BACKEND && (
+        <p role="status" className="rounded-md border border-warning px-3 py-2 text-sm">
+          <span className="text-warning">No precomputed answer for this question.</span> The static deployment only holds answers to the golden-set questions
+          listed above; IGNIS shows nothing rather than inventing one.
         </p>
       )}
 
