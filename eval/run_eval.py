@@ -4,7 +4,8 @@ Metrics (each with a Wilson 95% interval):
 - abstention accuracy: abstains on must-abstain questions and answers the others;
 - citation correctness: share of kept sentences (answerable questions) that cite an expected source
   or, for tool questions, a Core tool result;
-- validator acceptance (faithfulness proxy): share of drafted sentences that survive validation;
+- validator outcome rates over drafted sentences: VERIFIED (entailed by the cited text), DOWNGRADED
+  (kept as hypothesis: not entailed), REMOVED (invented citation, untraceable number or contradiction);
 - retrieval recall@8: an expected source appears among the retrieved chunks.
 
 Usage (from backend/): uv run python ../eval/run_eval.py LOCAL|CLOUD|NONE [--demo]
@@ -42,6 +43,8 @@ def main(mode_name: str, demo: bool) -> None:
     mode = LLMMode(mode_name)
     golden = yaml.safe_load((HERE / "golden.yaml").read_text(encoding="utf-8"))["questions"]
     cp = get_copilot()
+    if mode != LLMMode.NONE:  # warm-up call (model load), not scored
+        cp.answer("Warm-up: what is flame spread?", mode)
     rows: list[dict[str, Any]] = []
     for q in golden:
         t0 = time.time()
@@ -62,6 +65,10 @@ def main(mode_name: str, demo: bool) -> None:
             "id": q["id"], "question": q["question"], "status": out["status"], "must_abstain": must_abstain,
             "abstention_correct": abstained == must_abstain if mode != LLMMode.NONE else None,
             "n_drafted": len(out["sentences"]), "n_kept": len(kept),
+            "n_verified": sum(1 for s in out["sentences"] if s["verdict"] == "VERIFIED"),
+            "n_removed": sum(1 for s in out["sentences"] if s["verdict"] == "REMOVED"),
+            "infra_failure": any(a.get("error_kind") in ("timeout", "unavailable") for a in out.get("attempts") or [])
+            and out["status"] == "NO_LLM",
             "n_well_cited": sum(1 for s in kept if well_cited(s)),
             "retrieval_hit": (bool(exp & set(label_src.values())) if exp else None),
             "provider": out.get("provider"), "attempts": out.get("attempts"),
@@ -80,7 +87,10 @@ def main(mode_name: str, demo: bool) -> None:
         "n_questions": len(rows),
         "abstention_accuracy": wilson(sum(1 for r in ab if r["abstention_correct"]), len(ab)) if ab else None,
         "citation_correctness": wilson(cited, kept),
-        "validator_acceptance": wilson(kept, drafted),
+        "verified_rate": wilson(sum(r["n_verified"] for r in answerable), drafted),
+        "downgraded_rate": wilson(kept - sum(r["n_verified"] for r in answerable), drafted),
+        "removed_rate": wilson(sum(r["n_removed"] for r in answerable), drafted),
+        "infrastructure_failures": [r["id"] for r in rows if r["infra_failure"]],
         "retrieval_recall_at_8": wilson(sum(1 for r in ret if r["retrieval_hit"]), len(ret)),
         "median_latency_s": sorted(r["latency_s"] for r in rows)[len(rows) // 2],
         "providers": sorted({(r["provider"] or {}).get("model", "none") for r in rows}),

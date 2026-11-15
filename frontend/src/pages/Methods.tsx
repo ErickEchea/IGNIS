@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/react-query'
 import { Loading, Note, Section, SourceRef } from '../components/ui'
 import { useAnalysis, useDatasets, useScenarios, useSources, useVerification } from '../lib/data'
 
@@ -7,6 +8,13 @@ export default function Methods() {
   const verification = useVerification()
   const scenarios = useScenarios()
   const analysis = useAnalysis()
+  const evalq = useQuery({
+    queryKey: ['copilot-demo'],
+    queryFn: async () => {
+      const r = await fetch('/data/copilot_demo.json')
+      return r.ok ? ((await r.json()) as { summary: Record<string, unknown> }) : null
+    },
+  })
   if (!sources.data || !datasets.data || !verification.data || !scenarios.data || !analysis.data) return <Loading what="methods and sources" />
   const xc = datasets.data.flex_crosscheck
   const srcs = [...sources.data.values()].sort((a, b) => a.id.localeCompare(b.id))
@@ -48,6 +56,8 @@ export default function Methods() {
           </li>
         </ul>
       </Section>
+
+      {evalq.data && <EvalSection summary={evalq.data.summary} />}
 
       <Section kicker="Formulas" title="Scientific Core">
         <dl className="space-y-3 text-sm">
@@ -122,5 +132,50 @@ function Formula({ name, f }: { name: string; f: string }) {
       <dt className="text-muted">{name}</dt>
       <dd className="mt-0.5 rounded bg-surface-2 px-2 py-1 font-mono text-xs">{f}</dd>
     </div>
+  )
+}
+
+type Ci = [number, number, number] | null
+
+function EvalSection({ summary }: { summary: Record<string, unknown> }) {
+  const row = (label: string, key: string, help: string) => {
+    const v = summary[key] as Ci
+    return (
+      <tr className="border-t border-line">
+        <td className="py-1.5 pr-3">{label}</td>
+        <td className="num pr-3">{v ? v[0].toFixed(2) : '—'}</td>
+        <td className="num pr-3 text-muted">{v ? `[${v[1].toFixed(2)}, ${v[2].toFixed(2)}]` : ''}</td>
+        <td className="text-muted">{help}</td>
+      </tr>
+    )
+  }
+  return (
+    <Section kicker="Copilot evaluation" title={`Golden set: ${String(summary.n_questions)} questions, ${String(summary.mode)} mode`}>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[640px] text-left text-sm">
+          <thead className="text-xs text-muted">
+            <tr>
+              <th className="py-1 pr-3">Metric</th>
+              <th className="pr-3">Value</th>
+              <th className="pr-3">Wilson 95% CI</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            {row('Abstention accuracy', 'abstention_accuracy', 'abstains exactly when the corpus cannot answer')}
+            {row('Citation correctness', 'citation_correctness', 'kept sentences citing an expected source or Core tool')}
+            {row('Verified (entailed)', 'verified_rate', 'drafted sentences entailed by the cited text')}
+            {row('Downgraded to hypothesis', 'downgraded_rate', 'kept but not entailed by the cited text')}
+            {row('Removed', 'removed_rate', 'invented citation, untraceable number or contradiction')}
+            {row('Retrieval recall@8', 'retrieval_recall_at_8', 'an expected source is among the retrieved passages')}
+          </tbody>
+        </table>
+      </div>
+      <Note>
+        Model(s): {String((summary.providers as string[] | undefined)?.join(', ') ?? '')} · median latency {String(summary.median_latency_s)} s · run{' '}
+        {String(summary.run_at)}. Small sample: intervals are wide. The validator is conservative and occasionally removes a correct sentence when the cited
+        passage words a number differently (e.g. “.9” vs “0.92 mm/s” on two LUCI slides).
+      </Note>
+    </Section>
   )
 }

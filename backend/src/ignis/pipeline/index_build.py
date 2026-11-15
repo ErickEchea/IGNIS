@@ -34,12 +34,25 @@ def build_index(out_dir: Path | None = None, *, embed: bool = True) -> Path:
     if embed:
         from fastembed import TextEmbedding
 
+        # Incremental: reuse vectors of unchanged chunks (same id and text) from the previous index.
+        reuse: dict[tuple[str, str], np.ndarray] = {}
+        if (out / "chunks.jsonl").exists() and (out / "embeddings.npy").exists():
+            old = HybridIndex.load(out)
+            if old.embeddings is not None:
+                reuse = {(c.id, c.text): old.embeddings[i] for i, c in enumerate(old.chunks)}
+        todo = [i for i, c in enumerate(chunks) if (c.id, c.text) not in reuse]
         t0 = time.time()
-        model = TextEmbedding(EMBED_MODEL, cache_dir=str(s.models_dir))
-        vecs = np.asarray(list(model.passage_embed([c.text for c in chunks], batch_size=64)), dtype=np.float32)
-        vecs /= np.linalg.norm(vecs, axis=1, keepdims=True) + 1e-12
+        vecs = np.zeros((len(chunks), 384), dtype=np.float32)
+        for i, c in enumerate(chunks):
+            if (c.id, c.text) in reuse:
+                vecs[i] = reuse[(c.id, c.text)]
+        if todo:
+            model = TextEmbedding(EMBED_MODEL, cache_dir=str(s.models_dir))
+            new_vecs = np.asarray(list(model.passage_embed([chunks[i].text for i in todo], batch_size=64)))
+            new_vecs = new_vecs / (np.linalg.norm(new_vecs, axis=1, keepdims=True) + 1e-12)
+            vecs[todo] = new_vecs
         emb = vecs
-        print(f"Embedded {len(chunks)} chunks in {time.time() - t0:.0f} s")
+        print(f"Embedded {len(todo)} new chunks, reused {len(chunks) - len(todo)} in {time.time() - t0:.0f} s")
     HybridIndex.save(out, chunks, emb)
     print(f"Index: {len(chunks)} chunks ({sum(c.kind == 'card' for c in chunks)} card chunks) -> {out}")
     return out
