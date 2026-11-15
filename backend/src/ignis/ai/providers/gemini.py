@@ -21,6 +21,8 @@ class GeminiProvider:
         self._model = settings.gemini_model.strip()
         self._client: Any = None
         self._resolved: str | None = None
+        self._candidates: list[str] | None = None
+        self.skipped: list[str] = []
         self.last_error: str | None = None
         self.last_latency_s: float | None = None
 
@@ -38,13 +40,13 @@ class GeminiProvider:
     def model(self) -> str:
         return self._resolved or self._model or "(auto)"
 
-    def resolve_model(self) -> str:
-        """Use IGNIS_GEMINI_MODEL; otherwise pick a text 'flash' model actually enabled on this key."""
-        if self._resolved:
-            return self._resolved
+    def candidates(self) -> list[str]:
+        """IGNIS_GEMINI_MODEL if set; otherwise text 'flash' models enabled on this key, best first."""
+        if self._candidates is not None:
+            return self._candidates
         if self._model:
-            self._resolved = self._model
-            return self._resolved
+            self._candidates = [self._model]
+            return self._candidates
         names: list[str] = []
         for m in self._get_client().models.list():
             name = str(getattr(m, "name", "")).removeprefix("models/")
@@ -54,59 +56,78 @@ class GeminiProvider:
         if not names:
             raise ProviderError("unavailable", "no text 'flash' model is enabled for this API key")
 
-        def version(n: str) -> tuple[float, int]:
+        def version(n: str) -> tuple[float, int, int]:
             m = re.search(r"gemini-(\d+(?:\.\d+)?)", n)
-            return (float(m.group(1)) if m else 0.0, 0 if ("preview" in n or "exp" in n) else 1)
+            stable = 0 if ("preview" in n or "exp" in n) else 1
+            full = 0 if "lite" in n else 1  # prefer the full flash model over flash-lite
+            return (float(m.group(1)) if m else 0.0, stable, full)
 
-        self._resolved = sorted(names, key=version, reverse=True)[0]
-        return self._resolved
+        self._candidates = sorted(names, key=version, reverse=True)
+        return self._candidates
+
+    def resolve_model(self) -> str:
+        return self._resolved or self.candidates()[0]
 
     def generate_json(self, system: str, user: str, schema: dict[str, Any], timeout_s: float) -> LLMResponse:
+        """Try the sticky model first, then other enabled flash models on 404/5xx (all attempts recorded)."""
         if not self.configured():
             raise ProviderError("auth", "GEMINI_API_KEY is not set")
         from google.genai import errors, types
 
-        t0 = time.time()
-        try:
-            model = self.resolve_model()
-            resp = self._get_client().models.generate_content(
-                model=model,
-                contents=user,
-                config=types.GenerateContentConfig(
-                    system_instruction=system,
-                    response_mime_type="application/json",
-                    temperature=0.1,
-                    http_options=types.HttpOptions(timeout=int(timeout_s * 1000)),
-                ),
-            )
-        except ProviderError:
-            raise
-        except errors.APIError as exc:
-            code = getattr(exc, "code", None)
-            kind: ErrorKind = "rate_limit" if code == 429 else "auth" if code in (401, 403) else "unavailable"
-            self.last_error = f"{kind}: HTTP {code}"
-            raise ProviderError(kind, f"Gemini API error {code}") from exc
-        except Exception as exc:
-            timed_out = "timeout" in type(exc).__name__.lower() or "timed out" in str(exc).lower()
-            kind2: ErrorKind = "timeout" if timed_out else "unavailable"
-            self.last_error = f"{kind2}: {type(exc).__name__}"
-            raise ProviderError(kind2, f"Gemini request failed: {type(exc).__name__}") from exc
-        self.last_latency_s = round(time.time() - t0, 2)
-        try:
-            data = json.loads(resp.text or "")
-        except (json.JSONDecodeError, TypeError) as exc:
-            self.last_error = "invalid_output"
-            raise ProviderError("invalid_output", "Gemini returned non-JSON output") from exc
-        if not isinstance(data, dict):
-            raise ProviderError("invalid_output", "Gemini returned a non-object JSON value")
-        self.last_error = None
-        return LLMResponse(data, self.name, model, self.last_latency_s)
+        order = self.candidates()
+        if self._resolved in order:
+            order = [self._resolved] + [m for m in order if m != self._resolved]
+        self.skipped = []
+        last: ProviderError | None = None
+        for model in order[:4]:
+            t0 = time.time()
+            try:
+                resp = self._get_client().models.generate_content(
+                    model=model,
+                    contents=user,
+                    config=types.GenerateContentConfig(
+                        system_instruction=system,
+                        response_mime_type="application/json",
+                        temperature=0.1,
+                        http_options=types.HttpOptions(timeout=int(timeout_s * 1000)),
+                    ),
+                )
+            except errors.APIError as exc:
+                code = getattr(exc, "code", None)
+                if code in (401, 403):
+                    self.last_error = f"auth: HTTP {code}"
+                    raise ProviderError("auth", f"Gemini API error {code}") from exc
+                kind: ErrorKind = "rate_limit" if code == 429 else "unavailable"
+                self.skipped.append(f"{model}: HTTP {code}")
+                last = ProviderError(kind, f"Gemini API error {code} ({model})")
+                continue
+            except Exception as exc:
+                timed_out = "timeout" in type(exc).__name__.lower() or "timed out" in str(exc).lower()
+                kind2: ErrorKind = "timeout" if timed_out else "unavailable"
+                self.skipped.append(f"{model}: {type(exc).__name__}")
+                last = ProviderError(kind2, f"Gemini request failed: {type(exc).__name__} ({model})")
+                continue
+            self.last_latency_s = round(time.time() - t0, 2)
+            try:
+                data = json.loads(resp.text or "")
+            except (json.JSONDecodeError, TypeError) as exc:
+                self.last_error = "invalid_output"
+                raise ProviderError("invalid_output", "Gemini returned non-JSON output") from exc
+            if not isinstance(data, dict):
+                raise ProviderError("invalid_output", "Gemini returned a non-object JSON value")
+            self._resolved = model
+            self.last_error = None
+            return LLMResponse(data, self.name, model, self.last_latency_s)
+        self.last_error = "; ".join(self.skipped)
+        raise last or ProviderError("unavailable", "no Gemini model responded")
 
     def health(self) -> dict[str, Any]:
         return {
             "provider": self.name,
             "configured": self.configured(),
             "model": self.model,
+            "candidates": self._candidates,
+            "skipped_last_call": self.skipped,
             "last_latency_s": self.last_latency_s,
             "last_error": self.last_error,
         }
