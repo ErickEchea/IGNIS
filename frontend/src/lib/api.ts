@@ -1,5 +1,7 @@
 // Optional live backend. The static site works without it; VITE_API_BASE points at the deployed API.
 export const API_BASE: string = (import.meta.env.VITE_API_BASE as string | undefined) ?? ''
+// Live Copilot only in development (Vite proxies /api) or when a backend URL is configured.
+export const LIVE_BACKEND: boolean = import.meta.env.DEV || API_BASE !== ''
 
 export type Mode = 'AUTO' | 'CLOUD' | 'LOCAL' | 'NONE'
 

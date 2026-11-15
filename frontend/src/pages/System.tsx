@@ -1,10 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
 import { Loading, Note, Section } from '../components/ui'
-import { API_BASE, getStatus } from '../lib/api'
+import { API_BASE, getStatus, LIVE_BACKEND } from '../lib/api'
 import { useCards, useCatalog } from '../lib/data'
 
 export default function System() {
-  const status = useQuery({ queryKey: ['status'], queryFn: ({ signal }) => getStatus(signal), retry: 0, refetchInterval: 30_000 })
+  const status = useQuery({
+    queryKey: ['status'],
+    queryFn: ({ signal }) => getStatus(signal),
+    retry: 0,
+    refetchInterval: 30_000,
+    enabled: LIVE_BACKEND,
+  })
   const cards = useCards()
   const catalog = useCatalog()
   return (
@@ -20,7 +26,12 @@ export default function System() {
         </p>
       </Section>
       <Section kicker="Live layer" title={`Backend ${API_BASE || '(same origin)'}`}>
-        {status.isLoading ? (
+        {!LIVE_BACKEND ? (
+          <p className="text-sm">
+            Static deployment: no backend is configured. The Copilot shows precomputed answers from the validated pipeline; run the backend locally for
+            live answers (see docs/DEPLOY.md).
+          </p>
+        ) : status.isLoading ? (
           <Loading what="backend status" />
         ) : status.isError ? (
           <p className="text-sm">

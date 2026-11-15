@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Note, Section, SourceRef } from '../components/ui'
-import { askCopilot, type CopilotAnswer, type Mode } from '../lib/api'
+import { askCopilot, LIVE_BACKEND, type CopilotAnswer, type Mode } from '../lib/api'
 
 const EXAMPLES = [
   'Are NASA-STD-6001 Test 1 flammability limits conservative at lunar gravity?',
@@ -39,6 +39,11 @@ export default function Copilot() {
   const fromDemo = (question: string) => demo.data?.answers.find((a) => a.question === question) ?? null
 
   async function ask(question: string) {
+    if (!LIVE_BACKEND) {
+      setOffline(true)
+      setAnswer(fromDemo(question))
+      return
+    }
     setBusy(true)
     setAnswer(null)
     try {
@@ -102,7 +107,7 @@ export default function Copilot() {
             </label>
           </div>
           <div className="flex flex-wrap gap-1.5">
-            {EXAMPLES.map((ex) => (
+            {(LIVE_BACKEND ? EXAMPLES : (demo.data?.answers.map((a) => a.question) ?? EXAMPLES)).map((ex) => (
               <button
                 key={ex}
                 type="button"
@@ -119,7 +124,15 @@ export default function Copilot() {
         </form>
       </Section>
 
-      {offline && (
+      {!LIVE_BACKEND && (
+        <p role="note" className="rounded-md border border-line bg-surface px-3 py-2 text-sm text-muted">
+          <span className="text-ink">Static deployment.</span> This public site runs without a backend, so it shows the precomputed answers that the
+          validated pipeline produced for the {demo.data?.answers.length ?? 25} golden-set questions above (model and date on each answer). Run IGNIS locally
+          with Gemini or Ollama for live answers to new questions.
+        </p>
+      )}
+
+      {offline && LIVE_BACKEND && (
         <p role="status" className="rounded-md border border-warning px-3 py-2 text-sm">
           <span className="text-warning">Live backend unreachable.</span>{' '}
           {answer
