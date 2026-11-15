@@ -52,7 +52,8 @@ We tested two hypotheses against sources. We did not assume them.
 | **B · Consensus & Contradiction** | ◐ curated | Two apparent contradictions, each explained by test conditions. |
 | **C.2 · Predictor** | ⛔ gated | The pre-specified gate fails on the data: 2 of 3 partial-g test series (both from one apparatus), 8 of 20 points. No fire probabilities are shown anywhere. |
 | **F.2 · Bayesian design** | ⛔ | Requires the C.2 predictor. A transparent priority formula is used instead. |
-| D · Habitat Twin, H · Explainer, I · Earth Impact, paper | ⏳ | After the hackathon. |
+| D · Habitat Twin, H · Explainer, I · Earth Impact | ⏳ | After the hackathon. |
+| Technical paper | ✅ | [paper/ignis.pdf](paper/ignis.pdf) (LaTeX source in `paper/`) |
 
 ### Answers to the challenge's three questions
 
@@ -109,7 +110,7 @@ wrong burning-rate unit in the PSI FLEX table, and a figure caption inconsistent
 
 ## Verification and metrics
 
-See [TEST_REPORT.md](TEST_REPORT.md).
+See [TEST_REPORT.md](TEST_REPORT.md). Technical paper (6 pages, LaTeX): [paper/ignis.pdf](paper/ignis.pdf).
 
 - Backend: pytest covers units (property-based), quote verification, the Table I recomputation, the analytics,
   the validator, prompt injection, 429/timeout/network failover, LOCAL and no-LLM modes. ruff and mypy

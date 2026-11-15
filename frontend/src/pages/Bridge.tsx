@@ -180,7 +180,7 @@ function buoyancyChart(a: Analysis, t: ChartTheme): { data: Data[]; layout: Part
         `Moon ${a.bridge.moon.low_cm_s.toFixed(1)}–${a.bridge.moon.high_cm_s.toFixed(1)} cm/s`,
         `Mars ${a.bridge.mars.low_cm_s.toFixed(1)}–${a.bridge.mars.high_cm_s.toFixed(1)} cm/s`,
       ],
-      textposition: 'middle right',
+      textposition: ['middle right', 'bottom right'] as unknown as 'middle right', // per-point positions (supported by Plotly at runtime)
       textfont: { color: t.text, size: 11 },
       marker: { color: t.text, size: 9, line: { color: t.surface, width: 2 } },
       hoverinfo: 'skip',
