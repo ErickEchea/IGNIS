@@ -340,6 +340,22 @@ def suggest_platform(gi: int) -> dict[str, str]:
             "why": "1-g reference limits under the same atmosphere are needed to compute oxygen margins."}
 
 
+def scenario_owns_cell(sc: Scenario, cell: dict[str, Any]) -> bool:
+    """True if the scenario's gravity (and O2 / pressure class, when known) fall inside the cell."""
+    if sc.gravity_g0 is None:
+        return False
+    gi = gravity_bins_for(sc.gravity_g0, sc.gravity_g0)
+    if cell["g"] not in gi[:1]:
+        return False
+    if sc.o2_percent is not None and o2_bin_for(sc.o2_percent) != cell["o2"]:
+        return False
+    if sc.pressure is not None:
+        pa = sc.derived()["pressure_kpa"] * 1000.0
+        if pressure_class(pa) != cell["pressure"]:
+            return False
+    return True
+
+
 EXPLORATION_SCENARIOS = ("LUNAR-SURFACE-HABITAT", "LUNAR-SURFACE-HABITAT-EVA", "MARS-SURFACE-HABITAT",
                          "GATEWAY-NOMINAL")
 
@@ -359,8 +375,11 @@ def next_experiments(grid: dict[str, Any], scenarios: Sequence[Scenario], top_k:
             break
         if cell["pressure"] == PRESSURE_CLASSES[2]:
             continue
-        best = max(ids, key=lambda s: cell["relevance"][s])
-        sc = next(s for s in scenarios if s.id == best)
+        own = [s for s in scenarios if s.id in ids and scenario_owns_cell(s, cell)]
+        if not own:
+            continue  # proposals sit exactly at a mission's conditions, never in a neighbouring bin
+        sc = own[0]
+        best = sc.id
         unknown_atm = sc.o2_percent is None
         key = (cell["g"], "TBD" if unknown_atm else cell["pressure"], best)
         if key in used:
@@ -512,6 +531,30 @@ def comparability_notes(card: FindingCard) -> list[str]:
     return notes
 
 
+def partial_gravity_summary(cards: Sequence[FindingCard]) -> dict[str, Any]:
+    """H1 quantification from the ledger: evidence cards whose gravity lies in (0.01, 0.9) g."""
+    ev = [c for c in cards if is_evidence(c) and c.data_type.value in {"MEASURED", "DERIVED"}
+          and c.gravity_bounds[1] > PARTIAL_G[0] and c.gravity_bounds[0] < PARTIAL_G[1]]
+    durations = [d for c in ev if (d := platform_duration_s(c)) is not None and not math.isinf(d)]
+    levels: set[float] = set()
+    for c in ev:
+        if c.gravity is not None:
+            levels.add(round(c.gravity.value_si, 3))
+    ranges = sorted({c.gravity_range_g0 for c in ev if c.gravity_range_g0 is not None})
+    numeric = [c for c in ev if c.value is not None and c.data_type.value == "MEASURED"]
+    return {
+        "n_cards": len(ev),
+        "campaigns": sorted({c.campaign_id for c in ev}),
+        "sources": sorted({c.provenance.source_id for c in ev}),
+        "platforms": sorted({c.platform.value for c in ev}),
+        "material_classes": sorted({c.material_class for c in ev if c.material_class != "multiple"}),
+        "single_gravity_levels": sorted(levels),
+        "gravity_ranges": [list(r) for r in ranges],
+        "max_reduced_g_duration_s": max(durations) if durations else None,
+        "n_numeric_measurements": len(numeric),
+    }
+
+
 def build_analysis(cards: Sequence[FindingCard], scenarios: Sequence[Scenario],
                    datasets: dict[str, Any]) -> dict[str, Any]:
     pts = points_from_cards(cards) + points_from_datasets(datasets)
@@ -530,6 +573,7 @@ def build_analysis(cards: Sequence[FindingCard], scenarios: Sequence[Scenario],
             "solid": solid, "droplet": gap_grid(pts, scenarios, "droplet"),
         },
         "next_experiments": next_experiments(solid, scenarios),
+        "partial_gravity": partial_gravity_summary(cards),
         "gate": evaluate_gate(cards),
         "bridge": {
             "buoyancy_curve": buoyancy_curve(),

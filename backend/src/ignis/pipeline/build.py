@@ -10,7 +10,7 @@ from typing import Any
 import duckdb
 import yaml
 
-from ignis.core.analysis import build_analysis
+from ignis.core.analysis import build_analysis, priority, weighted_geometric_score
 from ignis.evidence.cards import load_cards, verify_all
 from ignis.evidence.documents import DocumentStore, pdf_pages
 from ignis.evidence.scenarios import load_scenarios, verify_scenario
@@ -29,6 +29,17 @@ def _read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+# Display-name corrections for NTRS metadata errors (each one listed in the data-quality log).
+AUTHOR_FIXES = {"NTRS-20130010991": ["Olson, Sandra L.", "Ferkul, Paul V."]}
+
+
+def ntrs_abstracts(processed: Path) -> dict[str, str]:
+    path = processed / "ntrs_records.json"
+    if not path.exists():
+        return {}
+    return {r["id"]: r["abstract"] for r in _read_json(path)["records"] if r.get("abstract")}
+
+
 def build_sources(processed: Path, raw: Path) -> tuple[list[Source], dict[str, str]]:
     """Registry of every citable source + map of source_id -> local PDF (raw-relative)."""
     manifest = Manifest(raw)
@@ -45,7 +56,7 @@ def build_sources(processed: Path, raw: Path) -> tuple[list[Source], dict[str, s
                 Source(
                     id=r["id"],
                     title=r["title"],
-                    authors=r["authors"],
+                    authors=AUTHOR_FIXES.get(r["id"], r["authors"]),
                     year=r["year"],
                     url=r["url"],
                     license=f"NTRS {r['copyright']}",
@@ -157,12 +168,32 @@ def _dump(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def parity_vectors(analysis: dict[str, Any]) -> dict[str, Any]:
+    """Python reference outputs that the TypeScript mirror must reproduce exactly (vitest)."""
+    weight_sets = [{"M": 1, "E": 1, "R": 1}, {"M": 2, "E": 1, "R": 0.5}, {"M": 0, "E": 1, "R": 0},
+                   {"M": 3, "E": 0.5, "R": 1.5}]
+    scores = []
+    for card_id, f in sorted(analysis["ranking"].items())[:25]:
+        for sc_id in ("LUNAR-SURFACE-HABITAT", "ISS-NOMINAL"):
+            factors = {"M": f["M"][sc_id], "E": f["E"], "R": f["R"]}
+            for w in weight_sets:
+                scores.append({"card": card_id, "factors": factors, "weights": w,
+                               "expected": weighted_geometric_score(factors, w)})
+    sets = [["LUNAR-SURFACE-HABITAT"], ["LUNAR-SURFACE-HABITAT", "MARS-SURFACE-HABITAT", "GATEWAY-NOMINAL"], []]
+    prios = []
+    for cell in analysis["gaps"]["solid"]["cells"][::7]:
+        for ids in sets:
+            prios.append({"cell": {k: cell[k] for k in ("relevance", "scarcity", "duration_factor")},
+                          "scenarios": ids, "expected": priority(cell, ids)})
+    return {"scores": scores, "priorities": prios}
+
+
 def build_all(*, strict: bool = True) -> int:
     settings = get_settings()
     processed, raw = settings.processed_dir, settings.raw_dir
     sources, pdfs = build_sources(processed, raw)
     known = {s.id for s in sources}
-    store = DocumentStore(raw, pdfs)
+    store = DocumentStore(raw, pdfs, ntrs_abstracts(processed))
 
     cards = load_cards(CARDS_DIR)
     results = verify_all(cards, known, store.page_text)
@@ -226,6 +257,7 @@ def build_all(*, strict: bool = True) -> int:
         verified, scenarios, {"flex": [r.as_record() for r in flex], "bass2": bass2, "saffire": saffire}
     )
     _dump(STATIC_DIR / "analysis.json", {"built_at": built_at, **analysis})
+    _dump(REPO_ROOT / "frontend" / "src" / "lib" / "parity_vectors.json", parity_vectors(analysis))
     _dump(STATIC_DIR / "verification.json", {
         "built_at": built_at,
         "n_cards": len(cards),

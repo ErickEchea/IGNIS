@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-14T21:32:25+00:00",
+ "built_at": "2026-11-15T01:10:22+00:00",
  "cards": [
   {
    "id": "LUCI2025-SIBAL-BASE-SPREAD",
@@ -3981,6 +3981,156 @@
    },
    "gravity_lo": 0.16,
    "gravity_hi": 0.38
+  },
+  {
+   "id": "SACK1993-DOWNWARD-ENHANCED",
+   "claim": "Aircraft experiments at 0.05-0.6 g on a thin cellulosic fuel at normal pressure and 21% O2 or less showed that downward-burning flammability and flame spread rates are enhanced by reductions in gravity.",
+   "material": "thin cellulosic fuel",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": null,
+   "pressure": {
+    "value": 1.0,
+    "unit": "atm",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101325.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.05,
+    0.6
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "flame_spread_rate_trend",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Peer-reviewed symposium work; IGNIS verified the abstract only (full text is not public-use on NTRS).",
+   "caveats": [
+    "Verified against the NTRS abstract; figure-level values not extracted."
+   ],
+   "campaign_id": "KC135-PARTIAL-G-1993",
+   "tags": [
+    "partial_gravity",
+    "flame_spread",
+    "contradiction_candidate",
+    "lunar",
+    "mars"
+   ],
+   "provenance": {
+    "source_id": "NTRS-19930040901",
+    "page": null,
+    "locator": "NTRS abstract",
+    "quote": "Downward burning flammability and flame spread rates are shown to be enhanced by reductions in gravitational acceleration.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.05,
+   "gravity_hi": 0.6
+  },
+  {
+   "id": "SACK1993-CONDITIONS",
+   "claim": "The 1993 lunar/Martian simulations used a thin cellulosic fuel at normal pressure in O2/N2 mixtures of 21% O2 and below, at effective accelerations from 0.05 to 0.6 g.",
+   "material": "thin cellulosic fuel",
+   "material_class": "thin cellulose",
+   "geometry": "thin_sheet",
+   "thickness": null,
+   "o2": null,
+   "pressure": {
+    "value": 1.0,
+    "unit": "atm",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101325.0,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "buoyant_downward",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.05,
+    0.6
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "test_matrix",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Experimental description in the abstract.",
+   "caveats": [],
+   "campaign_id": "KC135-PARTIAL-G-1993",
+   "tags": [
+    "partial_gravity",
+    "platform"
+   ],
+   "provenance": {
+    "source_id": "NTRS-19930040901",
+    "page": null,
+    "locator": "NTRS abstract",
+    "quote": "tested at normal pressure in oxygen/nitrogen mixtures of 21 percent oxygen, by volume, and below are described over effective acceleration levels ranging from 0.05 to 0.6 times normal earth gravity",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.05,
+   "gravity_hi": 0.6
+  },
+  {
+   "id": "SACK1999-GAP-STATEMENT",
+   "claim": "In 1999, NASA and university researchers noted that very few studies had considered, especially experimentally, purely buoyant flow with gravity as a variable.",
+   "material": "thin fuels (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": null,
+   "gravity_range_g0": [
+    0.0,
+    1.0
+   ],
+   "platform": "parabolic_flight",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "evidence_gap_statement",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit statement by the investigators (historical, 1999).",
+   "caveats": [],
+   "campaign_id": "KC135-PARTIAL-G-GIFFTS",
+   "tags": [
+    "evidence_gap",
+    "history"
+   ],
+   "provenance": {
+    "source_id": "NTRS-19990054085",
+    "page": null,
+    "locator": "NTRS abstract",
+    "quote": "very few have considered (especially experimentally) purely-buoyant flow influences, using gravity as a variable",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 1.0
   }
  ]
 }

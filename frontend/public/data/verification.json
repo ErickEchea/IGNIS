@@ -1,7 +1,7 @@
 {
- "built_at": "2026-11-14T21:32:25+00:00",
- "n_cards": 60,
- "n_passed": 60,
+ "built_at": "2026-11-15T01:10:22+00:00",
+ "n_cards": 63,
+ "n_passed": 63,
  "results": [
   {
    "card_id": "LUCI2025-SIBAL-BASE-SPREAD",
@@ -418,6 +418,27 @@
   },
   {
    "card_id": "SACK2003-GAP-STATEMENT",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK1993-DOWNWARD-ENHANCED",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK1993-CONDITIONS",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "SACK1999-GAP-STATEMENT",
    "passed": true,
    "quote_on_page": true,
    "numbers_in_quote": true,

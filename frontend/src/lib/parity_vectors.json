@@ -1,0 +1,3940 @@
+{
+ "scores": [
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.562954
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.532183
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.537527
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.562954
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.532183
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.537527
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.49,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.35901
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.49,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.387273
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.49,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.24
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.49,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.427181
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-FM2-PLANNED",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.49,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.373385
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.49,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.400527
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.49,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.27
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.49,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.432242
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-HABITAT-HAZARD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.27,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.6766
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.623034
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 1.0
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.568012
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.562954
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.532183
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.537527
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.6766
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.623034
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 1.0
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.568012
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-SHORT-TEST-TIMES",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.632121
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.5777
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.582236
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 1.0
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.492709
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-CORIOLIS",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.5777
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.582236
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 1.0
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.49,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.492709
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-FIRST-LONG-DURATION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.406223,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.457729
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.406223,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.452045
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.406223,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.6
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.406223,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.418357
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-O2-DEPLETION",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.365388
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.282966
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.241512
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-PMMA-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.365388
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.282966
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.241512
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-BASE-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.49,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.487251
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.49,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.503169
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.49,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.6
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.49,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.468173
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-LONGER-SURVIVAL",
+   "factors": {
+    "M": 0.0,
+    "E": 0.6,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.365388
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.282966
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.154975,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.241512
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LUCI2025-SIBAL-TIP-SPREAD",
+   "factors": {
+    "M": 0.0,
+    "E": 0.8,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.119122
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.031896
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.72
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.027607
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.610034
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.524555
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.72
+  },
+  {
+   "card": "OF2012-0G-DO2-MYLAR",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.522236
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.001753,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.099347
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.001753,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.023366
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.001753,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.72
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.001753,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.019912
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.7,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.731576
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.7,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.716239
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.7,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.72
+  },
+  {
+   "card": "OF2012-0G-DO2-NOMEX",
+   "factors": {
+    "M": 0.7,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.724263
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.119122
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.031896
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.72
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.003022,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.027607
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.610034
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.524555
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.72
+  },
+  {
+   "card": "OF2012-0G-DO2-ULTEM",
+   "factors": {
+    "M": 0.405865,
+    "E": 0.72,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.522236
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.000138,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.045702
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.000138,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.005721
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.000138,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.000138,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.004522
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.265455,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.568385
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.265455,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.430667
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.265455,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-MOC-MYLAR",
+   "factors": {
+    "M": 0.265455,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.422433
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.00133,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.097259
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.00133,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.020882
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.00133,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.00133,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.017607
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.969233,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.87523
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.969233,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.902681
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.969233,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-MOC-NOMEX",
+   "factors": {
+    "M": 0.969233,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.918799
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.002945,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.126767
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.002945,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.032889
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.002945,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.002945,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.028367
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.511678,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.707367
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.511678,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.626617
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.511678,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-MOC-ULTEM",
+   "factors": {
+    "M": 0.511678,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.62627
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.000257,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.056229
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.000257,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.008162
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.000257,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.000257,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.006566
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.351671,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.624249
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.351671,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.505754
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.351671,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-ULOI-MYLAR",
+   "factors": {
+    "M": 0.351671,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.500087
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.001707,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.105696
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.001707,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.024083
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.001707,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.001707,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.02045
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.882497,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.848302
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.882497,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.855596
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.882497,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-ULOI-NOMEX",
+   "factors": {
+    "M": 0.882497,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.868543
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.003552,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.134939
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.003552,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.036607
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.003552,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.003552,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.031743
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.437661,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.671468
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.437661,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.573094
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.437661,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.8
+  },
+  {
+   "card": "OF2012-0G-ULOI-ULTEM",
+   "factors": {
+    "M": 0.437661,
+    "E": 0.8,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.570225
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-MYLAR",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-NOMEX",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "OF2012-1G-MOC-ULTEM",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.864665
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  }
+ ],
+ "priorities": [
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.441248,
+     "ISS-USOS-MATERIALS": 0.221804,
+     "ISS-AIRLOCK-PREBREATHE": 0.022794,
+     "GATEWAY-NOMINAL": 0.172422,
+     "LUNAR-SURFACE-HABITAT": 0.001412,
+     "LUNAR-SURFACE-HABITAT-EVA": 7e-06,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000884,
+     "MARS-TRANSIT-HABITAT": 0.4,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.000706
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.441248,
+     "ISS-USOS-MATERIALS": 0.221804,
+     "ISS-AIRLOCK-PREBREATHE": 0.022794,
+     "GATEWAY-NOMINAL": 0.172422,
+     "LUNAR-SURFACE-HABITAT": 0.001412,
+     "LUNAR-SURFACE-HABITAT-EVA": 7e-06,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000884,
+     "MARS-TRANSIT-HABITAT": 0.4,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.086211
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.441248,
+     "ISS-USOS-MATERIALS": 0.221804,
+     "ISS-AIRLOCK-PREBREATHE": 0.022794,
+     "GATEWAY-NOMINAL": 0.172422,
+     "LUNAR-SURFACE-HABITAT": 0.001412,
+     "LUNAR-SURFACE-HABITAT-EVA": 7e-06,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000884,
+     "MARS-TRANSIT-HABITAT": 0.4,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.882497,
+     "ISS-USOS-MATERIALS": 1.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.37742,
+     "GATEWAY-NOMINAL": 0.5,
+     "LUNAR-SURFACE-HABITAT": 0.004094,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000885,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.108133,
+     "MARS-TRANSIT-HABITAT": 0.8,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.002047
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.882497,
+     "ISS-USOS-MATERIALS": 1.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.37742,
+     "GATEWAY-NOMINAL": 0.5,
+     "LUNAR-SURFACE-HABITAT": 0.004094,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000885,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.108133,
+     "MARS-TRANSIT-HABITAT": 0.8,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.25
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.882497,
+     "ISS-USOS-MATERIALS": 1.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.37742,
+     "GATEWAY-NOMINAL": 0.5,
+     "LUNAR-SURFACE-HABITAT": 0.004094,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000885,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.108133,
+     "MARS-TRANSIT-HABITAT": 0.8,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.032953,
+     "ISS-USOS-MATERIALS": 0.1694,
+     "ISS-AIRLOCK-PREBREATHE": 0.726925,
+     "GATEWAY-NOMINAL": 0.398322,
+     "LUNAR-SURFACE-HABITAT": 0.003262,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.006142,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.75,
+     "MARS-TRANSIT-HABITAT": 0.6,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.003262
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.032953,
+     "ISS-USOS-MATERIALS": 0.1694,
+     "ISS-AIRLOCK-PREBREATHE": 0.726925,
+     "GATEWAY-NOMINAL": 0.398322,
+     "LUNAR-SURFACE-HABITAT": 0.003262,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.006142,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.75,
+     "MARS-TRANSIT-HABITAT": 0.6,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.398322
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.032953,
+     "ISS-USOS-MATERIALS": 0.1694,
+     "ISS-AIRLOCK-PREBREATHE": 0.726925,
+     "GATEWAY-NOMINAL": 0.398322,
+     "LUNAR-SURFACE-HABITAT": 0.003262,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.006142,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.75,
+     "MARS-TRANSIT-HABITAT": 0.6,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.454839,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.015203,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.022794,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.454839
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.454839,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.015203,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.022794,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.454839
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.454839,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.015203,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.022794,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.330893,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.25173,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.37742,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.330893
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.330893,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.25173,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.37742,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.330893
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.330893,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.25173,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.37742,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.052314,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.484842,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.726925,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.052314
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.052314,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.484842,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.726925,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.052314
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.052314,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.484842,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.726925,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 1e-06
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 1.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.216265,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.216265,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.003825
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 1.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 1.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.216265,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.216265,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.003825
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 1.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 1.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.216265,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.216265,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.003825
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.265548,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.5,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.5,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.003825
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.265548
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.265548,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.5,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.5,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.003825
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.265548
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.265548,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.5,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.5,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.003825
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.070616,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000362,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000663,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.070616
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.070616,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000362,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000663,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.177944
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.070616,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000362,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000663,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.541825,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.412199,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.75484,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.541825
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.541825,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.412199,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.75484,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.541825
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.541825,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.412199,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.75484,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.028554,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.264637,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.484617,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.028554
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.028554,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.264637,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.484617,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.177944
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.028554,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.264637,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.484617,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.01336,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000447,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.017096,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.64
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.00668
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.01336,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000447,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.017096,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.64
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.32
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.01336,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.000447,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.017096,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.64
+    },
+    "scarcity": 0.5,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.013873,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.026121,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.64
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.013873
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.013873,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.026121,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.64
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.64
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.013873,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.026121,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.64
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000442,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000442,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.177944
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.000442,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.162199,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.162199,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.177944
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.162199,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.969233,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.969233,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.177944
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.969233,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.177944
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.011397,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 0.5
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.011397,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 0.5
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.011397,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 0.5,
+    "duration_factor": 0.5
+   },
+   "scenarios": [],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.56613,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.56613,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [
+    "LUNAR-SURFACE-HABITAT",
+    "MARS-SURFACE-HABITAT",
+    "GATEWAY-NOMINAL"
+   ],
+   "expected": 0.0
+  },
+  {
+   "cell": {
+    "relevance": {
+     "ISS-NOMINAL": 0.0,
+     "ISS-USOS-MATERIALS": 0.0,
+     "ISS-AIRLOCK-PREBREATHE": 0.0,
+     "GATEWAY-NOMINAL": 0.0,
+     "LUNAR-SURFACE-HABITAT": 0.0,
+     "LUNAR-SURFACE-HABITAT-EVA": 0.0,
+     "EXPLORATION-ATMOSPHERE-8.2-34": 0.56613,
+     "MARS-TRANSIT-HABITAT": 0.0,
+     "MARS-SURFACE-HABITAT": 0.0
+    },
+    "scarcity": 1.0,
+    "duration_factor": 1.0
+   },
+   "scenarios": [],
+   "expected": 0.0
+  }
+ ]
+}

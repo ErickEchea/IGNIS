@@ -1,12 +1,12 @@
 {
- "built_at": "2026-11-14T21:32:25+00:00",
+ "built_at": "2026-11-15T01:10:22+00:00",
  "sources": [
   {
    "id": "NTRS-20130010991",
    "title": "Evaluating Material Flammability in Microgravity and Martian Gravity Compared to the NASA Standard Normal Gravity Test",
    "authors": [
-    "Oslon, Sandra. L.",
-    "Ferkul, Paul"
+    "Olson, Sandra L.",
+    "Ferkul, Paul V."
    ],
    "year": 2012,
    "url": "https://ntrs.nasa.gov/citations/20130010991",
@@ -50,6 +50,22 @@
    "sha256": "bb0aadd2f9543483467b86796e6aa19f4e13c3f8169eec96134015f95ed61d79"
   },
   {
+   "id": "NTRS-19990054085",
+   "title": "Flame Spread and Extinction in Partial-Gravity Environments",
+   "authors": [
+    "K R Sacksteder",
+    "P V Ferkul",
+    "J S T'ien"
+   ],
+   "year": 1999,
+   "url": "https://ntrs.nasa.gov/citations/19990054085",
+   "doi": null,
+   "license": "NTRS GOV_PUBLIC_USE_PERMITTED",
+   "full_text_indexed": false,
+   "raw_path": null,
+   "sha256": null
+  },
+  {
    "id": "NTRS-20040053567",
    "title": "Upward And Downward Flame Spreading And Extinction In Partial Gravity Environments",
    "authors": [
@@ -66,6 +82,21 @@
    "full_text_indexed": true,
    "raw_path": "ntrs/pdf/20040053567.pdf",
    "sha256": "f4021961886188ec48f51c38af679dc026efabe3bedbe0a5308d901db5fe5c47"
+  },
+  {
+   "id": "NTRS-19930040901",
+   "title": "Downward Diffusion Flame Spread and Extinction in Variable Gravitational Fields - Lunar and Martian Simulations",
+   "authors": [
+    "Sacksteder, Kurt R.",
+    "Tien, James S."
+   ],
+   "year": 1993,
+   "url": "https://ntrs.nasa.gov/citations/19930040901",
+   "doi": null,
+   "license": "NTRS OTHER",
+   "full_text_indexed": false,
+   "raw_path": null,
+   "sha256": null
   },
   {
    "id": "NTRS-20220000524",

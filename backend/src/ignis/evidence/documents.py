@@ -28,9 +28,10 @@ def pdf_pages(path: str) -> tuple[str, ...]:
 class DocumentStore:
     """Maps source ids to local PDF files and serves page text."""
 
-    def __init__(self, raw_dir: Path, pdf_paths: dict[str, str]) -> None:
+    def __init__(self, raw_dir: Path, pdf_paths: dict[str, str], abstracts: dict[str, str] | None = None) -> None:
         self.raw_dir = raw_dir
         self.pdf_paths = pdf_paths  # source_id -> path relative to raw_dir
+        self.abstracts = abstracts or {}  # source_id -> NTRS metadata abstract (no PDF needed)
 
     def has_text(self, source_id: str) -> bool:
         rel = self.pdf_paths.get(source_id)
@@ -46,6 +47,9 @@ class DocumentStore:
         return pdf_pages(str(path))
 
     def page_text(self, source_id: str, page: int | None) -> str | None:
+        """Text of ``page``; ``page=None`` means the NTRS abstract (or the whole document)."""
+        if page is None and source_id in self.abstracts:
+            return self.abstracts[source_id]
         pages = self.pages(source_id)
         if pages is None:
             return None

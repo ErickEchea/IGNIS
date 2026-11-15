@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-14T21:32:25+00:00",
+ "built_at": "2026-11-15T01:10:22+00:00",
  "ranking": {
   "LUCI2025-SIBAL-BASE-SPREAD": {
    "E": 0.8,
@@ -835,8 +835,8 @@
   },
   "SACK2003-PLATFORM-LEVELS": {
    "E": 1.0,
-   "R": 0.393469,
-   "n_campaigns_same_family": 1,
+   "R": 0.632121,
+   "n_campaigns_same_family": 2,
    "M": {
     "ISS-NOMINAL": 0.0,
     "ISS-USOS-MATERIALS": 0.0,
@@ -851,8 +851,8 @@
   },
   "SACK2003-UPWARD-LINEAR-IN-G": {
    "E": 0.8,
-   "R": 0.393469,
-   "n_campaigns_same_family": 1,
+   "R": 0.632121,
+   "n_campaigns_same_family": 2,
    "M": {
     "ISS-NOMINAL": 0.0,
     "ISS-USOS-MATERIALS": 0.0,
@@ -867,8 +867,8 @@
   },
   "SACK2003-DOWNWARD-PEAK-NEAR-MARS": {
    "E": 0.8,
-   "R": 0.393469,
-   "n_campaigns_same_family": 1,
+   "R": 0.632121,
+   "n_campaigns_same_family": 2,
    "M": {
     "ISS-NOMINAL": 0.0,
     "ISS-USOS-MATERIALS": 0.0,
@@ -958,6 +958,54 @@
     "LUNAR-SURFACE-HABITAT-EVA": 0.49,
     "EXPLORATION-ATMOSPHERE-8.2-34": 0.49,
     "MARS-TRANSIT-HABITAT": 0.0,
+    "MARS-SURFACE-HABITAT": 1.0
+   }
+  },
+  "SACK1993-DOWNWARD-ENHANCED": {
+   "E": 0.8,
+   "R": 0.632121,
+   "n_campaigns_same_family": 2,
+   "M": {
+    "ISS-NOMINAL": 0.0,
+    "ISS-USOS-MATERIALS": 0.0,
+    "ISS-AIRLOCK-PREBREATHE": 0.0,
+    "GATEWAY-NOMINAL": 0.0,
+    "LUNAR-SURFACE-HABITAT": 0.406223,
+    "LUNAR-SURFACE-HABITAT-EVA": 0.174504,
+    "EXPLORATION-ATMOSPHERE-8.2-34": 0.174504,
+    "MARS-TRANSIT-HABITAT": 0.0,
+    "MARS-SURFACE-HABITAT": 1.0
+   }
+  },
+  "SACK1993-CONDITIONS": {
+   "E": 1.0,
+   "R": 0.632121,
+   "n_campaigns_same_family": 2,
+   "M": {
+    "ISS-NOMINAL": 0.0,
+    "ISS-USOS-MATERIALS": 0.0,
+    "ISS-AIRLOCK-PREBREATHE": 0.0,
+    "GATEWAY-NOMINAL": 0.0,
+    "LUNAR-SURFACE-HABITAT": 0.406223,
+    "LUNAR-SURFACE-HABITAT-EVA": 0.174504,
+    "EXPLORATION-ATMOSPHERE-8.2-34": 0.174504,
+    "MARS-TRANSIT-HABITAT": 0.0,
+    "MARS-SURFACE-HABITAT": 1.0
+   }
+  },
+  "SACK1999-GAP-STATEMENT": {
+   "E": 1.0,
+   "R": 0.393469,
+   "n_campaigns_same_family": 1,
+   "M": {
+    "ISS-NOMINAL": 0.49,
+    "ISS-USOS-MATERIALS": 0.49,
+    "ISS-AIRLOCK-PREBREATHE": 0.49,
+    "GATEWAY-NOMINAL": 0.49,
+    "LUNAR-SURFACE-HABITAT": 0.49,
+    "LUNAR-SURFACE-HABITAT-EVA": 0.49,
+    "EXPLORATION-ATMOSPHERE-8.2-34": 0.49,
+    "MARS-TRANSIT-HABITAT": 0.7,
     "MARS-SURFACE-HABITAT": 1.0
    }
   }
@@ -1173,7 +1221,10 @@
   "SACK2003-MODEL-CONCURRENT-LOWEST-O2": [
    "Model result, not a measurement."
   ],
-  "SACK2003-GAP-STATEMENT": []
+  "SACK2003-GAP-STATEMENT": [],
+  "SACK1993-DOWNWARD-ENHANCED": [],
+  "SACK1993-CONDITIONS": [],
+  "SACK1999-GAP-STATEMENT": []
  },
  "gaps": {
   "gravity_bins": [
@@ -4367,7 +4418,7 @@
      "refs": []
     }
    ],
-   "unplaced_points": 13
+   "unplaced_points": 14
   },
   "droplet": {
    "fuel_class": "droplet",
@@ -7558,60 +7609,6 @@
    "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
   },
   {
-   "gravity_bin": "µg (<0.01 g)",
-   "o2_bin": "27-31%",
-   "pressure_class": "reduced (<85 kPa)",
-   "priority": 0.992218,
-   "relevance": 0.992218,
-   "scarcity": 1.0,
-   "duration_factor": 1.0,
-   "closest_scenario": {
-    "id": "GATEWAY-NOMINAL",
-    "name": "Gateway (nominal, as assumed for transit-habitat planning)"
-   },
-   "existing_campaigns": [],
-   "platform": "ISS (SoFIE / Saffire-class facility)",
-   "platform_rationale": "Long-duration microgravity with controlled low-speed forced flow.",
-   "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
-   "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
-  },
-  {
-   "gravity_bin": "Sub-lunar (0.01-0.12 g)",
-   "o2_bin": "23-27%",
-   "pressure_class": "reduced (<85 kPa)",
-   "priority": 0.666977,
-   "relevance": 0.666977,
-   "scarcity": 1.0,
-   "duration_factor": 1.0,
-   "closest_scenario": {
-    "id": "LUNAR-SURFACE-HABITAT",
-    "name": "Lunar surface habitat (nominal)"
-   },
-   "existing_campaigns": [],
-   "platform": "Spinning suborbital vehicle (LUCI-class) or long-radius centrifuge",
-   "platform_rationale": "Sub-lunar (0.01-0.12 g): no real-gravity platform exists; spin simulation gives >2.5 min but adds Coriolis effects that must be characterized.",
-   "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
-   "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
-  },
-  {
-   "gravity_bin": "Sub-lunar (0.01-0.12 g)",
-   "o2_bin": "31-35%",
-   "pressure_class": "reduced (<85 kPa)",
-   "priority": 0.666977,
-   "relevance": 0.666977,
-   "scarcity": 1.0,
-   "duration_factor": 1.0,
-   "closest_scenario": {
-    "id": "LUNAR-SURFACE-HABITAT-EVA",
-    "name": "Lunar surface habitat (8.2 psi / 34% capability)"
-   },
-   "existing_campaigns": [],
-   "platform": "Spinning suborbital vehicle (LUCI-class) or long-radius centrifuge",
-   "platform_rationale": "Sub-lunar (0.01-0.12 g): no real-gravity platform exists; spin simulation gives >2.5 min but adds Coriolis effects that must be characterized.",
-   "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
-   "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
-  },
-  {
    "gravity_bin": "Martian (0.30-0.46 g)",
    "o2_bin": "TBD: scenario atmosphere UNKNOWN in NASA sources",
    "pressure_class": "TBD",
@@ -7628,8 +7625,81 @@
    "platform_rationale": "Martian (0.30-0.46 g): no real-gravity platform exists; spin simulation gives >2.5 min but adds Coriolis effects that must be characterized.",
    "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
    "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
+  },
+  {
+   "gravity_bin": "µg (<0.01 g)",
+   "o2_bin": "23-27%",
+   "pressure_class": "reduced (<85 kPa)",
+   "priority": 0.5,
+   "relevance": 1.0,
+   "scarcity": 0.5,
+   "duration_factor": 1.0,
+   "closest_scenario": {
+    "id": "GATEWAY-NOMINAL",
+    "name": "Gateway (nominal, as assumed for transit-habitat planning)"
+   },
+   "existing_campaigns": [
+    "GRC-ZGF-0G-FORCED-FLOW"
+   ],
+   "platform": "ISS (SoFIE / Saffire-class facility)",
+   "platform_rationale": "Long-duration microgravity with controlled low-speed forced flow.",
+   "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
+   "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
   }
  ],
+ "partial_gravity": {
+  "n_cards": 28,
+  "campaigns": [
+   "GRC-ZGF-CENTRIFUGE-LUNAR",
+   "GRC-ZGF-CENTRIFUGE-MARS",
+   "KC135-PARTIAL-G-1993",
+   "KC135-PARTIAL-G-GIFFTS",
+   "LUCI-NEW-SHEPARD-2025"
+  ],
+  "sources": [
+   "NTRS-19930040901",
+   "NTRS-20040053567",
+   "NTRS-20130010991",
+   "NTRS-20250010653"
+  ],
+  "platforms": [
+   "drop_tower_centrifuge",
+   "parabolic_flight",
+   "suborbital_spin"
+  ],
+  "material_classes": [
+   "PMMA (non-charring, melting)",
+   "aramid fabric (charring)",
+   "cotton-fiberglass fabric (charring)",
+   "fire-retarded polyetherimide film (charring)",
+   "polyester film (non-charring, melting)",
+   "thin cellulose"
+  ],
+  "single_gravity_levels": [
+   0.165,
+   0.38
+  ],
+  "gravity_ranges": [
+   [
+    0.05,
+    0.6
+   ],
+   [
+    0.1,
+    1.0
+   ],
+   [
+    0.1,
+    1.5
+   ],
+   [
+    0.165,
+    1.0
+   ]
+  ],
+  "max_reduced_g_duration_s": 150.0,
+  "n_numeric_measurements": 17
+ },
  "gate": {
   "enabled": false,
   "status": "DISABLED",

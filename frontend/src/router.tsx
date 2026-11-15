@@ -3,6 +3,10 @@ import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Home } from './pages/Home'
 
+const Bridge = lazy(() => import('./pages/Bridge'))
+const Gaps = lazy(() => import('./pages/Gaps'))
+const Evidence = lazy(() => import('./pages/Evidence'))
+const Methods = lazy(() => import('./pages/Methods'))
 const Placeholder = lazy(() => import('./pages/Placeholder'))
 
 function page(node: ReactNode) {
@@ -15,11 +19,11 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'bridge', element: page(<Placeholder title="Partial-Gravity Bridge" />) },
-      { path: 'gaps', element: page(<Placeholder title="Evidence Gap Radar" />) },
-      { path: 'evidence', element: page(<Placeholder title="Evidence Explorer" />) },
+      { path: 'bridge', element: page(<Bridge />) },
+      { path: 'gaps', element: page(<Gaps />) },
+      { path: 'evidence', element: page(<Evidence />) },
       { path: 'copilot', element: page(<Placeholder title="Scientific Copilot" />) },
-      { path: 'methods', element: page(<Placeholder title="Methods & Sources" />) },
+      { path: 'methods', element: page(<Methods />) },
       { path: 'system', element: page(<Placeholder title="System" />) },
       { path: '*', element: page(<Placeholder title="Not found" />) },
     ],
