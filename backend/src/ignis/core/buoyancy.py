@@ -9,9 +9,11 @@ Balancing inertia against buoyancy over the gas-phase thermal length L_g = alpha
 (Konno, Ishikawa, Hashimoto & Fujita 2024, Proc. Combust. Inst. 40:105199, following Altenkirch,
 Eichhorn & Shang 1980; Nakaya, KAKEN 21K18775 report uses V_b ~ [alpha_g g (T_f - T_inf)/T_v]^(1/3)).
 
-The proportionality constant is anchored at 1 g by values reported in those sources:
-33.0 cm/s (Nakaya, fit at 1 G, 21% O2) and 35 cm/s (Konno et al. 2024, citing Takahashi et al. 2015).
-We carry the anchor as an interval [33, 35] cm/s rather than picking one value.
+The same g^(1/3) "thermal length" scaling is used by NASA researchers (Ferkul, Liao & Ruff 2021, "Fire on the
+Moon", NTRS 20210020516 p. 20), with a representative 1-g value U2 ~ 20 cm/s (about 10 cm/s on the Moon).
+Reported 1-g anchors therefore span 20 cm/s (NASA 2021), 33.0 cm/s (Nakaya, fit at 1 G, 21% O2) and 35 cm/s
+(Konno et al. 2024). We carry the whole range [20, 35] cm/s rather than picking one value: the result is
+anchor-dependent and is shown as such.
 
 Assumptions (shown in the UI next to every number)
 * alpha_g, beta and dT are independent of the gravity level (gas properties at fixed O2/pressure).
@@ -27,8 +29,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-ANCHOR_1G_CM_S = (33.0, 35.0)
-ANCHOR_SOURCES = ("KAKEN-21K18775", "DOI-10.1016/j.proci.2024.105199")
+ANCHOR_1G_CM_S = (20.0, 35.0)
+ANCHOR_SOURCES = ("NTRS-20210020516", "KAKEN-21K18775", "DOI-10.1016/j.proci.2024.105199")
 EXPONENT = 1.0 / 3.0
 
 ASSUMPTIONS = (
@@ -37,8 +39,11 @@ ASSUMPTIONS = (
     "u_b is a characteristic velocity scale, not a flow field; real buoyant flows are non-uniform and"
     " depend on flame orientation.",
     "Radiation and short-duration (transient) effects are neglected.",
-    "The 1-g anchor (33-35 cm/s) comes from downward/opposed spread at 1 atm and 21% O2; other"
-    " atmospheres change the anchor.",
+    "The 1-g anchor spans 20-35 cm/s across sources (NASA 2021: ~20 cm/s; Konno 2024: 35; Nakaya: 33),"
+    " so every equivalence is anchor-dependent.",
+    "The g^(1/3) form applies when the length scale is the flame's thermal length (flame stabilization"
+    " zone, opposed spread); for a fixed length scale (e.g. a small engulfed sample) NASA notes"
+    " U ~ g^(1/2) instead (NTRS 20210020516 p. 20).",
 )
 
 

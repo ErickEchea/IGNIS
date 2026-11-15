@@ -161,7 +161,7 @@ function buoyancyChart(a: Analysis, t: ChartTheme): { data: Data[]; layout: Part
     {
       type: 'scatter',
       mode: 'lines',
-      name: 'u_b(g) band (MODELED, anchor 33–35 cm/s at 1 g)',
+      name: 'u_b(g) band (MODELED, 1-g anchors 20–35 cm/s across sources)',
       x: c.map((p) => p.g),
       y: c.map((p) => p.low_cm_s),
       fill: 'tonexty',
@@ -262,7 +262,7 @@ export default function Bridge() {
             label={`with partial-gravity measurements in the IGNIS ledger, from ${pg.sources.length} sources; longest test ${pg.max_reduced_g_duration_s ?? '?'} s`}
             src={`${pg.n_cards} verified evidence cards · ${pg.n_numeric_measurements} numeric measurements · DERIVED by the IGNIS Core`}
           />
-          <Stat value="−5.75% O₂" label="largest low-g oxygen margin (Mylar G, lunar g, 10.2 psia)" src="Olson & Ferkul 2012, Table I" />
+          <Stat value="−5.75 pts O₂" label="most negative oxygen margin: Mylar G, lunar g, 10.2 psia (flame survived a 5.18-s drop)" src="Olson & Ferkul 2012, Table I · recomputed 9/9" />
         </div>
       </header>
 
@@ -315,33 +315,42 @@ export default function Bridge() {
             <Note>
               ΔO₂ = (ULOI* + MOC*)/2 − (ULOI₁g + MOC₁g)/2 (Eq. 1 of the source). Negative means the material kept burning at lower O₂ than in 1 g. IGNIS recomputed
               every margin from the tabulated limits: <strong className="text-good">✓ {nMatch}/{a.bridge.margin_checks.length} match the published values</strong>. The Fig. 6
-              caption averages in the same paper do not match its Table I; IGNIS uses the table (see Methods → data quality).
+              caption's 0-g average (−2.6%) does not match Table I (−1.38%); IGNIS uses the table (see Methods → data quality).
             </Note>
           </div>
           <div className="space-y-2 rounded-md border border-line bg-bg/40 p-3 text-sm">
             <p className="text-xs uppercase tracking-wider text-muted">Hypothesis H2 · verdict</p>
             <p className="font-semibold text-warning">Partially supported</p>
             <ul className="list-disc space-y-1 pl-5 text-xs text-muted">
-              <li>Supported for 3 materials at lunar and Martian g (all margins negative, down to −5.75% O₂) and for the non-charring film in 0 g with 30 cm/s flow.</li>
-              <li>Not supported for charring Ultem and Nomex in 0 g (margins +0.25 and −0.3).</li>
-              <li>Limits come from 5.18 s drops; weak flames might have gone out given more time, so the true low-g limits could be higher.</li>
-              <li>“More flammable” here means a lower O₂ limit, not faster fire growth: LUCI spread rates were lower at lunar g than at 1 g.</li>
-              <li>NASA-STD-6001B itself makes no statement on partial gravity; the concern is raised by NASA researchers.</li>
+              <li>Supported for 3 materials at lunar and Martian g (all 6 margins negative, down to −5.75 percentage points) and for the non-charring Mylar film in 0 g with a 30 cm/s forced flow.</li>
+              <li>Not supported for charring Ultem film and Nomex fabric in 0 g (margins +0.25 and −0.3, within the 1% O₂ test step).</li>
+              <li>Evidence comes from 5.18 s drop-tower tests only; weak flames might have gone out given more time, so the true low-g limits could be higher.</li>
+              <li>The 1-g limits come from a modified Test 1 (hot-wire igniter, limit search), not the standard pass/fail screening.</li>
+              <li>Counter-evidence: earlier NASA assessments judged Test 1 conservative for quiescent microgravity (Miller 2004; Golden 2007).</li>
+              <li>“More flammable” means a lower O₂ limit, not faster fire growth: LUCI spread rates were lower at lunar g than at 1 g.</li>
             </ul>
           </div>
         </div>
         <div className="grid gap-3 md:grid-cols-2">
-          {['OF2012-INTERP-NOT-CONSERVATIVE', 'LPSC2026-1G-NOT-WORST-CASE', 'LUCI2025-SIBAL-LONGER-SURVIVAL', 'OF2012-CAVEAT-CRITERIA'].map((id) => {
+          {[
+            'OF2012-INTERP-NOT-CONSERVATIVE',
+            'LPSC2026-TEST1-ASSUMPTION',
+            'MILLER2004-TEST1-QUIESCENT',
+            'GOLDEN2007-TESTS-CONSERVATIVE',
+            'OF2012-MODIFIED-PROTOCOL',
+            'OF2012-CAVEAT-CRITERIA',
+          ].map((id) => {
             const c = byId.get(id)
             return c ? <FindingCardView key={id} card={c} compact /> : null
           })}
         </div>
       </Section>
 
-      <Section kicker="Physics bridge · MODELED scaling, not a predictor" title="Which microgravity experiments are the closest analogs to lunar and Martian convection?">
+      <Section kicker="Physics bridge · MODELED scaling, not a predictor" title="How do microgravity forced-flow tests compare with lunar and Martian convection?">
         {buoy && <Plot {...buoy} ariaLabel="Buoyancy-induced velocity scale versus gravity level with microgravity forced-flow levels" height={340} />}
         <p className="text-sm text-muted">
-          Buoyant velocity scales as u_b ∝ (α·g·β·ΔT)<sup>1/3</sup>. Anchored at 33–35 cm/s in 1 g, it gives{' '}
+          In the flame stabilization zone the buoyant velocity scales as u_b ∝ (α·g·β·ΔT)<sup>1/3</sup>. Published 1-g anchors range from 20 cm/s (NASA, 2021) to
+          35 cm/s (Konno et al., 2024), which gives{' '}
           <span className="num text-ink">
             {a.bridge.moon.low_cm_s.toFixed(1)}–{a.bridge.moon.high_cm_s.toFixed(1)} cm/s
           </span>{' '}
@@ -349,8 +358,9 @@ export default function Bridge() {
           <span className="num text-ink">
             {a.bridge.mars.low_cm_s.toFixed(1)}–{a.bridge.mars.high_cm_s.toFixed(1)} cm/s
           </span>{' '}
-          on Mars. Saffire's 20 cm/s forced flow matches the buoyant scale of 0.19–0.22 g, so it is the closest orbital analog to lunar natural convection. It is an
-          analog, not an equivalent: forced flow is uniform, while buoyant flow accelerates along the flame.
+          on Mars (MODELED). The equivalence is anchor-dependent: Saffire's 20 cm/s forced flow corresponds to anywhere from 0.19 g (35 cm/s anchor) to 1 g
+          (20 cm/s anchor). Microgravity tests with forced flows of roughly 10–20 cm/s are the relevant analogs for lunar opposed-flow spread, and only as
+          analogs: forced flow is uniform, while buoyant flow accelerates along the flame, and fixed-length systems scale as g<sup>1/2</sup> instead.
         </p>
         <ul className="list-disc space-y-0.5 pl-5 text-xs text-muted">
           {a.bridge.assumptions.map((s) => (
@@ -358,6 +368,7 @@ export default function Bridge() {
           ))}
         </ul>
         <div className="flex flex-wrap gap-3">
+          <SourceRef id="NTRS-20210020516" page={20} locator="U2 ~ g^(1/3), ≈20 cm/s on Earth" />
           <SourceRef id="DOI-10.1016/j.proci.2024.105199" locator="u ∝ a^(1/3), 35 cm/s at 1 G" />
           <SourceRef id="KAKEN-21K18775" locator="V_b = 33.0 cm/s at 1 G, 21% O₂" />
         </div>
@@ -369,7 +380,7 @@ export default function Bridge() {
 
       <Section kicker="C.2 · Predictor gate" title="Why the partial-gravity predictor is switched off">
         <p className="text-sm text-muted">
-          A model that predicts flammability limits at an arbitrary gravity level is enabled only if all pre-registered criteria pass. They are evaluated live from
+          A model that predicts flammability limits at an arbitrary gravity level is enabled only if all pre-specified criteria (fixed before looking at the results) pass. They are evaluated live from
           the ledger. Status: <strong className="text-critical">{a.gate.status}</strong>.
         </p>
         <ul className="space-y-1">
@@ -384,7 +395,8 @@ export default function Bridge() {
         {a.gate.best_candidate && (
           <Note>
             Best candidate: {a.gate.best_candidate.variable_family.replace('_', ' ')} for “{a.gate.best_candidate.material_class}”, with partial-g data from{' '}
-            {a.gate.best_candidate.partial_g_campaigns.join(' and ')}. Bayesian experimental design (F.2) depends on this predictor and is therefore also disabled;
+            {a.gate.best_candidate.partial_g_campaigns.join(' and ')}: two test series from one apparatus and team (NASA GRC drop-tower centrifuge), so they are not
+            fully independent. Bayesian experimental design (F.2) depends on this predictor and is therefore also disabled;
             the Gap Radar uses a transparent priority formula instead.
           </Note>
         )}
@@ -396,14 +408,14 @@ export default function Bridge() {
             title="Is microgravity safer or more dangerous than Earth?"
             a={byId.get('SACK2003-DOWNWARD-U-BOUNDARY')}
             b={byId.get('OF2012-0G-DO2-MYLAR')}
-            explanation="Both hold. With little or no flow, low-gravity flames can extinguish through radiative loss (low-g branch of the U-shaped boundary). With a modest flow (here 30 cm/s), the same environment can sustain flames at lower O₂ than in 1 g. Ventilation, not gravity alone, decides which branch applies."
+            explanation="Both hold. With little or no flow, low-gravity flames can extinguish through radiative loss (low-g branch of the U-shaped boundary). With a forced flow (here 30 cm/s, which the authors call a reasonable maximum local spacecraft ventilation velocity), the same environment sustained a Mylar flame at lower O₂ than in 1 g. Ventilation, not gravity alone, decides which branch applies."
             verdict="Consistent once flow is accounted for"
           />
           <Contradiction
             title="Does downward flame spread peak at lunar or at Martian gravity?"
             a={byId.get('LPSC2026-MIN-O2-NEAR-LUNAR')}
             b={byId.get('SACK2003-DOWNWARD-PEAK-NEAR-MARS')}
-            explanation="The lunar-peak statement summarizes earlier aircraft work at normal pressure with 21% O₂ or less (Sacksteder & T'ien, NTRS 19930040901, verified abstract); the Martian-peak observation used 27.6 kPa air and 2-cm Kimwipes. The peak location depends on test conditions, so these results are not directly comparable, and IGNIS does not attempt a quantitative reconciliation."
+            explanation="The lunar-peak statement cites Sacksteder & T'ien (1994). The closest record in our corpus, the same authors' 1993 NTRS abstract (19930040901), reports aircraft tests at normal pressure with 21% O₂ or less; IGNIS infers, but has not verified, that both describe the same campaign. The Martian-peak observation used 27.6 kPa air and 2-cm Kimwipes. The peak location depends on test conditions, so these results are not directly comparable, and IGNIS does not attempt a quantitative reconciliation."
             verdict="Not comparable · reconciliation UNKNOWN"
           />
         </div>

@@ -78,8 +78,8 @@ QUALITY_LOG: list[QualityIssue] = [
     ),
     QualityIssue(
         "Olson & Ferkul 2012, Fig. 6 caption",
-        "Caption states average 0g margin -2.6% and average Martian margin '2.7%'; Table I values give "
-        "means of -1.38% (0g) and -2.72% (Martian).",
+        "Caption states an average 0g margin of -2.6%, but Table I gives a mean of -1.38%; the caption's Martian "
+        "average '2.7%' has the right magnitude (Table I mean -2.72%) but lacks its minus sign.",
         "IGNIS uses Table I values (recomputed and verified with Eq. 1); the caption averages are not used.",
         "NTRS-20130010991 p. 6 (Table I) and p. 7 (Fig. 6 caption).",
     ),

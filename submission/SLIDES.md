@@ -8,7 +8,7 @@ The Space Apps limit is 7 slides including the title. This is the slide alternat
 ## Slide 1: IGNIS, Space Fire Intelligence
 
 - Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data
-- Team Artisanal Intelligence · Riobamba, Ecuador
+- Team Artisanal Intelligence · Riobamba, Ecuador · not affiliated with or endorsed by NASA
 - Visual: logo and the line "Fire depends on gravity."
 
 **Speaker notes:** We built an evidence engine for a question NASA has not closed: how do fires behave at the
@@ -19,7 +19,8 @@ gravity levels where crews will actually live?
 ## Slide 2: The partial-gravity blind spot
 
 - Artemis surface operations at 0.165 g; Mars at 0.38 g.
-- Planned cabins: 10.2 psia / 26.5% O₂ and 8.2 psia / 34% O₂ (NASA/TM-20220000524).
+- Cabins: the lunar Surface Habitat at 10.2 psia / 26.5% O₂, with an 8.2 psia / 34% capability
+  (NASA/TM-20220000524). Long-duration lunar and Mars habitats: 8.0 psia / 32% (2006 EAWG).
 - 0 of 24 NASA PSI combustion investigations are at partial gravity.
 - 5 partial-gravity campaigns in our ledger. The longest test lasted 150 s; most lasted 5–25 s.
 
@@ -32,7 +33,7 @@ no downloadable partial-gravity dataset. We quantify the gap instead of claiming
 
 - Finding Cards record material, O₂, pressure, flow, gravity and platform, plus value, data type and epistemic
   status.
-- 66 cards. Each verbatim quote is verified on the cited page by code, not by an LLM.
+- 72 cards. Each verbatim quote is verified on the cited page (3 against NTRS abstracts) by code, not by an LLM.
 - Cross-checks:
   - 9/9 published oxygen margins recomputed;
   - 260/260 FLEX rows identical between the PSI CSV and the NASA TP;
@@ -45,51 +46,55 @@ themselves: a wrong unit in the PSI FLEX table, and an inconsistent figure capti
 
 ## Slide 4: Is the 1-g screening test conservative?
 
-- Visual: oxygen-margin bars. Mylar at lunar g: −5.75% O₂. All lunar and Martian margins are negative.
-- Verdict on H2: **partially supported.** It holds for these materials at partial g, but not for charring fabrics
-  in 0 g.
+- Visual: oxygen-margin bars. Mylar at lunar g: −5.75 percentage points (5.18-s drop). All 6 lunar and Martian
+  margins are negative.
+- Verdict on H2: **partially supported.** It holds for these materials at partial g, but not for the charring Ultem
+  film and Nomex fabric in 0 g.
 - Caveats:
-  - the limits come from 5-s drops;
+  - the low-g limits come from 5-s drops, and the 1-g limits from a modified Test 1;
+  - earlier NASA assessments judged Test 1 conservative for quiescent microgravity;
   - "more flammable" means a lower O₂ limit, not faster spread.
 
 **Speaker notes:** We frame this as a finding to investigate, not an accusation. NASA researchers raise the same
-concern, and NASA-STD-6001B itself is silent on partial gravity.
+concern: in their words, Test 1 is run in Earth gravity "with the assumption that if a material passes the 1-g
+test, then it is considered safe for spaceflight" (LPSC 2026).
 
 ---
 
 ## Slide 5: We refuse to fake a predictor
 
 - The predictor gate is evaluated live from the ledger:
-  - 2 of the 3 required partial-g campaigns;
+  - 2 of the 3 required partial-g test series (both from one apparatus);
   - 8 of the 20 required compatible points;
   - 4 of the 5 required held-out points.
 - So there are **no fire probabilities and no risk maps**.
-- The physics bridge u_b ∝ g^(1/3) is shown as MODELED, with its assumptions. Saffire's 20 cm/s flow is the
-  closest orbital analog to lunar convection.
+- The physics bridge u_b ∝ g^(1/3) is shown as MODELED and anchor-dependent: with 1-g anchors of 20–35 cm/s
+  across sources, lunar buoyant flow is about 11–19 cm/s.
 
 **Speaker notes:** Predicting habitat fire risk from microgravity data alone is not yet supported by evidence. We
 show why, and what data would unlock it.
 
 ---
 
-## Slide 6: What NASA should measure next
+## Slide 6: What to measure next (our recommendation)
 
 - Gap Radar: P = relevance × 1/(1 + campaigns) × D × F, with the formula on screen.
-- #1: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂). It has no data, and the
-  sources we indexed show no plan to test it. FM2 plans 8.2 psia/34% and 14.7 psia/21%.
+- #1: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂). The only evidence in our ledger is a 5.18-s drop-tower limit series on two films; no long-duration test is in our ledger or planned in our sources (FM2 plans 8.2 psia/34% and 14.7 psia/21%).
 - Recommended platform: lunar surface (FM2-class) or a spin vehicle (LUCI-class). Pair every test with a 1-g
   test to compute the oxygen margin.
 
-**Speaker notes:** IGNIS doesn't just summarize the archive; it tells NASA what to measure next.
+**Speaker notes:** IGNIS doesn't just summarize the archive; it suggests what to measure next, and shows why.
 
 ---
 
-## Slide 7: A copilot that cannot make things up
+## Slide 7: A copilot that shows its evidence
 
 - Hybrid retrieval over about 18,000 passages of public-use NASA documents.
 - Validator checks:
   - invented citations, DOI or page mismatches and untraceable numbers are removed;
-  - claims the cited text does not entail are downgraded.
+  - claims the cited text does not entail are downgraded to hypotheses.
+- Golden set (25 questions): abstained correctly 25/25; 41% of sentences verified, 52% kept as hypotheses,
+  7% removed.
 - Works with Gemini, a local Ollama model, or no LLM at all.
 
 **Speaker notes:** Language models explain; they never compute or decide the truth. Thank you. Everything is

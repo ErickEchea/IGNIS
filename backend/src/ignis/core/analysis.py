@@ -49,6 +49,7 @@ VARIABLE_FAMILY = {
     "flammability_boundary_shape": "flammability_boundary",
     "flammable_domain_comparison": "flammability_boundary",
     "burn_duration_difference": "burn_duration",
+    "buoyant_velocity_estimate": "scaling",
 }
 LONG_DURATION_S = 60.0  # evidence shorter than this cannot show developed (steady) fires
 PARTIAL_G = (0.01, 0.90)
@@ -228,6 +229,9 @@ class EvidencePoint:
     duration_s: float | None
     fuel_class: str  # "solid" | "droplet"
     ref: str  # card id or dataset row reference
+    # A flammability-limit measurement is informative for every O2 level at and above the limit
+    # (the material burns there), not only for the bin that contains the limit value.
+    o2_open_upward: bool = False
 
 
 def points_from_cards(cards: Iterable[FindingCard]) -> list[EvidencePoint]:
@@ -251,6 +255,7 @@ def points_from_cards(cards: Iterable[FindingCard]) -> list[EvidencePoint]:
                 platform_duration_s(c),
                 "droplet" if c.geometry.value == "droplet" else "solid",
                 c.id,
+                o2_open_upward=family(c.measured_variable) == "oxygen_limit",
             )
         )
     return pts
@@ -346,9 +351,10 @@ def gap_grid(
         if p.o2_percent is None:
             unplaced += 1
             continue
-        oi = o2_bin_for(p.o2_percent)
+        oi0 = o2_bin_for(p.o2_percent)
+        o2_bins = range(oi0, len(O2_BINS)) if p.o2_open_upward else range(oi0, oi0 + 1)
         pc = pressure_class(p.pressure_pa)
-        for gi in gravity_bins_for(p.gravity_lo, p.gravity_hi):
+        for gi, oi in ((g, o) for g in gravity_bins_for(p.gravity_lo, p.gravity_hi) for o in o2_bins):
             cell = cells[(gi, oi, pc)]
             cell["campaigns"].add(p.campaign_id)
             cell["n_points"] += 1
@@ -374,10 +380,10 @@ def gap_grid(
                 "scarcity": scarcity,
                 "duration_factor": short,
                 "relevance": {sc.id: scenario_cell_relevance(sc, gi, oi, pc) for sc in scenarios},
-            "planned": (planned or {}).get((gi, oi, pc), []) if fuel_class == "solid" else [],
-            "planned_factor": PLANNED_FACTOR
-            if fuel_class == "solid" and (planned or {}).get((gi, oi, pc))
-            else 1.0,
+                "planned": (planned or {}).get((gi, oi, pc), []) if fuel_class == "solid" else [],
+                "planned_factor": PLANNED_FACTOR
+                if fuel_class == "solid" and (planned or {}).get((gi, oi, pc))
+                else 1.0,
                 "refs": cell["refs"],
             }
         )
@@ -452,7 +458,8 @@ def next_experiments(grid: dict[str, Any], scenarios: Sequence[Scenario], top_k:
     (at most one cell per gravity bin and pressure class) so the list is not six variants of one gap.
     """
     ids = [s.id for s in scenarios if s.id in EXPLORATION_SCENARIOS]
-    ranked = sorted(grid["cells"], key=lambda c: (priority(c, ids), -c["g"]), reverse=True)
+    # Ties: partial gravity first (microgravity already has long-duration orbital facilities), then lower g.
+    ranked = sorted(grid["cells"], key=lambda c: (priority(c, ids), 1 <= c["g"] <= 5, -c["g"]), reverse=True)
     out: list[dict[str, Any]] = []
     used: set[tuple[Any, ...]] = set()
     for cell in ranked:
@@ -482,8 +489,10 @@ def next_experiments(grid: dict[str, Any], scenarios: Sequence[Scenario], top_k:
                 "duration_factor": cell["duration_factor"],
                 "closest_scenario": {"id": sc.id, "name": sc.name},
                 "existing_campaigns": cell["campaigns"],
-            "already_planned": cell["planned"],
-            "planned_factor": cell["planned_factor"],
+                "already_planned": cell["planned"],
+                "max_duration_s": cell["max_duration_s"],
+                "evidence_refs": cell["refs"],
+                "planned_factor": cell["planned_factor"],
                 "platform": plat["platform"],
                 "platform_rationale": plat["why"],
                 "hypothesis": (

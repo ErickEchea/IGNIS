@@ -88,7 +88,7 @@ def run_tools(question: str) -> list[ToolResult]:
                     "buoyant_velocity",
                     f"IGNIS Core (MODELED scaling): characteristic buoyant velocity at {name} ({g:g} g) is "
                     f"{bv.low_cm_s:.1f} to {bv.high_cm_s:.1f} cm/s, from u_b proportional to g^(1/3) anchored at "
-                    f"33 to 35 cm/s in 1 g.",
+                    f"20 to 35 cm/s in 1 g across published sources (anchor-dependent).",
                     "MODELED",
                 )
             )

@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom'
 import { useAnalysis, useCards, useCatalog } from '../lib/data'
-import { priority } from '../lib/ranking'
-
-const LUNAR = ['LUNAR-SURFACE-HABITAT', 'LUNAR-SURFACE-HABITAT-EVA']
 
 export function Home() {
   const catalog = useCatalog()
@@ -12,9 +9,7 @@ export function Home() {
   const nPsi = catalog.data?.length
   const nPartialPsi = catalog.data?.filter((i) => i.gravity_regime === 'partial_gravity').length
   const minMargin = analysis.data ? Math.min(...analysis.data.bridge.margin_checks.map((m) => m.computed)) : undefined
-  const lunarCells = analysis.data?.gaps.solid.cells.filter((c) => c.g === 2 && c.pressure.startsWith('reduced') && c.o2 === 2)
-  const lunarCampaigns = lunarCells?.reduce((n, c) => n + c.n_campaigns, 0)
-  const lunarTop = lunarCells?.every((c) => priority(c, LUNAR) === 1)
+  const lunarNominal = analysis.data?.next_experiments.find((n) => n.closest_scenario.id === 'LUNAR-SURFACE-HABITAT')
 
   return (
     <div className="space-y-10 py-4">
@@ -36,14 +31,14 @@ export function Home() {
           src="PSI catalog harvested by IGNIS · DERIVED"
         />
         <Fact
-          value={minMargin === undefined ? '…' : `${minMargin.toFixed(2)}% O₂`}
-          text="lowest oxygen margin vs the 1-g screening limit: Mylar G kept burning at lower O₂ in lunar gravity."
+          value={minMargin === undefined ? '…' : `${minMargin.toFixed(2)} pts O₂`}
+          text="most negative oxygen margin vs a (modified) 1-g Test 1 limit: Mylar G's flame survived a 5.18-s lunar-g drop at an O₂ level 5.75 percentage points below its 1-g limit."
           src="Olson & Ferkul 2012, Table I · recomputed by IGNIS (9/9 match)"
         />
         <Fact
-          value={lunarCampaigns === undefined ? '…' : `${lunarCampaigns} campaigns`}
-          text="in the IGNIS ledger test flammability at lunar gravity in the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂), and none of the planned experiments in our sources targets it."
-          src={lunarTop ? 'Gap Radar · top priority (P = 1); FM2 plans 8.2 psia/34% and 14.7 psia/21% instead' : 'Gap Radar'}
+          value={lunarNominal ? `≤ ${lunarNominal.max_duration_s ?? '?'} s` : '…'}
+          text="longest lunar-gravity flammability test at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂) in our ledger: drop-tower limit tests on two films. No long-duration test there is in our ledger or planned in our sources."
+          src="Gap Radar · FM2 plans 8.2 psia/34% and 14.7 psia/21% instead"
         />
       </section>
 

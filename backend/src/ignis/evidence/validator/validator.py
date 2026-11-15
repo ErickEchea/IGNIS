@@ -77,6 +77,19 @@ class ValidationReport:
         return out
 
 
+# Sentence boundaries, plus bullet glyphs that PDF slides extract as U+2022, U+00BE or U+F0B7.
+_SENT_SPLIT = re.compile(r"(?<=[.!?;])\s+|\s*[\u2022\u00be\uf0b7]\s*|\n{2,}")
+
+
+def premise_windows(text: str, size: int = 3, max_windows: int = 12) -> list[str]:
+    """Overlapping windows of up to ``size`` sentences (bullets count as sentence breaks)."""
+    sents = [x.strip() for x in _SENT_SPLIT.split(text) if x and len(x.strip()) > 3]
+    if len(sents) <= 1:
+        return []
+    out = [" ".join(sents[i : i + size]) for i in range(0, max(1, len(sents) - size + 1))]
+    return out[:max_windows]
+
+
 def _strip_labels(text: str) -> str:
     return _LABEL.sub("", text).strip()
 
@@ -155,9 +168,16 @@ def validate(
             hyp = _strip_labels(d.text)
             best_e, best_c = 0.0, 0.0
             for e in cited:
+                # Contradiction is judged on the whole passage (conservative); entailment is the max over the
+                # whole passage and its windows of up to 3 sentences (NLI models degrade on long premises).
                 r = nli.predict(e.text, hyp)
                 best_e = max(best_e, float(getattr(r, "entailment", 0.0)))
                 best_c = max(best_c, float(getattr(r, "contradiction", 0.0)))
+                for window in premise_windows(e.text):
+                    if best_e >= ENTAIL_MIN:
+                        break
+                    rw = nli.predict(window, hyp)
+                    best_e = max(best_e, float(getattr(rw, "entailment", 0.0)))
             chk.entailment = round(best_e, 3)
             chk.checks["entailed"] = best_e >= ENTAIL_MIN
             if best_e < ENTAIL_MIN and best_c >= CONTRADICT_MIN:

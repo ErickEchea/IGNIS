@@ -34,7 +34,7 @@ export default function Methods() {
         <ul className="space-y-1 text-sm">
           <li>
             <span className="text-good">✓</span> {verification.data.n_passed}/{verification.data.n_cards} Finding Cards: verbatim quote found on the cited page (or NTRS
-            abstract), and every number of the card's value present in the quote.
+            abstract for 3 metadata-only sources), and every number of the card's value present in the quote.
           </li>
           <li>
             <span className="text-good">✓</span> {analysis.data.bridge.margin_checks.filter((m) => m.matches).length}/{analysis.data.bridge.margin_checks.length} oxygen
@@ -62,7 +62,7 @@ export default function Methods() {
       <Section kicker="Formulas" title="Scientific Core">
         <dl className="space-y-3 text-sm">
           <Formula name="Oxygen margin (Olson & Ferkul 2012, Eq. 1)" f="ΔO₂ = (ULOI* + MOC*)/2 − (ULOI₁g + MOC₁g)/2" />
-          <Formula name="Buoyant velocity scale (Konno et al. 2024; Nakaya, KAKEN 21K18775)" f="u_b(g) = u_b(1 g) · (g/g₀)^(1/3), u_b(1 g) ∈ [33, 35] cm/s" />
+          <Formula name="Buoyant velocity scale (NASA 2021, NTRS 20210020516; Konno et al. 2024; Nakaya, KAKEN 21K18775)" f="u_b(g) = u_b(1 g) · (g/g₀)^(1/3), u_b(1 g) ∈ [20, 35] cm/s across sources (thermal-length scaling; fixed-length systems scale as g^(1/2))" />
           <Formula name="Spin gravity" f="g/g₀ = (2π·rpm/60)² · r / 9.80665" />
           <Formula name="O₂ partial pressure (Dalton)" f="pO₂ = X_O₂ · p" />
           <Formula name="Evidence ranking" f="S = (M^a · E^b · R^c)^(1/(a+b+c)); E = w_type·w_epistemic·w_confidence; R = 1 − e^(−n/2)" />
@@ -94,7 +94,7 @@ export default function Methods() {
       <Section kicker="Limitations" title="What this evidence base cannot tell you">
         <ul className="list-disc space-y-1 pl-5 text-sm text-muted">
           <li>The ledger is curated for partial-gravity fire safety; it is not an exhaustive review of all combustion literature.</li>
-          <li>Most partial-gravity limits come from 5 s drop tests or ~25 s aircraft parabolas; only LUCI (spin-simulated, one flight) exceeds 2.5 min.</li>
+          <li>Most partial-gravity limits come from 5 s drop tests or ~25 s aircraft parabolas; only LUCI (spin-simulated, one flight) lasted longer, about 150 s.</li>
           <li>Paywalled papers are used as metadata and short quotes only; their full text is not indexed or redistributed.</li>
           <li>The buoyant-velocity bridge is an order-of-magnitude scaling, not a flow model and not a predictor.</li>
           <li>Ranking and gap-priority weights are judgment calls, shown openly so they can be challenged.</li>

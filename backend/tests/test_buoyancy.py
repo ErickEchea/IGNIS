@@ -12,7 +12,7 @@ from ignis.core.buoyancy import (
 
 def test_one_g_returns_anchor_interval() -> None:
     bv = buoyant_velocity(1.0)
-    assert (bv.low_cm_s, bv.high_cm_s) == (33.0, 35.0)
+    assert (bv.low_cm_s, bv.high_cm_s) == (20.0, 35.0)
     assert bv.data_type == "MODELED"
 
 
@@ -21,7 +21,7 @@ def test_lunar_and_martian_ratios() -> None:
     assert buoyant_velocity_ratio(0.165) == pytest.approx(0.5484, abs=1e-4)
     assert buoyant_velocity_ratio(0.380) == pytest.approx(0.7243, abs=1e-4)
     moon = buoyant_velocity(0.165)
-    assert moon.low_cm_s == pytest.approx(18.10, abs=0.01)
+    assert moon.low_cm_s == pytest.approx(10.97, abs=0.01)  # NASA 2021 gives ~10 cm/s
     assert moon.high_cm_s == pytest.approx(19.19, abs=0.01)
 
 

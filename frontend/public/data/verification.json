@@ -1,7 +1,7 @@
 {
- "built_at": "2026-11-15T01:34:25+00:00",
- "n_cards": 66,
- "n_passed": 66,
+ "built_at": "2026-11-15T01:56:21+00:00",
+ "n_cards": 72,
+ "n_passed": 72,
  "results": [
   {
    "card_id": "FM2-2024-ATM-34-8.2",
@@ -460,6 +460,48 @@
   },
   {
    "card_id": "SACK1999-GAP-STATEMENT",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "FOM2021-U2-THERMAL-LENGTH",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "FOM2021-U1-FIXED-LENGTH",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "MILLER2004-TEST1-QUIESCENT",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "OF2012-MODIFIED-PROTOCOL",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "LPSC2026-TEST1-ASSUMPTION",
    "passed": true,
    "quote_on_page": true,
    "numbers_in_quote": true,

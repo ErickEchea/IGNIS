@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-15T01:34:25+00:00",
+ "built_at": "2026-11-15T01:56:21+00:00",
  "scenarios": [
   {
    "id": "ISS-NOMINAL",
@@ -187,19 +187,26 @@
   },
   {
    "id": "MARS-SURFACE-HABITAT",
-   "name": "Mars surface habitat",
+   "name": "Mars surface habitat (2006 EAWG recommendation)",
    "gravity_g0": 0.38,
-   "gravity_note": "Mars surface gravity 3.73 m/s^2 (NSSDC).",
-   "pressure": null,
-   "o2_percent": null,
-   "unknown_note": "IGNIS found no NASA document specifying a Mars surface habitat atmosphere: UNKNOWN.",
-   "provenance": null,
-   "derived": {
-    "pressure_kpa": null,
-    "o2_mole_fraction": null,
-    "o2_partial_pressure_kpa": null
+   "gravity_note": "Mars surface gravity 3.73 m/s^2 (NSSDC). Atmosphere: 2006 EAWG recommendation for long-duration lunar and Mars habitats; the EVA-intensive environment was revised in 2012 to 8.2 psia / 34% O2 (same source, p. 4).",
+   "pressure": {
+    "value": 8.0,
+    "unit": "psi"
    },
-   "verification": "no source: values must be UNKNOWN"
+   "o2_percent": 32.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20150021491",
+    "page": 5,
+    "quote": "Long-duration lunar and Mars habitats should operate at 8.0 psia / 32% O2 nominally"
+   },
+   "derived": {
+    "pressure_kpa": 55.16,
+    "o2_mole_fraction": 0.32,
+    "o2_partial_pressure_kpa": 17.65
+   },
+   "verification": "quote verified"
   }
  ]
 }

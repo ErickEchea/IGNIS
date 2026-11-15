@@ -170,8 +170,9 @@ export default function Gaps() {
           (e.g. FM2) already targets the cell, else 1.
         </div>
         <Note>
-          {a.gaps[fuel].unplaced_points} evidence points with no reported O₂ are not placed on the map. Partial-gravity limits from Olson & Ferkul (2012) sit in the
-          &lt;19% and 19–23% bins because they are the O₂ values at which flames went out. The IGNIS ledger contains no partial-gravity flammability test at the habitat oxygen levels (26.5% or 34%); absence from this ledger is not proof that no such test exists.
+          {a.gaps[fuel].unplaced_points} evidence points with no reported O₂ are not placed on the map. A flammability-limit measurement counts for its own O₂ bin
+          and for every higher bin (the material burns there). Example: the only lunar-gravity evidence at 10.2 psia is a 5.18-s drop-tower limit series on two
+          films, so the lunar-habitat cell has one campaign and no long-duration test. Absence from this ledger is not proof that no test exists.
         </Note>
       </Section>
 
@@ -188,6 +189,9 @@ export default function Gaps() {
               <p className="text-xs text-muted">
                 Closest mission: <span className="text-ink">{n.closest_scenario.name}</span> · existing campaigns:{' '}
                 <span className="text-ink">{n.existing_campaigns.length ? n.existing_campaigns.join(', ') : 'none in the ledger'}</span>
+              </p>
+              <p className="text-xs text-muted">
+                Longest reduced-gravity test in this cell: <span className="num text-ink">{n.max_duration_s != null ? `${n.max_duration_s} s` : 'none'}</span>
               </p>
               <p className="num text-[11px] text-muted">
                 R = {n.relevance.toFixed(2)} · 1/(1+n) = {n.scarcity.toFixed(2)} · D = {n.duration_factor} · F = {n.planned_factor}

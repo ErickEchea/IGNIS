@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-15T01:34:25+00:00",
+ "built_at": "2026-11-15T01:56:21+00:00",
  "sources": [
   {
    "id": "NTRS-20130010991",
@@ -159,6 +159,25 @@
    "sha256": "3da552ee4b661f5084c8498f9a3bf4faa94ca2a5c46ada31d4d787b918a5d302"
   },
   {
+   "id": "NTRS-20210020516",
+   "title": "Fire on the Moon: Solid Fuel Combustion Experiments",
+   "authors": [
+    "Paul Ferkul",
+    "Ya-Ting Liao",
+    "Gary Ruff",
+    "Daniel Gotti",
+    "Jay Owens",
+    "Luke Ogorzaly"
+   ],
+   "year": 2021,
+   "url": "https://ntrs.nasa.gov/citations/20210020516",
+   "doi": null,
+   "license": "NTRS GOV_PERMITTED",
+   "full_text_indexed": true,
+   "raw_path": "ntrs/pdf/20210020516.pdf",
+   "sha256": "b8f929c9676233769f0b3904fea6744df1bd3dc646cfc62c030c1ba5c8c9642f"
+  },
+  {
    "id": "NTRS-20240015307",
    "title": "Flammability of Materials on the Moon",
    "authors": [
@@ -174,6 +193,20 @@
    "full_text_indexed": true,
    "raw_path": "ntrs/pdf/20240015307.pdf",
    "sha256": "eb86f426ee83c3edb3eda8053f33382248394f5bcb6aa6be171b59ddab5c3e47"
+  },
+  {
+   "id": "NTRS-20040142368",
+   "title": "Organizing Questions for Reduced-Gravity Flammability",
+   "authors": [
+    "Miller, Fletcher"
+   ],
+   "year": 2004,
+   "url": "https://ntrs.nasa.gov/citations/20040142368",
+   "doi": null,
+   "license": "NTRS GOV_PUBLIC_USE_PERMITTED",
+   "full_text_indexed": true,
+   "raw_path": "ntrs/pdf/20040142368.pdf",
+   "sha256": "902b802305ac175d6ca44c869daefd4f5932451505ff6cc418af539253bba996"
   },
   {
    "id": "PSI-10",

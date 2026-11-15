@@ -349,7 +349,7 @@ def test_core_tools_compute_instead_of_the_llm() -> None:
     tools = run_tools("What is the buoyant flow velocity on the Moon and Mars at 10.2 psia?")
     names = [t.name for t in tools]
     assert names.count("buoyant_velocity") == 2 and "convert_units" in names
-    assert "18.1 to 19.2 cm/s" in tools[0].text
+    assert "11.0 to 19.2 cm/s" in tools[0].text
     assert any("70.3 kPa" in t.text for t in tools)
 
 
@@ -362,3 +362,35 @@ def test_chunking_keeps_page_numbers() -> None:
     pages = ("short", "A sentence about flames. " * 120)
     chunks = chunk_pages("SRC", pages)
     assert chunks and all(c.page == 2 for c in chunks) and all(len(c.text) <= 1200 for c in chunks)
+
+
+def test_premise_windows_split_sentences_and_bullets() -> None:
+    from ignis.evidence.validator.validator import premise_windows
+
+    text = "A first sentence. A second one. • A bullet item • Another bullet. Last sentence here."
+    w = premise_windows(text, size=2)
+    assert w[0] == "A first sentence. A second one."
+    assert any("A bullet item" in x for x in w)
+
+
+@pytest.mark.models
+def test_real_nli_entails_quote_inside_long_passage() -> None:
+    from ignis.evidence.validator.nli import get_nli
+
+    nli = get_nli()
+    if nli is None:
+        pytest.skip("NLI model not available")
+    passage = (
+        "Organizing Questions. Is the NASA STD 6001, Test 1 configuration conservative or non-conservative in "
+        "assessing material flammability in reduced gravity? NASA STD 6001, Test 1 is an upward flammability "
+        "test, considered the most stringent test in normal gravity. A material that passes this test would most "
+        "likely not burn in a quiescent microgravity environment. More research is needed on practical but exotic "
+        "materials to verify this. The degree of conservatism varies with material."
+    )
+    e = {"S1": Evidence("S1", passage, "NTRS-X", 4)}
+    r = validate(
+        [DraftSentence("A material that passes Test 1 would most likely not burn in quiescent microgravity [S1].",
+                       ["S1"], "DOCUMENTED_FACT")],
+        e, {"NTRS-X"}, {}, nli,
+    )
+    assert r.sentences[0].verdict == "VERIFIED"

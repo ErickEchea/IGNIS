@@ -93,10 +93,12 @@ scenarios:
       quote: "Mars Transit conditions (14.7 psia (101.4 kPa), reliant on TH subsystems)"
 
   - id: MARS-SURFACE-HABITAT
-    name: "Mars surface habitat"
+    name: "Mars surface habitat (2006 EAWG recommendation)"
     gravity_g0: 0.38
-    gravity_note: "Mars surface gravity 3.73 m/s^2 (NSSDC)."
-    pressure: null
-    o2_percent: null
-    unknown_note: "IGNIS found no NASA document specifying a Mars surface habitat atmosphere: UNKNOWN."
-    provenance: null
+    gravity_note: "Mars surface gravity 3.73 m/s^2 (NSSDC). Atmosphere: 2006 EAWG recommendation for long-duration lunar and Mars habitats; the EVA-intensive environment was revised in 2012 to 8.2 psia / 34% O2 (same source, p. 4)."
+    pressure: {value: 8.0, unit: psi}
+    o2_percent: 32
+    provenance:
+      source_id: NTRS-20150021491
+      page: 5
+      quote: "Long-duration lunar and Mars habitats should operate at 8.0 psia / 32% O2 nominally"

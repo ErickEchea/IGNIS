@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-15T01:34:25+00:00",
+ "built_at": "2026-11-15T01:56:21+00:00",
  "cards": [
   {
    "id": "FM2-2024-ATM-34-8.2",
@@ -4312,6 +4312,331 @@
     "verified_at": null
    },
    "gravity_lo": 0.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "FOM2021-U2-THERMAL-LENGTH",
+   "claim": "NASA researchers estimate the characteristic buoyant speed in a flame's stabilization zone with U2 ~ g^(1/3) (thermal-length scaling): a representative flame with U2 of about 20 cm/s on Earth would have about 10 cm/s on the Moon.",
+   "material": "representative flame (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "buoyant_velocity_estimate",
+   "value": {
+    "value": 10.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.1,
+    "uncertainty_si": null
+   },
+   "comparison_1g": {
+    "value": 20.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.2,
+    "uncertainty_si": null
+   },
+   "data_type": "MODELED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Order-of-magnitude scaling in a NASA presentation; the 1-g anchor differs from other sources (33-35 cm/s).",
+   "caveats": [],
+   "campaign_id": "SCALING-NASA-2021",
+   "tags": [
+    "scaling",
+    "buoyancy",
+    "lunar"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20210020516",
+    "page": 20,
+    "locator": null,
+    "quote": "For a representative flame on Earth having U2 ≈ 20 cm/s, the corresponding value on the moon would be U2 ≈ 10 cm/s",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "FOM2021-U1-FIXED-LENGTH",
+   "claim": "For a system with a fixed characteristic length, NASA researchers use U1 ~ g^(1/2) instead: a small engulfed burning sample with about 100 cm/s on Earth would have about 40 cm/s on the Moon.",
+   "material": "small engulfed burning sample (1 cm)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "buoyant_velocity_estimate",
+   "value": {
+    "value": 40.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.4,
+    "uncertainty_si": null
+   },
+   "comparison_1g": {
+    "value": 100.0,
+    "unit": "cm/s",
+    "dimension": "velocity",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "data_type": "MODELED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Order-of-magnitude scaling in a NASA presentation.",
+   "caveats": [],
+   "campaign_id": "SCALING-NASA-2021",
+   "tags": [
+    "scaling",
+    "buoyancy",
+    "lunar"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20210020516",
+    "page": 20,
+    "locator": null,
+    "quote": "if a small (1-cm), engulfed, burning sample on Earth has U1 ≈ 100 cm/s, then on the Moon the same sample would have U1 ≈ 40 cm/s",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "MILLER2004-TEST1-QUIESCENT",
+   "claim": "A 2004 NASA analysis judged that a material passing NASA-STD-6001 Test 1 would most likely not burn in a quiescent microgravity environment, while noting that the degree of conservatism varies with material and cannot be determined from the test data.",
+   "material": "spacecraft materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "quiescent",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Expert assessment (conference paper); applies to quiescent microgravity, not to partial gravity or ventilated cabins.",
+   "caveats": [
+    "Scope is quiescent microgravity; the partial-gravity evidence in this ledger concerns buoyant flow."
+   ],
+   "campaign_id": "MILLER-2004-REVIEW",
+   "tags": [
+    "h2_counterevidence",
+    "standards_stress_test"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20040142368",
+    "page": 4,
+    "locator": null,
+    "quote": "A material that passes this test would most likely not burn in a quiescent microgravity environment",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "claim": "From the ISS materials user perspective (2007), microgravity combustion findings were described as showing that the long-established material flammability test conditions are conservative.",
+   "material": "spacecraft materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "End-user assessment of microgravity findings; predates the partial-gravity drop-tower and LUCI results in this ledger.",
+   "caveats": [
+    "Refers to microgravity findings, not to lunar or Martian gravity."
+   ],
+   "campaign_id": "GOLDEN-2007-REVIEW",
+   "tags": [
+    "h2_counterevidence",
+    "standards_stress_test"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20070018274",
+    "page": 1,
+    "locator": null,
+    "quote": "they show that the long-established test conditions used for the evaluation of materials flammability are conservative",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.0,
+   "gravity_hi": 0.0
+  },
+  {
+   "id": "OF2012-MODIFIED-PROTOCOL",
+   "claim": "The 1-g limits in Olson & Ferkul (2012) come from a modified Test 1 protocol: a hot-wire igniter replaced the 25-s chemical igniter, and the atmosphere was varied to find limits rather than run a single pass/fail test.",
+   "material": "Mylar G (Melinex 515 in 1 g), Ultem 1000, Nomex HT90-40",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "methodological_limitation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Explicit description by the authors.",
+   "caveats": [],
+   "campaign_id": "WSTF-1G-MODIFIED-TEST1",
+   "tags": [
+    "limitation",
+    "standards_stress_test"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20130010991",
+    "page": 4,
+    "locator": null,
+    "quote": "The NASA WSTF tests were conducted using the STD-6001 Test 1 protocol except a hot wire igniter is used to ignite the samples instead of a chemical igniter",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
+   "gravity_hi": 1.0
+  },
+  {
+   "id": "LPSC2026-TEST1-ASSUMPTION",
+   "claim": "NASA-STD-6001B Test 1 is conducted in normal Earth gravity, with the assumption that a material passing the 1-g test is considered safe for spaceflight.",
+   "material": "spacecraft materials (general)",
+   "material_class": "standard test",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 1.0,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 1.0,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "ground_1g",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "test_condition",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "MEASURED",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "high",
+   "confidence_rationale": "Description of current practice by NASA researchers.",
+   "caveats": [],
+   "campaign_id": "NASA-STD-6001-TEST1",
+   "tags": [
+    "standards_stress_test"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20260000646",
+    "page": 1,
+    "locator": null,
+    "quote": "The test is conducted in normal Earth gravity, with the assumption that if a material passes the 1-g test, then it is considered safe for spaceflight.",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 1.0,
    "gravity_hi": 1.0
   }
  ]

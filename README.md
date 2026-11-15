@@ -12,8 +12,9 @@ Team **Artisanal Intelligence** (Riobamba, Ecuador) · MIT license · not affili
 ## The problem
 
 Nearly all spacecraft-fire evidence comes from Earth (1 g) or orbit (~0 g). Artemis and Mars crews will live
-at partial gravity, and the cabin atmospheres NASA documents for them have reduced pressure and elevated
-oxygen: 10.2 psia with 26.5% O₂, and 8.2 psia with 34% O₂ (NASA/TM-20220000524).
+at partial gravity, in reduced-pressure, oxygen-enriched cabins. NASA documents the lunar Surface Habitat at 10.2 psia
+with 26.5% O₂, with an 8.2 psia / 34% O₂ capability (NASA/TM-20220000524). The 2006 Exploration Atmospheres Working
+Group recommended 8.0 psia / 32% O₂ for long-duration lunar and Mars habitats (NTRS 20150021491).
 
 ### Thesis: the partial-gravity blind spot
 
@@ -21,32 +22,34 @@ We tested two hypotheses against sources. We did not assume them.
 
 **H1: partial-gravity combustion data are scarce.** Holds, reformulated:
 
-- 0 of NASA PSI's 24 combustion investigations are partial-gravity investigations, which the challenge page
-  itself also states.
-- Our ledger holds 5 partial-gravity campaigns from 4 sources.
-- The longest test lasted 150 s (LUCI, spin-simulated); the rest are 5-s drop tests or ~25-s aircraft
+- 0 of NASA PSI's 24 combustion investigations are partial-gravity investigations (from PSI metadata).
+- Our curated ledger holds 5 partial-gravity campaigns from 4 sources. Other registered studies, such as
+  Konno et al. (2023), are not yet carded.
+- The longest test lasted about 150 s (LUCI, spin-simulated); the rest are 5-s drop tests or ~25-s aircraft
   parabolas.
 - Most results are only available as plots.
 
 **H2: 1-g screening (NASA-STD-6001 Test 1) may not be conservative at low gravity.** Partially supported:
 
-- Mylar, Ultem and Nomex all had negative oxygen margins at lunar and Martian gravity, down to −5.75% O₂ for
-  Mylar at lunar g (Olson & Ferkul 2012).
-- The charring fabrics did not show this in 0 g.
-- The limits come from 5-s drops.
+- Mylar, Ultem and Nomex all had negative oxygen margins at lunar and Martian gravity, down to −5.75 percentage
+  points for Mylar at lunar g (Olson & Ferkul 2012).
+- The charring Ultem film and Nomex fabric did not show this in 0 g (+0.25 and −0.3, within the 1% O₂ test step).
+- The low-g limits come from 5.18-s drops. The 1-g limits come from a modified Test 1 (hot-wire igniter, limit
+  search), not the standard pass/fail screening.
+- Earlier NASA assessments judged Test 1 conservative for quiescent microgravity (Miller 2004; Golden 2007).
 - "More flammable" means a lower O₂ limit, not faster spread.
 
 ## What IGNIS does
 
 | Module | Status | What it does |
 |---|---|---|
-| **A · Evidence Explorer** | ✅ | 66 Finding Cards. Each verbatim quote is verified on the cited page, and every number of the value must appear in the quote. Transparent ranking S = (M^a·E^b·R^c)^(1/Σw), with adjustable weights and a one-line explanation for each card. Also the PSI catalog (24 investigations). |
-| **C.1 · Partial-Gravity Bridge** | ✅ | Flammability limits at 0, 0.165, 0.38 and 1 g, with comparability flags. Buoyant-velocity scaling u_b ∝ g^(1/3) places µg forced-flow tests on the gravity axis as analogs. |
+| **A · Evidence Explorer** | ✅ | 72 Finding Cards from NTRS documents. Each verbatim quote is verified on the cited page (3 cards against NTRS abstracts), and every number of the value must appear in the quote. Transparent ranking S = (M^a·E^b·R^c)^(1/Σw), with adjustable weights and a one-line explanation for each card. Also the PSI catalog (24 investigations). |
+| **C.1 · Partial-Gravity Bridge** | ✅ | Flammability limits at 0, 0.165, 0.38 and 1 g, with comparability flags. Buoyant-velocity scaling u_b ∝ g^(1/3) places µg forced-flow tests on the gravity axis as anchor-dependent analogs (1-g anchors 20–35 cm/s across sources). |
 | **E · Standards Stress-Test** | ✅ | Published oxygen margins, recomputed (9/9 match), with the H2 verdict and its caveats. |
-| **F.1 · Gap Radar + Next-Experiment Designer** | ✅ | Gravity × O₂ × pressure coverage. P = R × 1/(1+n) × D × F, with the formula visible. Proposals are placed exactly at mission conditions, and documented FM2 plans are accounted for. |
+| **F.1 · Gap Radar + Next-Experiment Designer** | ✅ | Gravity × O₂ × pressure coverage. P = R × 1/(1+n) × D × F, with the formula visible. Proposals sit in the cell that contains each mission's conditions, and documented FM2 plans are accounted for. |
 | **G · Scientific Copilot** | ✅ | Hybrid RAG (BM25 + bge-small + RRF + cross-encoder) over ~18k passages. Core tools do the calculations; the Scientific Evidence Validator checks every sentence. Gemini, Ollama, or no LLM. |
 | **B · Consensus & Contradiction** | ◐ curated | Two apparent contradictions, each explained by test conditions. |
-| **C.2 · Predictor** | ⛔ gated | The pre-registered gate fails on the data: 2 of 3 partial-g campaigns, 8 of 20 points. No fire probabilities are shown anywhere. |
+| **C.2 · Predictor** | ⛔ gated | The pre-specified gate fails on the data: 2 of 3 partial-g test series (both from one apparatus), 8 of 20 points. No fire probabilities are shown anywhere. |
 | **F.2 · Bayesian design** | ⛔ | Requires the C.2 predictor. A transparent priority formula is used instead. |
 | D · Habitat Twin, H · Explainer, I · Earth Impact, paper | ⏳ | After the hackathon. |
 
@@ -58,8 +61,7 @@ We tested two hypotheses against sources. We did not assume them.
 2. **How well is a mission condition covered?** Pick a scenario (ISS, Gateway, lunar habitat, Mars). Its
    atmosphere is verified in NASA documents, or marked UNKNOWN. Then see the evidence and the comparability
    caveats.
-3. **What should fly next?** Top gap: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5%
-   O₂). It has no test in our ledger, and no plan in our sources; FM2 plans 8.2 psia/34% and 14.7 psia/21%.
+3. **What should fly next?** Top gap: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂). The only evidence in our ledger is a 5.18-s drop-tower limit series on two films; no long-duration test is in our ledger or planned in our sources (FM2 plans 8.2 psia/34% and 14.7 psia/21%).
 
 ## Architecture
 
@@ -145,6 +147,9 @@ Ollama, IGNIS still runs in "evidence only" mode.
 - Ranking and priority weights are documented judgment calls, not fitted parameters.
 - Finding Cards were drafted with AI assistance. They are accepted only by deterministic checks, and a human
   spot-check is reported in TEST_REPORT.md.
+- The Copilot validator is conservative but not perfect: in the golden set, 41% of drafted sentences were
+  verified by NLI and 52% were kept only as hypotheses. It has also removed correct sentences when the cited
+  passage wrote a number differently.
 
 ## Use of AI (SI) tools
 

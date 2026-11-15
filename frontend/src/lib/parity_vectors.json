@@ -229,35 +229,35 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.603007
+   "expected": 0.63749
   },
   {
    "card": "FM2-2024-GOLDILOCKS",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.548093
+   "expected": 0.561312
   },
   {
    "card": "FM2-2024-GOLDILOCKS",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 0,
@@ -271,21 +271,21 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.571827
+   "expected": 0.601175
   },
   {
    "card": "FM2-2024-GOLDILOCKS",
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 1,
@@ -299,7 +299,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 2,
@@ -313,7 +313,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 0,
@@ -327,7 +327,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 3,
@@ -337,39 +337,375 @@
    "expected": 0.0
   },
   {
-   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "card": "FOM2021-U1-FIXED-LENGTH",
    "factors": {
     "M": 0.49,
-    "E": 0.576,
-    "R": 0.77687
+    "E": 0.384,
+    "R": 0.393469
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.603007
+   "expected": 0.4199
   },
   {
-   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "card": "FOM2021-U1-FIXED-LENGTH",
    "factors": {
     "M": 0.49,
-    "E": 0.576,
-    "R": 0.77687
+    "E": 0.384,
+    "R": 0.393469
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.548093
+   "expected": 0.442932
+  },
+  {
+   "card": "FOM2021-U1-FIXED-LENGTH",
+   "factors": {
+    "M": 0.49,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.384
+  },
+  {
+   "card": "FOM2021-U1-FIXED-LENGTH",
+   "factors": {
+    "M": 0.49,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.447738
+  },
+  {
+   "card": "FOM2021-U1-FIXED-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U1-FIXED-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U1-FIXED-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U1-FIXED-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.49,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.4199
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.49,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.442932
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.49,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.384
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.49,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.447738
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FOM2021-U2-THERMAL-LENGTH",
+   "factors": {
+    "M": 0.0,
+    "E": 0.384,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.103812
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.025001
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.022919
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.63749
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.561312
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "GOLDEN2007-TESTS-CONSERVATIVE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.601175
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.63749
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.561312
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
    },
    "weights": {
     "M": 0,
@@ -383,49 +719,49 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.571827
+   "expected": 0.601175
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.603007
+   "expected": 0.63749
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.548093
+   "expected": 0.561312
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 0,
@@ -439,14 +775,14 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.571827
+   "expected": 0.601175
   },
   {
    "card": "LPSC2026-FM2-PLANNED",
@@ -677,35 +1013,35 @@
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.6766
+   "expected": 0.724739
   },
   {
    "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.623034
+   "expected": 0.64166
   },
   {
    "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -719,21 +1055,21 @@
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.568012
+   "expected": 0.604258
   },
   {
    "card": "LPSC2026-ISS-CENTRIFUGE-CORIOLIS",
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
@@ -747,7 +1083,7 @@
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
@@ -761,7 +1097,7 @@
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -775,7 +1111,7 @@
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
@@ -789,35 +1125,35 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.603007
+   "expected": 0.63749
   },
   {
    "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.548093
+   "expected": 0.561312
   },
   {
    "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 0,
@@ -831,21 +1167,21 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.571827
+   "expected": 0.601175
   },
   {
    "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 1,
@@ -859,7 +1195,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 2,
@@ -873,7 +1209,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 0,
@@ -887,7 +1223,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.77687
+    "R": 0.917915
    },
    "weights": {
     "M": 3,
@@ -901,35 +1237,35 @@
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.6766
+   "expected": 0.724739
   },
   {
    "card": "LPSC2026-SHORT-TEST-TIMES",
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.623034
+   "expected": 0.64166
   },
   {
    "card": "LPSC2026-SHORT-TEST-TIMES",
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -943,21 +1279,21 @@
    "factors": {
     "M": 0.49,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.568012
+   "expected": 0.604258
   },
   {
    "card": "LPSC2026-SHORT-TEST-TIMES",
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
@@ -971,7 +1307,7 @@
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
@@ -985,7 +1321,7 @@
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -999,7 +1335,119 @@
    "factors": {
     "M": 0.0,
     "E": 1.0,
-    "R": 0.632121
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "LPSC2026-TEST1-ASSUMPTION",
+   "factors": {
+    "M": 0.0,
+    "E": 1.0,
+    "R": 0.393469
    },
    "weights": {
     "M": 3,
@@ -1793,6 +2241,118 @@
    "expected": 0.0
   },
   {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.103812
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.025001
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.002116,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.022919
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.63749
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.561312
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "MILLER2004-TEST1-QUIESCENT",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.917915
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.601175
+  },
+  {
    "card": "OF2012-0G-DO2-MYLAR",
    "factors": {
     "M": 0.003022,
@@ -2239,566 +2799,6 @@
     "R": 1.5
    },
    "expected": 0.422433
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.00133,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.097259
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.00133,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.020882
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.00133,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.00133,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.017607
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.969233,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.87523
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.969233,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.902681
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.969233,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-MOC-NOMEX",
-   "factors": {
-    "M": 0.969233,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.918799
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.002945,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.126767
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.002945,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.032889
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.002945,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.002945,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.028367
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.511678,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.707367
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.511678,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.626617
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.511678,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-MOC-ULTEM",
-   "factors": {
-    "M": 0.511678,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.62627
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.000257,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.056229
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.000257,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.008162
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.000257,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.000257,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.006566
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.351671,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.624249
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.351671,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.505754
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.351671,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-ULOI-MYLAR",
-   "factors": {
-    "M": 0.351671,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.500087
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.001707,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.105696
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.001707,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.024083
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.001707,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.001707,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.02045
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.882497,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.848302
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.882497,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.855596
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.882497,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-ULOI-NOMEX",
-   "factors": {
-    "M": 0.882497,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.868543
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.003552,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.134939
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.003552,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.036607
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.003552,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.003552,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.031743
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.437661,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.671468
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.437661,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.573094
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.437661,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.8
-  },
-  {
-   "card": "OF2012-0G-ULOI-ULTEM",
-   "factors": {
-    "M": 0.437661,
-    "E": 0.8,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.570225
   }
  ],
  "priorities": [
@@ -3011,7 +3011,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.015203,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.022794,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 1e-06
+     "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3033,7 +3033,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.015203,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.022794,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 1e-06
+     "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3057,7 +3057,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.015203,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.022794,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 1e-06
+     "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3209,16 +3209,16 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.216265,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.216265,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.003825
+     "MARS-SURFACE-HABITAT": 0.002736
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
    ],
-   "expected": 1.0
+   "expected": 0.5
   },
   {
    "cell": {
@@ -3231,9 +3231,9 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.216265,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.216265,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.003825
+     "MARS-SURFACE-HABITAT": 0.002736
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
@@ -3242,7 +3242,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 1.0
+   "expected": 0.5
   },
   {
    "cell": {
@@ -3255,9 +3255,9 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.216265,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.216265,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.003825
+     "MARS-SURFACE-HABITAT": 0.002736
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
@@ -3275,16 +3275,16 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.5,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.5,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.003825
+     "MARS-SURFACE-HABITAT": 0.002988
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
    ],
-   "expected": 0.265548
+   "expected": 0.132774
   },
   {
    "cell": {
@@ -3297,9 +3297,9 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.5,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.5,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.003825
+     "MARS-SURFACE-HABITAT": 0.002988
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
@@ -3308,7 +3308,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.265548
+   "expected": 0.132774
   },
   {
    "cell": {
@@ -3321,9 +3321,9 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.5,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.5,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.003825
+     "MARS-SURFACE-HABITAT": 0.002988
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
@@ -3341,7 +3341,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.000362,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.000663,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.001061
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3363,7 +3363,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.000362,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.000663,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.001061
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3374,7 +3374,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.177944
+   "expected": 0.070616
   },
   {
    "cell": {
@@ -3387,7 +3387,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.000362,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.000663,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.001061
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3407,7 +3407,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.412199,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.75484,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.269483
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3429,7 +3429,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.412199,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.75484,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.269483
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3453,7 +3453,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.412199,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.75484,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.269483
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3473,7 +3473,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.264637,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.484617,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.104937
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3495,7 +3495,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.264637,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.484617,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.104937
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3506,7 +3506,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.177944
+   "expected": 0.104937
   },
   {
    "cell": {
@@ -3519,7 +3519,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.264637,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.484617,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.104937
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3539,7 +3539,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.000447,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.017096,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.64
+     "MARS-SURFACE-HABITAT": 0.05967
     },
     "scarcity": 0.5,
     "duration_factor": 1.0,
@@ -3561,7 +3561,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.000447,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.017096,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.64
+     "MARS-SURFACE-HABITAT": 0.05967
     },
     "scarcity": 0.5,
     "duration_factor": 1.0,
@@ -3572,7 +3572,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.32
+   "expected": 0.029835
   },
   {
    "cell": {
@@ -3585,7 +3585,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.000447,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.017096,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.64
+     "MARS-SURFACE-HABITAT": 0.05967
     },
     "scarcity": 0.5,
     "duration_factor": 1.0,
@@ -3605,16 +3605,16 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.026121,
      "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.64
+     "MARS-SURFACE-HABITAT": 1.0
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
    ],
-   "expected": 0.013873
+   "expected": 0.006936
   },
   {
    "cell": {
@@ -3627,9 +3627,9 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.026121,
      "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.64
+     "MARS-SURFACE-HABITAT": 1.0
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
@@ -3638,7 +3638,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.64
+   "expected": 0.5
   },
   {
    "cell": {
@@ -3651,9 +3651,9 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.026121,
      "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.64
+     "MARS-SURFACE-HABITAT": 1.0
     },
-    "scarcity": 1.0,
+    "scarcity": 0.5,
     "duration_factor": 1.0,
     "planned_factor": 1.0
    },
@@ -3671,7 +3671,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.000442,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.000707
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3693,7 +3693,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.000442,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.000707
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3704,7 +3704,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.177944
+   "expected": 0.000707
   },
   {
    "cell": {
@@ -3717,7 +3717,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.000442,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.000707
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3737,7 +3737,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.162199,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.095471
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3759,7 +3759,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.162199,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.095471
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3770,7 +3770,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.177944
+   "expected": 0.095471
   },
   {
    "cell": {
@@ -3783,7 +3783,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.162199,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.095471
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3803,7 +3803,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.969233,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.209874
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3825,7 +3825,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.969233,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.209874
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,
@@ -3836,7 +3836,7 @@
     "MARS-SURFACE-HABITAT",
     "GATEWAY-NOMINAL"
    ],
-   "expected": 0.177944
+   "expected": 0.209874
   },
   {
    "cell": {
@@ -3849,7 +3849,7 @@
      "LUNAR-SURFACE-HABITAT-EVA": 0.0,
      "EXPLORATION-ATMOSPHERE-8.2-34": 0.969233,
      "MARS-TRANSIT-HABITAT": 0.0,
-     "MARS-SURFACE-HABITAT": 0.177944
+     "MARS-SURFACE-HABITAT": 0.209874
     },
     "scarcity": 1.0,
     "duration_factor": 1.0,

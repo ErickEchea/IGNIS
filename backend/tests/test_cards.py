@@ -35,9 +35,12 @@ def test_normalize_handles_pdf_artifacts() -> None:
 
 def test_numbers_extraction() -> None:
     assert {"1", "20", "23", "22.1"} <= numbers_in("1g MOC 20.0 23.0 22.1")
-    assert "-5.75" in numbers_in("Lunar ∆O2 % -5.75 -2.8 -2.35")
+    assert "5.75" in numbers_in("Lunar ∆O2 % -5.75 -2.8 -2.35")
     assert format_number(20.0) == "20"
-    assert format_number(-0.30) == "-0.3"
+    assert format_number(-0.30) == "0.3"
+    # identifiers are not numbers with a minus sign
+    assert numbers_in("NASA-STD-6001 Test 1") == {"6001", "1"}
+    assert "5.75" in numbers_in("margins down to −5.75% O2")  # noqa: RUF001
 
 
 def test_fabricated_quote_is_rejected(cards) -> None:  # type: ignore[no-untyped-def]

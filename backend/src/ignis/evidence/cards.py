@@ -52,7 +52,11 @@ _NUM = re.compile(r"[-+]?(?:\d+(?:\.\d+)?|\.\d+)")
 
 
 def numbers_in(text: str) -> set[str]:
-    return {_strip_num(m) for m in _NUM.findall(text.replace(",", ""))}
+    """Unsigned numbers in ``text``. Signs are dropped (prose says "5.75% lower" for -5.75) and hyphens
+    inside identifiers ("NASA-STD-6001", "FLEX-2") are never read as minus signs."""
+    text = text.replace(",", "").replace("−", "-").replace("–", "-")  # noqa: RUF001
+    text = re.sub(r"(?<=[A-Za-z0-9])-", " ", text)
+    return {_strip_num(m).lstrip("-") or "0" for m in _NUM.findall(text)}
 
 
 def _strip_num(n: str) -> str:
@@ -67,7 +71,8 @@ def _strip_num(n: str) -> str:
 
 
 def format_number(value: float) -> str:
-    return _strip_num(f"{value:.10g}")
+    """Unsigned canonical string, comparable with :func:`numbers_in`."""
+    return _strip_num(f"{abs(value):.10g}")
 
 
 @dataclass

@@ -50,3 +50,4 @@ data/raw/psi/search_*.json
 # Retrieval index (rebuilt by the pipeline; shipped in the backend image)
 data/processed/index/
 eval/results/*.json
+eval/results/*.log

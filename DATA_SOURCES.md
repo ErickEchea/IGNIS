@@ -10,7 +10,7 @@ sources is [`pipeline/manifests/sources.yaml`](pipeline/manifests/sources.yaml).
 | Source | What IGNIS uses | Access | License / terms | Citation |
 |---|---|---|---|---|
 | NASA Physical Sciences Informatics (PSI), all 24 investigations with Research Area "Combustion Science" (FLEX, FLEX-2, BASS, BASS-II, CFI, ACME BRE / CLD Flame / E-FIELD / s-Flame / Flame Design / CFI-G, SAFFIRE-I/II/III, SAME, SAME-R, SPICE, SLICE, DAFT, and ground/model studies) | Investigation metadata (objectives, hardware, dates, publications), and the small "Experimental table" CSV files | Public JSON web service `psi.nasa.gov/geode-py/ws` (undocumented; raw responses are snapshotted) | CC0-1.0 (per investigation record) | Cite each investigation's DataCite DOI, e.g. FLEX `10.60555/mbq8-0451`, BASS-II `10.60555/4qc4-de67` |
-| NASA Technical Reports Server (NTRS) | 141 records (21 curated + 11 documented search queries, top 25 each); 107 PDFs downloaded | Public API `ntrs.nasa.gov/api/citations` | Full text indexed only when NTRS marks `PUBLIC_USE_PERMITTED`, `GOV_PUBLIC_USE_PERMITTED` or `GOV_PERMITTED`. `MAY_INCLUDE_COPYRIGHT_MATERIAL` PDFs are kept locally only to verify quotes. Everything else is metadata only. | NASA STI; each record's NTRS citation |
+| NASA Technical Reports Server (NTRS) | 141 records (21 curated + 11 documented search queries, top 25 each); 120 PDFs downloaded, 106 full-text indexed | Public API `ntrs.nasa.gov/api/citations` | Full text indexed only when NTRS marks `PUBLIC_USE_PERMITTED`, `GOV_PUBLIC_USE_PERMITTED` or `GOV_PERMITTED`. `MAY_INCLUDE_COPYRIGHT_MATERIAL` PDFs are kept locally only to verify quotes. Everything else is metadata only. | NASA STI; each record's NTRS citation |
 
 Key NTRS documents behind the Finding Cards:
 
@@ -22,7 +22,13 @@ Key NTRS documents behind the Finding Cards:
 - Sacksteder, Ferkul & T'ien (1999), *Flame Spread and Extinction in Partial-Gravity Environments*, NTRS 19990054085 (abstract only).
 - Zayac, Johnston, Ruff & Ferkul (2024), *Flammability of Materials on the Moon* (FM2 poster), NTRS 20240015307.
 - NASA/TP-2015-216046 (FLEX results), NTRS 20150023456: used to verify the PSI FLEX table.
-- Mission atmospheres: NASA/TM-20220000524 (NTRS 20220000524), NTRS 20150021491, NTRS 20070018274.
+- Mission atmospheres: NASA/TM-20220000524 (NTRS 20220000524), NTRS 20150021491 (2006 EAWG recommendations,
+  including 8.0 psia / 32% O₂ for long-duration lunar and Mars habitats, and the 2012 revision to 8.2 psia / 34%),
+  NTRS 20070018274.
+- Ferkul, Liao & Ruff (2021), *Fire on the Moon: Solid Fuel Combustion Experiments*, NTRS 20210020516: buoyant
+  velocity scaling and its 1-g anchor (~20 cm/s).
+- Miller (2004), *Organizing Questions for Reduced-Gravity Flammability*, NTRS 20040142368: counter-evidence on
+  Test 1 conservatism in quiescent microgravity.
 
 ## Other sources (metadata and short quotes only)
 

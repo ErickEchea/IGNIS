@@ -129,6 +129,8 @@ export interface NextExperiment {
   existing_campaigns: string[]
   already_planned: string[]
   planned_factor: number
+  max_duration_s: number | null
+  evidence_refs: string[]
   platform: string
   platform_rationale: string
   hypothesis: string
