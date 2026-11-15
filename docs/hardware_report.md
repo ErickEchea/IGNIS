@@ -17,8 +17,8 @@ Each context size: 3 runs, JSON-schema output, 160 generated tokens max, `think:
 
 Use **`qwen3:8b` at `num_ctx = 8192`**. This is the IGNIS default (`IGNIS_OLLAMA_MODEL`).
 
-- At 8k and 16k context it returned valid schema-constrained JSON in **9/9** runs. `llama3.1:8b` managed 7/9:
-  it produced invalid JSON in 2 of the 6 runs at 8k and 16k.
+- Across the 4k, 8k and 16k contexts it returned valid schema-constrained JSON in **9/9** runs. `llama3.1:8b`
+  managed 7/9: it failed 2 of its 6 runs at 8k and 16k.
 - At the 8k context the Copilot uses, it is faster end-to-end: median 1.4 s versus 6.1 s for a 160-token
   answer to a ~3k-token prompt.
 - It fits entirely in the 8 GB of VRAM. Measured GPU use was ~5.9 GB with the model loaded, leaving headroom
