@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-15T01:10:22+00:00",
+ "built_at": "2026-11-15T01:34:25+00:00",
  "sources": [
   {
    "id": "NTRS-20130010991",
@@ -157,6 +157,23 @@
    "full_text_indexed": true,
    "raw_path": "ntrs/pdf/20070018274.pdf",
    "sha256": "3da552ee4b661f5084c8498f9a3bf4faa94ca2a5c46ada31d4d787b918a5d302"
+  },
+  {
+   "id": "NTRS-20240015307",
+   "title": "Flammability of Materials on the Moon",
+   "authors": [
+    "Jennifer Zayac",
+    "Michael Johnston",
+    "Gary Ruff",
+    "Paul Ferkul"
+   ],
+   "year": 2024,
+   "url": "https://ntrs.nasa.gov/citations/20240015307",
+   "doi": null,
+   "license": "NTRS GOV_PERMITTED",
+   "full_text_indexed": true,
+   "raw_path": "ntrs/pdf/20240015307.pdf",
+   "sha256": "eb86f426ee83c3edb3eda8053f33382248394f5bcb6aa6be171b59ddab5c3e47"
   },
   {
    "id": "PSI-10",

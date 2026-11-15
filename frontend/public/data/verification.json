@@ -1,8 +1,29 @@
 {
- "built_at": "2026-11-15T01:10:22+00:00",
- "n_cards": 63,
- "n_passed": 63,
+ "built_at": "2026-11-15T01:34:25+00:00",
+ "n_cards": 66,
+ "n_passed": 66,
  "results": [
+  {
+   "card_id": "FM2-2024-ATM-34-8.2",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "FM2-2024-ATM-21-14.7",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
+  {
+   "card_id": "FM2-2024-GOLDILOCKS",
+   "passed": true,
+   "quote_on_page": true,
+   "numbers_in_quote": true,
+   "messages": []
+  },
   {
    "card_id": "LUCI2025-SIBAL-BASE-SPREAD",
    "passed": true,

@@ -112,6 +112,8 @@ export interface GapCell {
   scarcity: number
   duration_factor: number
   relevance: Record<string, number>
+  planned: string[]
+  planned_factor: number
   refs: string[]
 }
 
@@ -125,6 +127,8 @@ export interface NextExperiment {
   duration_factor: number
   closest_scenario: { id: string; name: string }
   existing_campaigns: string[]
+  already_planned: string[]
+  planned_factor: number
   platform: string
   platform_rationale: string
   hypothesis: string

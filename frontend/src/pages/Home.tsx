@@ -12,7 +12,7 @@ export function Home() {
   const nPsi = catalog.data?.length
   const nPartialPsi = catalog.data?.filter((i) => i.gravity_regime === 'partial_gravity').length
   const minMargin = analysis.data ? Math.min(...analysis.data.bridge.margin_checks.map((m) => m.computed)) : undefined
-  const lunarCells = analysis.data?.gaps.solid.cells.filter((c) => c.g === 2 && c.pressure.startsWith('reduced') && (c.o2 === 2 || c.o2 === 4))
+  const lunarCells = analysis.data?.gaps.solid.cells.filter((c) => c.g === 2 && c.pressure.startsWith('reduced') && c.o2 === 2)
   const lunarCampaigns = lunarCells?.reduce((n, c) => n + c.n_campaigns, 0)
   const lunarTop = lunarCells?.every((c) => priority(c, LUNAR) === 1)
 
@@ -42,8 +42,8 @@ export function Home() {
         />
         <Fact
           value={lunarCampaigns === undefined ? '…' : `${lunarCampaigns} campaigns`}
-          text="in the IGNIS ledger test flammability at lunar gravity in the planned lunar-habitat atmospheres (10.2 psia/26.5% O₂, 8.2 psia/34% O₂)."
-          src={lunarTop ? 'Gap Radar · both cells rank at the top priority (P = 1)' : 'Gap Radar'}
+          text="in the IGNIS ledger test flammability at lunar gravity in the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂), and none of the planned experiments in our sources targets it."
+          src={lunarTop ? 'Gap Radar · top priority (P = 1); FM2 plans 8.2 psia/34% and 14.7 psia/21% instead' : 'Gap Radar'}
         />
       </section>
 

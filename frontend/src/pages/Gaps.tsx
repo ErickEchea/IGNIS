@@ -35,6 +35,7 @@ function heatmap(
       `<b>${gb[c.g]} · ${ob[c.o2]} O₂</b><br>` +
       `Independent campaigns: ${c.n_campaigns}${c.campaigns.length ? ` (${c.campaigns.slice(0, 4).join(', ')}${c.campaigns.length > 4 ? '…' : ''})` : ''}<br>` +
       `Long-duration (≥${a.gaps.long_duration_s} s) evidence: ${c.long_duration_evidence ? 'yes' : 'no'}<br>` +
+      (c.planned?.length ? `Already planned: ${c.planned.join(', ')}<br>` : '') +
       `Priority P = ${p.toFixed(3)}`
   }
   const ramp = isLight() ? RAMP_LIGHT : RAMP_DARK
@@ -116,6 +117,7 @@ export default function Gaps() {
   if (!analysis.data || !scenarios.data || !cards.data) return <Loading what="the Gap Radar" />
   const a = analysis.data
   const fm2 = cards.data.cards.find((c) => c.id === 'LPSC2026-FM2-PLANNED')
+  const fm2atm = cards.data.cards.find((c) => c.id === 'FM2-2024-ATM-34-8.2')
   const toggle = (id: string) => setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]))
   const usable = scenarios.data.filter((s) => s.gravity_g0 !== null)
 
@@ -161,10 +163,11 @@ export default function Gaps() {
       <Section kicker={view === 'priority' ? 'Priority map' : 'Coverage map'} title={`Gravity × O₂ at ${pclass} pressure — ${fuel === 'solid' ? 'solid materials' : 'droplets'}`}>
         {chart && <Plot {...chart} height={420} ariaLabel="Heatmap of evidence priority or coverage by gravity level and oxygen concentration" />}
         <div className="rounded-md bg-surface-2 p-3 font-mono text-xs leading-relaxed">
-          P(cell) = max<sub>s∈missions</sub> R<sub>s</sub>(cell) × 1/(1 + n<sub>campaigns</sub>) × D
+          P(cell) = max<sub>s∈missions</sub> R<sub>s</sub>(cell) × 1/(1 + n<sub>campaigns</sub>) × D × F
           <br />R<sub>s</sub> = 1 inside the scenario's bin, Gaussian decay outside (σ<sub>g</sub> = 0.05 g, σ<sub>O₂</sub> = 4 pts); orbital free fall only matches µg; unknown
           scenario atmospheres count 0.8.
-          <br />D = 1 if no evidence in the cell lasted ≥ {a.gaps.long_duration_s} s of reduced gravity, else 0.5.
+          <br />D = 1 if no evidence in the cell lasted ≥ {a.gaps.long_duration_s} s of reduced gravity, else 0.5. F = 0.5 if a documented planned experiment
+          (e.g. FM2) already targets the cell, else 1.
         </div>
         <Note>
           {a.gaps[fuel].unplaced_points} evidence points with no reported O₂ are not placed on the map. Partial-gravity limits from Olson & Ferkul (2012) sit in the
@@ -187,8 +190,11 @@ export default function Gaps() {
                 <span className="text-ink">{n.existing_campaigns.length ? n.existing_campaigns.join(', ') : 'none in the ledger'}</span>
               </p>
               <p className="num text-[11px] text-muted">
-                R = {n.relevance.toFixed(2)} · 1/(1+n) = {n.scarcity.toFixed(2)} · D = {n.duration_factor}
+                R = {n.relevance.toFixed(2)} · 1/(1+n) = {n.scarcity.toFixed(2)} · D = {n.duration_factor} · F = {n.planned_factor}
               </p>
+              {n.already_planned.length > 0 && (
+                <p className="text-xs text-good">✓ Already targeted by a planned experiment: {n.already_planned.join(', ')} (documented plan, no results yet)</p>
+              )}
               <p className="text-sm">
                 <span className="text-muted">Platform: </span>
                 {n.platform}
@@ -210,9 +216,10 @@ export default function Gaps() {
           experimental design: expected information gain needs a validated predictor, and the C.2 gate is closed.
         </Note>
         {fm2 && (
-          <div className="space-y-1">
+          <div className="space-y-2">
             <p className="text-xs uppercase tracking-wider text-muted">Already planned</p>
             <FindingCardView card={fm2} compact />
+            {fm2atm && <FindingCardView card={fm2atm} compact />}
           </div>
         )}
       </Section>

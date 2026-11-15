@@ -56,7 +56,7 @@ export default function Methods() {
           <Formula name="Spin gravity" f="g/g₀ = (2π·rpm/60)² · r / 9.80665" />
           <Formula name="O₂ partial pressure (Dalton)" f="pO₂ = X_O₂ · p" />
           <Formula name="Evidence ranking" f="S = (M^a · E^b · R^c)^(1/(a+b+c)); E = w_type·w_epistemic·w_confidence; R = 1 − e^(−n/2)" />
-          <Formula name="Gap priority" f="P = max_s R_s(cell) × 1/(1 + n_campaigns) × D" />
+          <Formula name="Gap priority" f="P = max_s R_s(cell) × 1/(1 + n_campaigns) × D × F (D = 0.5 if ≥60 s evidence exists; F = 0.5 if a documented planned experiment targets the cell)" />
         </dl>
         <Note>
           Weights: MEASURED 1.0, DERIVED 0.9, MODELED 0.6, CONCEPTUAL 0.3; documented fact 1.0, interpretation 0.8, hypothesis 0.5, unknown 0.3; confidence high 1.0,

@@ -1,6 +1,188 @@
 {
- "built_at": "2026-11-15T01:10:22+00:00",
+ "built_at": "2026-11-15T01:34:25+00:00",
  "cards": [
+  {
+   "id": "FM2-2024-ATM-34-8.2",
+   "claim": "FM2's environmental control system can run lunar-surface fire experiments at 34% O2 and 8.2 psia, an atmosphere of immediate interest to the Human Lander System and the lunar rover.",
+   "material": "solid fuel samples (fabric and rods in the laboratory prototype)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": {
+    "value": 34.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.34,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 8.2,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 56537.009803980574,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "lunar_surface",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "planned_experiment",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "CONCEPTUAL",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Documented plan in a NASA poster; flight date and final test matrix are not verified by IGNIS.",
+   "caveats": [
+    "The same poster names both a CLPS mission (CP-21) and the SpaceX HLS demonstration flight as the ride: the carrier is not settled in this source."
+   ],
+   "campaign_id": "FM2-LUNAR-SURFACE",
+   "tags": [
+    "planned",
+    "next_experiment",
+    "lunar",
+    "exploration_atmosphere"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20240015307",
+    "page": 1,
+    "locator": null,
+    "quote": "specifically 21% oxygen at 14.7 psia, and 34% oxygen at 8.2 psia, which are of immediate interest to the Human Lander System (HLS) and Lunar Rover",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "FM2-2024-ATM-21-14.7",
+   "claim": "FM2 can also run lunar-surface fire experiments in air at 21% O2 and 14.7 psia.",
+   "material": "solid fuel samples (fabric and rods in the laboratory prototype)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": {
+    "value": 21.0,
+    "unit": "%",
+    "dimension": "fraction",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.21,
+    "uncertainty_si": null
+   },
+   "pressure": {
+    "value": 14.7,
+    "unit": "psi",
+    "dimension": "pressure",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 101352.93220957494,
+    "uncertainty_si": null
+   },
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "lunar_surface",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "planned_experiment",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "CONCEPTUAL",
+   "epistemic": "DOCUMENTED_FACT",
+   "confidence": "medium",
+   "confidence_rationale": "Documented plan in a NASA poster.",
+   "caveats": [],
+   "campaign_id": "FM2-LUNAR-SURFACE",
+   "tags": [
+    "planned",
+    "next_experiment",
+    "lunar"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20240015307",
+    "page": 1,
+    "locator": null,
+    "quote": "specifically 21% oxygen at 14.7 psia, and 34% oxygen at 8.2 psia",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
+  {
+   "id": "FM2-2024-GOLDILOCKS",
+   "claim": "NASA researchers describe lunar gravity as a 'goldilocks zone' for some materials: convective heat loss is reduced while buoyancy still supplies fresh oxygen, so flammability limits can be wider than on Earth; combined with elevated-O2 exploration atmospheres this motivates a long-duration lunar fire experiment.",
+   "material": "spacecraft materials (general)",
+   "material_class": "multiple",
+   "geometry": "other",
+   "thickness": null,
+   "o2": null,
+   "pressure": null,
+   "flow_velocity": null,
+   "flow_direction": "unknown",
+   "gravity": {
+    "value": 0.165,
+    "unit": "g",
+    "dimension": "gravity_ratio",
+    "uncertainty": null,
+    "uncertainty_kind": "unknown",
+    "value_si": 0.165,
+    "uncertainty_si": null
+   },
+   "gravity_range_g0": null,
+   "platform": "model",
+   "reduced_gravity_duration_s": null,
+   "measured_variable": "interpretation",
+   "value": null,
+   "comparison_1g": null,
+   "data_type": "DERIVED",
+   "epistemic": "SCIENTIFIC_INTERPRETATION",
+   "confidence": "medium",
+   "confidence_rationale": "Summary statement in a NASA poster, consistent with the drop-tower and spin-platform results in this ledger.",
+   "caveats": [],
+   "campaign_id": "FM2-LUNAR-SURFACE",
+   "tags": [
+    "h2_evidence",
+    "mechanism",
+    "lunar"
+   ],
+   "provenance": {
+    "source_id": "NTRS-20240015307",
+    "page": 1,
+    "locator": null,
+    "quote": "Lunar gravity has been found to increase the limits of flammability for some materials compared to Earth gravity, presenting a goldilocks zone of reduced convective heat loss",
+    "extraction": "llm_assisted_quote_verified",
+    "verified_by": null,
+    "verified_at": null
+   },
+   "gravity_lo": 0.165,
+   "gravity_hi": 0.165
+  },
   {
    "id": "LUCI2025-SIBAL-BASE-SPREAD",
    "claim": "In simulated lunar gravity (spinning New Shepard), the flame base of SIBAL cotton-fiberglass fabric burning downward in air spread at 0.9 mm/s versus 1.5 mm/s in the matching 1-g burn (ratio 0.6), from linear fits.",

@@ -220,7 +220,7 @@ def parity_vectors(analysis: dict[str, Any]) -> dict[str, Any]:
         for ids in sets:
             prios.append(
                 {
-                    "cell": {k: cell[k] for k in ("relevance", "scarcity", "duration_factor")},
+                    "cell": {k: cell[k] for k in ("relevance", "scarcity", "duration_factor", "planned_factor")},
                     "scenarios": ids,
                     "expected": priority(cell, ids),
                 }

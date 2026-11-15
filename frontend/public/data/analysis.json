@@ -1,6 +1,54 @@
 {
- "built_at": "2026-11-15T01:10:22+00:00",
+ "built_at": "2026-11-15T01:34:25+00:00",
  "ranking": {
+  "FM2-2024-ATM-34-8.2": {
+   "E": 0.24,
+   "R": 0.393469,
+   "n_campaigns_same_family": 1,
+   "M": {
+    "ISS-NOMINAL": 0.0,
+    "ISS-USOS-MATERIALS": 0.0,
+    "ISS-AIRLOCK-PREBREATHE": 0.0,
+    "GATEWAY-NOMINAL": 0.0,
+    "LUNAR-SURFACE-HABITAT": 0.141943,
+    "LUNAR-SURFACE-HABITAT-EVA": 1.0,
+    "EXPLORATION-ATMOSPHERE-8.2-34": 1.0,
+    "MARS-TRANSIT-HABITAT": 0.0,
+    "MARS-SURFACE-HABITAT": 9.7e-05
+   }
+  },
+  "FM2-2024-ATM-21-14.7": {
+   "E": 0.24,
+   "R": 0.393469,
+   "n_campaigns_same_family": 1,
+   "M": {
+    "ISS-NOMINAL": 0.0,
+    "ISS-USOS-MATERIALS": 0.0,
+    "ISS-AIRLOCK-PREBREATHE": 0.0,
+    "GATEWAY-NOMINAL": 0.0,
+    "LUNAR-SURFACE-HABITAT": 0.225302,
+    "LUNAR-SURFACE-HABITAT-EVA": 0.001266,
+    "EXPLORATION-ATMOSPHERE-8.2-34": 0.001266,
+    "MARS-TRANSIT-HABITAT": 0.0,
+    "MARS-SURFACE-HABITAT": 9.7e-05
+   }
+  },
+  "FM2-2024-GOLDILOCKS": {
+   "E": 0.576,
+   "R": 0.77687,
+   "n_campaigns_same_family": 3,
+   "M": {
+    "ISS-NOMINAL": 0.0,
+    "ISS-USOS-MATERIALS": 0.0,
+    "ISS-AIRLOCK-PREBREATHE": 0.0,
+    "GATEWAY-NOMINAL": 0.0,
+    "LUNAR-SURFACE-HABITAT": 0.49,
+    "LUNAR-SURFACE-HABITAT-EVA": 0.49,
+    "EXPLORATION-ATMOSPHERE-8.2-34": 0.49,
+    "MARS-TRANSIT-HABITAT": 0.0,
+    "MARS-SURFACE-HABITAT": 9.7e-05
+   }
+  },
   "LUCI2025-SIBAL-BASE-SPREAD": {
    "E": 0.8,
    "R": 0.393469,
@@ -115,8 +163,8 @@
   },
   "LPSC2026-1G-NOT-WORST-CASE": {
    "E": 0.576,
-   "R": 0.632121,
-   "n_campaigns_same_family": 2,
+   "R": 0.77687,
+   "n_campaigns_same_family": 3,
    "M": {
     "ISS-NOMINAL": 0.49,
     "ISS-USOS-MATERIALS": 0.49,
@@ -147,8 +195,8 @@
   },
   "LPSC2026-MIN-O2-NEAR-LUNAR": {
    "E": 0.576,
-   "R": 0.632121,
-   "n_campaigns_same_family": 2,
+   "R": 0.77687,
+   "n_campaigns_same_family": 3,
    "M": {
     "ISS-NOMINAL": 0.0,
     "ISS-USOS-MATERIALS": 0.0,
@@ -739,8 +787,8 @@
   },
   "OF2012-INTERP-NOT-CONSERVATIVE": {
    "E": 0.576,
-   "R": 0.632121,
-   "n_campaigns_same_family": 2,
+   "R": 0.77687,
+   "n_campaigns_same_family": 3,
    "M": {
     "ISS-NOMINAL": 0.49,
     "ISS-USOS-MATERIALS": 0.49,
@@ -1034,6 +1082,11 @@
   "missing_condition": 0.7
  },
  "comparability": {
+  "FM2-2024-ATM-34-8.2": [],
+  "FM2-2024-ATM-21-14.7": [],
+  "FM2-2024-GOLDILOCKS": [
+   "Model result, not a measurement."
+  ],
   "LUCI2025-SIBAL-BASE-SPREAD": [
    "Spin-generated gravity: Coriolis forces and g-gradients along the sample."
   ],
@@ -1277,6 +1330,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-0G-ULOI-MYLAR",
       "OF2012-0G-MOC-MYLAR"
@@ -1304,6 +1359,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1330,6 +1387,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-25:B14",
       "PSI-25:B16",
@@ -1367,6 +1426,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1393,6 +1454,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-0G-MOC-NOMEX"
      ]
@@ -1423,6 +1486,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-25:B1",
       "PSI-25:B2",
@@ -1462,6 +1527,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-0G-ULOI-ULTEM",
       "OF2012-0G-MOC-ULTEM"
@@ -1491,6 +1558,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-0G-ULOI-NOMEX"
      ]
@@ -1517,6 +1586,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1541,6 +1612,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1565,6 +1638,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1589,6 +1664,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1613,6 +1690,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1637,6 +1716,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1661,6 +1742,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1685,6 +1768,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1709,6 +1794,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1733,6 +1820,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1757,6 +1846,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1781,6 +1872,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1805,6 +1898,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1829,6 +1924,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1853,6 +1950,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1879,6 +1978,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "SACK2003-UPWARD-LINEAR-IN-G",
       "SACK2003-DOWNWARD-U-BOUNDARY",
@@ -1907,6 +2008,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1931,6 +2034,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1955,6 +2060,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -1979,6 +2086,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2003,6 +2112,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2027,6 +2138,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2051,6 +2164,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2075,6 +2190,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2099,6 +2216,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2123,6 +2242,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2147,6 +2268,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2171,6 +2294,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2197,6 +2322,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-LUNAR-ULOI-MYLAR",
       "OF2012-LUNAR-MOC-MYLAR"
@@ -2224,6 +2351,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2248,6 +2377,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2274,6 +2405,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-LUNAR-ULOI-ULTEM",
       "OF2012-LUNAR-MOC-ULTEM"
@@ -2304,6 +2437,10 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [
+      "FM2-2024-ATM-21-14.7"
+     ],
+     "planned_factor": 0.5,
      "refs": [
       "LUCI2025-SIBAL-BASE-SPREAD",
       "LUCI2025-SIBAL-TIP-SPREAD",
@@ -2336,6 +2473,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "SACK2003-UPWARD-LINEAR-IN-G",
       "SACK2003-DOWNWARD-U-BOUNDARY",
@@ -2364,6 +2503,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2388,6 +2529,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2412,6 +2555,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2436,6 +2581,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2460,6 +2607,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2484,6 +2633,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2508,6 +2659,10 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [
+      "FM2-2024-ATM-34-8.2"
+     ],
+     "planned_factor": 0.5,
      "refs": []
     },
     {
@@ -2532,6 +2687,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2556,6 +2713,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2580,6 +2739,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2604,6 +2765,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2628,6 +2791,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2652,6 +2817,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2676,6 +2843,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2700,6 +2869,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2724,6 +2895,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2748,6 +2921,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2774,6 +2949,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "SACK2003-UPWARD-LINEAR-IN-G",
       "SACK2003-DOWNWARD-U-BOUNDARY",
@@ -2802,6 +2979,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2826,6 +3005,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2850,6 +3031,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2874,6 +3057,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2898,6 +3083,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2922,6 +3109,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2946,6 +3135,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2970,6 +3161,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -2994,6 +3187,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3018,6 +3213,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3042,6 +3239,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3066,6 +3265,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3092,6 +3293,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-MARS-ULOI-MYLAR",
       "OF2012-MARS-MOC-MYLAR"
@@ -3119,6 +3322,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3143,6 +3348,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3170,6 +3377,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-MARS-ULOI-ULTEM",
       "OF2012-MARS-MOC-ULTEM",
@@ -3200,6 +3409,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-MARS-ULOI-NOMEX",
       "OF2012-MARS-MOC-NOMEX"
@@ -3229,6 +3440,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "SACK2003-UPWARD-LINEAR-IN-G",
       "SACK2003-DOWNWARD-U-BOUNDARY",
@@ -3257,6 +3470,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3281,6 +3496,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3305,6 +3522,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3329,6 +3548,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3353,6 +3574,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3377,6 +3600,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3401,6 +3626,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3425,6 +3652,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3449,6 +3678,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3473,6 +3704,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3497,6 +3730,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3521,6 +3756,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3545,6 +3782,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3569,6 +3808,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3593,6 +3834,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3617,6 +3860,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3641,6 +3886,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3667,6 +3914,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "SACK2003-UPWARD-LINEAR-IN-G",
       "SACK2003-DOWNWARD-U-BOUNDARY",
@@ -3695,6 +3944,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3719,6 +3970,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3743,6 +3996,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3767,6 +4022,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3791,6 +4048,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3815,6 +4074,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3839,6 +4100,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3863,6 +4126,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3887,6 +4152,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3911,6 +4178,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3935,6 +4204,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3959,6 +4230,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -3983,6 +4256,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4007,6 +4282,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4031,6 +4308,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4057,6 +4336,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-1G-ULOI-MYLAR",
       "OF2012-1G-MOC-MYLAR"
@@ -4086,6 +4367,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-1G-MOC-NOMEX"
      ]
@@ -4114,6 +4397,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "SACK2003-UPWARD-LINEAR-IN-G",
       "SACK2003-DOWNWARD-U-BOUNDARY",
@@ -4144,6 +4429,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-1G-ULOI-ULTEM",
       "OF2012-1G-MOC-ULTEM"
@@ -4173,6 +4460,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "OF2012-1G-ULOI-NOMEX"
      ]
@@ -4199,6 +4488,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4223,6 +4514,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4247,6 +4540,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4271,6 +4566,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4295,6 +4592,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4319,6 +4618,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4343,6 +4644,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4367,6 +4670,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4391,6 +4696,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4415,6 +4722,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     }
    ],
@@ -4447,6 +4756,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:119",
       "PSI-69:120",
@@ -4486,6 +4797,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:58",
       "PSI-69:59",
@@ -4523,6 +4836,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4549,6 +4864,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:36",
       "PSI-69:54",
@@ -4588,6 +4905,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:1",
       "PSI-69:2",
@@ -4625,6 +4944,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4651,6 +4972,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:88",
       "PSI-69:89",
@@ -4690,6 +5013,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:131",
       "PSI-69:132",
@@ -4724,6 +5049,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4750,6 +5077,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:25",
       "PSI-69:26",
@@ -4785,6 +5114,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:29",
       "PSI-69:30",
@@ -4817,6 +5148,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4843,6 +5176,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": [
       "PSI-69:19",
       "PSI-69:20",
@@ -4877,6 +5212,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4901,6 +5238,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4925,6 +5264,8 @@
       "MARS-TRANSIT-HABITAT": 0.4,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4949,6 +5290,8 @@
       "MARS-TRANSIT-HABITAT": 0.8,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4973,6 +5316,8 @@
       "MARS-TRANSIT-HABITAT": 0.6,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -4997,6 +5342,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5021,6 +5368,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5045,6 +5394,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5069,6 +5420,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5093,6 +5446,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5117,6 +5472,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5141,6 +5498,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5165,6 +5524,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5189,6 +5550,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5213,6 +5576,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5237,6 +5602,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5261,6 +5628,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5285,6 +5654,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5309,6 +5680,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5333,6 +5706,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5357,6 +5732,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5381,6 +5758,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5405,6 +5784,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 1e-06
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5429,6 +5810,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5453,6 +5836,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5477,6 +5862,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5501,6 +5888,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5525,6 +5914,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5549,6 +5940,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5573,6 +5966,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5597,6 +5992,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5621,6 +6018,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5645,6 +6044,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5669,6 +6070,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5693,6 +6096,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5717,6 +6122,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5741,6 +6148,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5765,6 +6174,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5789,6 +6200,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5813,6 +6226,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5837,6 +6252,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.003825
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5861,6 +6278,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5885,6 +6304,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5909,6 +6330,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5933,6 +6356,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5957,6 +6382,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -5981,6 +6408,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6005,6 +6434,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6029,6 +6460,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6053,6 +6486,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6077,6 +6512,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6101,6 +6538,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6125,6 +6564,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6149,6 +6590,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6173,6 +6616,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6197,6 +6642,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6221,6 +6668,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6245,6 +6694,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6269,6 +6720,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6293,6 +6746,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6317,6 +6772,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6341,6 +6798,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6365,6 +6824,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6389,6 +6850,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6413,6 +6876,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6437,6 +6902,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6461,6 +6928,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6485,6 +6954,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6509,6 +6980,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6533,6 +7006,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6557,6 +7032,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6581,6 +7058,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6605,6 +7084,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6629,6 +7110,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6653,6 +7136,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6677,6 +7162,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6701,6 +7188,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.64
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6725,6 +7214,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6749,6 +7240,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6773,6 +7266,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6797,6 +7292,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6821,6 +7318,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6845,6 +7344,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6869,6 +7370,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6893,6 +7396,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6917,6 +7422,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6941,6 +7448,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6965,6 +7474,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -6989,6 +7500,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7013,6 +7526,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7037,6 +7552,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7061,6 +7578,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7085,6 +7604,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7109,6 +7630,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7133,6 +7656,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.177944
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7157,6 +7682,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7181,6 +7708,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7205,6 +7734,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7229,6 +7760,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7253,6 +7786,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7277,6 +7812,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7301,6 +7838,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7325,6 +7864,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7349,6 +7890,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7373,6 +7916,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7397,6 +7942,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7421,6 +7968,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7445,6 +7994,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7469,6 +8020,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7493,6 +8046,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7517,6 +8072,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7541,6 +8098,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     },
     {
@@ -7565,6 +8124,8 @@
       "MARS-TRANSIT-HABITAT": 0.0,
       "MARS-SURFACE-HABITAT": 0.0
      },
+     "planned": [],
+     "planned_factor": 1.0,
      "refs": []
     }
    ],
@@ -7585,24 +8146,8 @@
     "name": "Lunar surface habitat (nominal)"
    },
    "existing_campaigns": [],
-   "platform": "Lunar surface (FM2-class) or spinning suborbital vehicle (LUCI-class)",
-   "platform_rationale": "Lunar (0.12-0.22 g): only real or spin-simulated lunar gravity gives tests longer than ~25 s; drop-tower centrifuges (5 s) and aircraft (~25 s) suit screening only.",
-   "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
-   "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
-  },
-  {
-   "gravity_bin": "Lunar (0.12-0.22 g)",
-   "o2_bin": "31-35%",
-   "pressure_class": "reduced (<85 kPa)",
-   "priority": 1.0,
-   "relevance": 1.0,
-   "scarcity": 1.0,
-   "duration_factor": 1.0,
-   "closest_scenario": {
-    "id": "LUNAR-SURFACE-HABITAT-EVA",
-    "name": "Lunar surface habitat (8.2 psi / 34% capability)"
-   },
-   "existing_campaigns": [],
+   "already_planned": [],
+   "planned_factor": 1.0,
    "platform": "Lunar surface (FM2-class) or spinning suborbital vehicle (LUCI-class)",
    "platform_rationale": "Lunar (0.12-0.22 g): only real or spin-simulated lunar gravity gives tests longer than ~25 s; drop-tower centrifuges (5 s) and aircraft (~25 s) suit screening only.",
    "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
@@ -7621,6 +8166,8 @@
     "name": "Mars surface habitat"
    },
    "existing_campaigns": [],
+   "already_planned": [],
+   "planned_factor": 1.0,
    "platform": "Spinning suborbital vehicle (LUCI-class) or long-radius centrifuge",
    "platform_rationale": "Martian (0.30-0.46 g): no real-gravity platform exists; spin simulation gives >2.5 min but adds Coriolis effects that must be characterized.",
    "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
@@ -7641,8 +8188,32 @@
    "existing_campaigns": [
     "GRC-ZGF-0G-FORCED-FLOW"
    ],
+   "already_planned": [],
+   "planned_factor": 1.0,
    "platform": "ISS (SoFIE / Saffire-class facility)",
    "platform_rationale": "Long-duration microgravity with controlled low-speed forced flow.",
+   "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
+   "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
+  },
+  {
+   "gravity_bin": "Lunar (0.12-0.22 g)",
+   "o2_bin": "31-35%",
+   "pressure_class": "reduced (<85 kPa)",
+   "priority": 0.5,
+   "relevance": 1.0,
+   "scarcity": 1.0,
+   "duration_factor": 1.0,
+   "closest_scenario": {
+    "id": "LUNAR-SURFACE-HABITAT-EVA",
+    "name": "Lunar surface habitat (8.2 psi / 34% capability)"
+   },
+   "existing_campaigns": [],
+   "already_planned": [
+    "FM2-2024-ATM-34-8.2"
+   ],
+   "planned_factor": 0.5,
+   "platform": "Lunar surface (FM2-class) or spinning suborbital vehicle (LUCI-class)",
+   "platform_rationale": "Lunar (0.12-0.22 g): only real or spin-simulated lunar gravity gives tests longer than ~25 s; drop-tower centrifuges (5 s) and aircraft (~25 s) suit screening only.",
    "hypothesis": "H2 test: is the low-gravity upward flammability limit (ULOI*/MOC*) of candidate cabin materials below their 1-g NASA-STD-6001 Test 1 MOC at this atmosphere? Pair every low-g test with a 1-g test in the same atmosphere to compute the oxygen margin (Eq. 1).",
    "measure": "ULOI*/MOC* in 1% O2 steps, flame spread rate, flame length history, burn duration >= 60 s, and local g-level vs time."
   }

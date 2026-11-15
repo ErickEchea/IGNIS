@@ -312,7 +312,28 @@ def scenario_cell_relevance(sc: Scenario, gi: int, oi: int, pclass: str) -> floa
     return round(k_g * k_o * k_p, 6)
 
 
-def gap_grid(points: Sequence[EvidencePoint], scenarios: Sequence[Scenario], fuel_class: str) -> dict[str, Any]:
+PLANNED_FACTOR = 0.5  # a documented, not-yet-flown experiment already targets the cell
+
+
+def planned_cells(cards: Iterable[FindingCard]) -> dict[tuple[int, int, str], list[str]]:
+    """Cells targeted by documented planned experiments (cards with measured_variable planned_experiment)."""
+    out: dict[tuple[int, int, str], list[str]] = defaultdict(list)
+    for c in cards:
+        if c.measured_variable != "planned_experiment" or c.o2 is None or c.gravity is None:
+            continue
+        oi = o2_bin_for(c.o2.value_si * 100)
+        pc = pressure_class(c.pressure.value_si if c.pressure else None)
+        for gi in gravity_bins_for(c.gravity.value_si, c.gravity.value_si):
+            out[(gi, oi, pc)].append(c.id)
+    return out
+
+
+def gap_grid(
+    points: Sequence[EvidencePoint],
+    scenarios: Sequence[Scenario],
+    fuel_class: str,
+    planned: dict[tuple[int, int, str], list[str]] | None = None,
+) -> dict[str, Any]:
     cells: dict[tuple[int, int, str], dict[str, Any]] = {}
     for gi in range(len(GRAVITY_BINS)):
         for oi in range(len(O2_BINS)):
@@ -353,6 +374,10 @@ def gap_grid(points: Sequence[EvidencePoint], scenarios: Sequence[Scenario], fue
                 "scarcity": scarcity,
                 "duration_factor": short,
                 "relevance": {sc.id: scenario_cell_relevance(sc, gi, oi, pc) for sc in scenarios},
+            "planned": (planned or {}).get((gi, oi, pc), []) if fuel_class == "solid" else [],
+            "planned_factor": PLANNED_FACTOR
+            if fuel_class == "solid" and (planned or {}).get((gi, oi, pc))
+            else 1.0,
                 "refs": cell["refs"],
             }
         )
@@ -360,11 +385,15 @@ def gap_grid(points: Sequence[EvidencePoint], scenarios: Sequence[Scenario], fue
 
 
 def priority(cell: dict[str, Any], scenario_ids: Sequence[str]) -> float:
-    """P = max_s R_s(cell) x 1/(1 + n_campaigns) x D, D = 1 if no evidence >= 60 s else 0.5."""
+    """P = max_s R_s(cell) x 1/(1 + n_campaigns) x D x F.
+
+    D = 1 if no evidence >= 60 s else 0.5; F = 0.5 if a documented planned experiment targets the cell.
+    """
     if not scenario_ids:
         return 0.0
     r = max(float(cell["relevance"][s]) for s in scenario_ids)
-    return round(r * float(cell["scarcity"]) * float(cell["duration_factor"]), 6)
+    f = float(cell.get("planned_factor", 1.0))
+    return round(r * float(cell["scarcity"]) * float(cell["duration_factor"]) * f, 6)
 
 
 def suggest_platform(gi: int) -> dict[str, str]:
@@ -453,6 +482,8 @@ def next_experiments(grid: dict[str, Any], scenarios: Sequence[Scenario], top_k:
                 "duration_factor": cell["duration_factor"],
                 "closest_scenario": {"id": sc.id, "name": sc.name},
                 "existing_campaigns": cell["campaigns"],
+            "already_planned": cell["planned"],
+            "planned_factor": cell["planned_factor"],
                 "platform": plat["platform"],
                 "platform_rationale": plat["why"],
                 "hypothesis": (
@@ -666,7 +697,7 @@ def build_analysis(
     cards: Sequence[FindingCard], scenarios: Sequence[Scenario], datasets: dict[str, Any]
 ) -> dict[str, Any]:
     pts = points_from_cards(cards) + points_from_datasets(datasets)
-    solid = gap_grid(pts, scenarios, "solid")
+    solid = gap_grid(pts, scenarios, "solid", planned_cells(cards))
     return {
         "ranking": ranking_factors(cards, scenarios),
         "ranking_constants": {

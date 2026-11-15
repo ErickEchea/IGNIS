@@ -24,11 +24,12 @@ export interface PriorityCell {
   relevance: Record<string, number>
   scarcity: number
   duration_factor: number
+  planned_factor?: number
 }
 
-/** P = max_s R_s(cell) x 1/(1 + n_campaigns) x D */
+/** P = max_s R_s(cell) x 1/(1 + n_campaigns) x D x F */
 export function priority(cell: PriorityCell, scenarioIds: string[]): number {
   if (scenarioIds.length === 0) return 0
   const r = Math.max(...scenarioIds.map((s) => cell.relevance[s] ?? 0))
-  return round6(r * cell.scarcity * cell.duration_factor)
+  return round6(r * cell.scarcity * cell.duration_factor * (cell.planned_factor ?? 1))
 }

@@ -1,0 +1,69 @@
+# Zayac, Johnston, Ruff & Ferkul (2024) "Flammability of Materials on the Moon" (poster),
+# NTRS 20240015307 (GOV_PERMITTED). Single-page poster; page = 1.
+
+cards:
+  - id: FM2-2024-ATM-34-8.2
+    claim: "FM2's environmental control system can run lunar-surface fire experiments at 34% O2 and 8.2 psia, an atmosphere of immediate interest to the Human Lander System and the lunar rover."
+    material: "solid fuel samples (fabric and rods in the laboratory prototype)"
+    material_class: "multiple"
+    geometry: other
+    o2: {value: 34, unit: "%", dimension: fraction}
+    pressure: {value: 8.2, unit: psi, dimension: pressure}
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio}
+    platform: lunar_surface
+    measured_variable: planned_experiment
+    data_type: CONCEPTUAL
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Documented plan in a NASA poster; flight date and final test matrix are not verified by IGNIS."
+    caveats:
+      - "The same poster names both a CLPS mission (CP-21) and the SpaceX HLS demonstration flight as the ride: the carrier is not settled in this source."
+    campaign_id: FM2-LUNAR-SURFACE
+    tags: [planned, next_experiment, lunar, exploration_atmosphere]
+    provenance:
+      source_id: NTRS-20240015307
+      page: 1
+      quote: "specifically 21% oxygen at 14.7 psia, and 34% oxygen at 8.2 psia, which are of immediate interest to the Human Lander System (HLS) and Lunar Rover"
+      extraction: llm_assisted_quote_verified
+
+  - id: FM2-2024-ATM-21-14.7
+    claim: "FM2 can also run lunar-surface fire experiments in air at 21% O2 and 14.7 psia."
+    material: "solid fuel samples (fabric and rods in the laboratory prototype)"
+    material_class: "multiple"
+    geometry: other
+    o2: {value: 21, unit: "%", dimension: fraction}
+    pressure: {value: 14.7, unit: psi, dimension: pressure}
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio}
+    platform: lunar_surface
+    measured_variable: planned_experiment
+    data_type: CONCEPTUAL
+    epistemic: DOCUMENTED_FACT
+    confidence: medium
+    confidence_rationale: "Documented plan in a NASA poster."
+    campaign_id: FM2-LUNAR-SURFACE
+    tags: [planned, next_experiment, lunar]
+    provenance:
+      source_id: NTRS-20240015307
+      page: 1
+      quote: "specifically 21% oxygen at 14.7 psia, and 34% oxygen at 8.2 psia"
+      extraction: llm_assisted_quote_verified
+
+  - id: FM2-2024-GOLDILOCKS
+    claim: "NASA researchers describe lunar gravity as a 'goldilocks zone' for some materials: convective heat loss is reduced while buoyancy still supplies fresh oxygen, so flammability limits can be wider than on Earth; combined with elevated-O2 exploration atmospheres this motivates a long-duration lunar fire experiment."
+    material: "spacecraft materials (general)"
+    material_class: "multiple"
+    geometry: other
+    gravity: {value: 0.165, unit: g, dimension: gravity_ratio}
+    platform: model
+    measured_variable: interpretation
+    data_type: DERIVED
+    epistemic: SCIENTIFIC_INTERPRETATION
+    confidence: medium
+    confidence_rationale: "Summary statement in a NASA poster, consistent with the drop-tower and spin-platform results in this ledger."
+    campaign_id: FM2-LUNAR-SURFACE
+    tags: [h2_evidence, mechanism, lunar]
+    provenance:
+      source_id: NTRS-20240015307
+      page: 1
+      quote: "Lunar gravity has been found to increase the limits of flammability for some materials compared to Earth gravity, presenting a goldilocks zone of reduced convective heat loss"
+      extraction: llm_assisted_quote_verified

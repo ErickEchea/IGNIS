@@ -1,39 +1,375 @@
 {
  "scores": [
   {
-   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "card": "FM2-2024-ATM-21-14.7",
    "factors": {
-    "M": 0.49,
-    "E": 0.576,
-    "R": 0.632121
+    "M": 0.225302,
+    "E": 0.24,
+    "R": 0.393469
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.562954
+   "expected": 0.277095
   },
   {
-   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "card": "FM2-2024-ATM-21-14.7",
    "factors": {
-    "M": 0.49,
-    "E": 0.576,
-    "R": 0.632121
+    "M": 0.225302,
+    "E": 0.24,
+    "R": 0.393469
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.532183
+   "expected": 0.248427
+  },
+  {
+   "card": "FM2-2024-ATM-21-14.7",
+   "factors": {
+    "M": 0.225302,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.24
+  },
+  {
+   "card": "FM2-2024-ATM-21-14.7",
+   "factors": {
+    "M": 0.225302,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.268011
+  },
+  {
+   "card": "FM2-2024-ATM-21-14.7",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-21-14.7",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-21-14.7",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-21-14.7",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.141943,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.237545
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.141943,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.190784
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.141943,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.24
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.141943,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.203125
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-ATM-34-8.2",
+   "factors": {
+    "M": 0.0,
+    "E": 0.24,
+    "R": 0.393469
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.603007
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.548093
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.576
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.571827
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 0,
+    "E": 1,
+    "R": 0
+   },
+   "expected": 0.0
+  },
+  {
+   "card": "FM2-2024-GOLDILOCKS",
+   "factors": {
+    "M": 0.0,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 3,
+    "E": 0.5,
+    "R": 1.5
+   },
+   "expected": 0.0
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 1,
+    "E": 1,
+    "R": 1
+   },
+   "expected": 0.603007
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.77687
+   },
+   "weights": {
+    "M": 2,
+    "E": 1,
+    "R": 0.5
+   },
+   "expected": 0.548093
+  },
+  {
+   "card": "LPSC2026-1G-NOT-WORST-CASE",
+   "factors": {
+    "M": 0.49,
+    "E": 0.576,
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -47,49 +383,49 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.537527
+   "expected": 0.571827
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.562954
+   "expected": 0.603007
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.532183
+   "expected": 0.548093
   },
   {
    "card": "LPSC2026-1G-NOT-WORST-CASE",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -103,14 +439,14 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.537527
+   "expected": 0.571827
   },
   {
    "card": "LPSC2026-FM2-PLANNED",
@@ -453,35 +789,35 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
     "E": 1,
     "R": 1
    },
-   "expected": 0.562954
+   "expected": 0.603007
   },
   {
    "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
     "E": 1,
     "R": 0.5
    },
-   "expected": 0.532183
+   "expected": 0.548093
   },
   {
    "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -495,21 +831,21 @@
    "factors": {
     "M": 0.49,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
     "E": 0.5,
     "R": 1.5
    },
-   "expected": 0.537527
+   "expected": 0.571827
   },
   {
    "card": "LPSC2026-MIN-O2-NEAR-LUNAR",
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 1,
@@ -523,7 +859,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 2,
@@ -537,7 +873,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 0,
@@ -551,7 +887,7 @@
    "factors": {
     "M": 0.0,
     "E": 0.576,
-    "R": 0.632121
+    "R": 0.77687
    },
    "weights": {
     "M": 3,
@@ -2463,342 +2799,6 @@
     "R": 1.5
    },
    "expected": 0.570225
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-MYLAR",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-NOMEX",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 1,
-    "E": 1,
-    "R": 1
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 2,
-    "E": 1,
-    "R": 0.5
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 0,
-    "E": 1,
-    "R": 0
-   },
-   "expected": 0.0
-  },
-  {
-   "card": "OF2012-1G-MOC-ULTEM",
-   "factors": {
-    "M": 0.0,
-    "E": 1.0,
-    "R": 0.864665
-   },
-   "weights": {
-    "M": 3,
-    "E": 0.5,
-    "R": 1.5
-   },
-   "expected": 0.0
   }
  ],
  "priorities": [
@@ -2816,7 +2816,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -2837,7 +2838,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -2860,7 +2862,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -2879,7 +2882,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -2900,7 +2904,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -2923,7 +2928,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -2942,7 +2948,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -2963,7 +2970,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -2986,7 +2994,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3005,7 +3014,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3026,7 +3036,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3049,7 +3060,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3068,7 +3080,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3089,7 +3102,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3112,7 +3126,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3131,7 +3146,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3152,7 +3168,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3175,7 +3192,8 @@
      "MARS-SURFACE-HABITAT": 1e-06
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3194,7 +3212,8 @@
      "MARS-SURFACE-HABITAT": 0.003825
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3215,7 +3234,8 @@
      "MARS-SURFACE-HABITAT": 0.003825
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3238,7 +3258,8 @@
      "MARS-SURFACE-HABITAT": 0.003825
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3257,7 +3278,8 @@
      "MARS-SURFACE-HABITAT": 0.003825
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3278,7 +3300,8 @@
      "MARS-SURFACE-HABITAT": 0.003825
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3301,7 +3324,8 @@
      "MARS-SURFACE-HABITAT": 0.003825
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3320,7 +3344,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3341,7 +3366,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3364,7 +3390,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3383,7 +3410,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3404,7 +3432,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3427,7 +3456,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3446,7 +3476,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3467,7 +3498,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3490,7 +3522,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3509,7 +3542,8 @@
      "MARS-SURFACE-HABITAT": 0.64
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3530,7 +3564,8 @@
      "MARS-SURFACE-HABITAT": 0.64
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3553,7 +3588,8 @@
      "MARS-SURFACE-HABITAT": 0.64
     },
     "scarcity": 0.5,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3572,7 +3608,8 @@
      "MARS-SURFACE-HABITAT": 0.64
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3593,7 +3630,8 @@
      "MARS-SURFACE-HABITAT": 0.64
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3616,7 +3654,8 @@
      "MARS-SURFACE-HABITAT": 0.64
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3635,7 +3674,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3656,7 +3696,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3679,7 +3720,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3698,7 +3740,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3719,7 +3762,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3742,7 +3786,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3761,7 +3806,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3782,7 +3828,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3805,7 +3852,8 @@
      "MARS-SURFACE-HABITAT": 0.177944
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3824,7 +3872,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 0.5
+    "duration_factor": 0.5,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3845,7 +3894,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 0.5
+    "duration_factor": 0.5,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3868,7 +3918,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 0.5,
-    "duration_factor": 0.5
+    "duration_factor": 0.5,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0
@@ -3887,7 +3938,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT"
@@ -3908,7 +3960,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [
     "LUNAR-SURFACE-HABITAT",
@@ -3931,7 +3984,8 @@
      "MARS-SURFACE-HABITAT": 0.0
     },
     "scarcity": 1.0,
-    "duration_factor": 1.0
+    "duration_factor": 1.0,
+    "planned_factor": 1.0
    },
    "scenarios": [],
    "expected": 0.0

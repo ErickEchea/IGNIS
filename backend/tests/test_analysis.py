@@ -73,13 +73,17 @@ def test_bins() -> None:
 
 
 def test_lunar_habitat_atmospheres_are_top_gaps(cards, scenarios) -> None:  # type: ignore[no-untyped-def]
-    grid = gap_grid(points_from_cards(cards), scenarios, "solid")
+    from ignis.core.analysis import planned_cells
+
+    grid = gap_grid(points_from_cards(cards), scenarios, "solid", planned_cells(cards))
     ids = ["LUNAR-SURFACE-HABITAT", "LUNAR-SURFACE-HABITAT-EVA"]
-    lunar_cells = [c for c in grid["cells"] if c["g"] == 2 and c["pressure"].startswith("reduced")]
-    habitat = [c for c in lunar_cells if c["o2"] in (2, 4)]
-    assert all(c["n_campaigns"] == 0 for c in habitat)
-    assert all(priority(c, ids) == 1.0 for c in habitat)
-    covered = next(c for c in lunar_cells if c["o2"] == 0)  # Table I lunar limits (14-16% O2)
+    lunar = {c["o2"]: c for c in grid["cells"] if c["g"] == 2 and c["pressure"].startswith("reduced")}
+    assert lunar[2]["n_campaigns"] == 0 and lunar[4]["n_campaigns"] == 0
+    # 10.2 psia / 26.5% O2: no evidence and nothing planned -> top priority
+    assert priority(lunar[2], ids) == 1.0 and lunar[2]["planned"] == []
+    # 8.2 psia / 34% O2: no evidence yet, but FM2 plans it -> halved
+    assert "FM2-2024-ATM-34-8.2" in lunar[4]["planned"] and priority(lunar[4], ids) == 0.5
+    covered = lunar[0]  # Table I lunar limits (14-16% O2)
     assert covered["n_campaigns"] >= 1 and priority(covered, ids) < 1.0
 
 
