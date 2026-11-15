@@ -1,0 +1,20 @@
+# Upload context for `gcloud run deploy --source .` (Cloud Build). Unlike .gitignore, the retrieval
+# index in data/processed/index IS uploaded: the Dockerfile bakes it into the image.
+.git
+.gitignore
+**/node_modules
+**/.venv
+**/__pycache__
+**/.mypy_cache
+**/.ruff_cache
+**/.pytest_cache
+**/.hypothesis
+frontend/
+data/raw/
+models_cache/
+eval/results/
+paper/
+submission/
+docs/
+**/.env
+backend/.env
