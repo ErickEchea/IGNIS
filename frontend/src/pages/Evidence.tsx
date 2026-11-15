@@ -22,7 +22,7 @@ export default function Evidence() {
   const analysis = useAnalysis()
   const scenarios = useScenarios()
   const [tab, setTab] = useState<'cards' | 'psi'>('cards')
-  const [scenario, setScenario] = useState('LUNAR-SURFACE-HABITAT')
+  const [scenario, setScenario] = useState('LUNAR-2026-NOMINAL')
   const [weights, setWeights] = useState<Record<string, number>>({ M: 1, E: 1, R: 1 })
   const [gfilter, setGfilter] = useState('all')
   const [epi, setEpi] = useState<'all' | Epistemic>('all')

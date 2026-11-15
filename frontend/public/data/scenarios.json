@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-15T01:56:21+00:00",
+ "built_at": "2026-11-15T02:20:14+00:00",
  "scenarios": [
   {
    "id": "ISS-NOMINAL",
@@ -94,8 +94,54 @@
    "verification": "quote verified"
   },
   {
+   "id": "LUNAR-2026-NOMINAL",
+   "name": "HLS / lunar habitat / pressurized rover (NASA 2026, nominal)",
+   "gravity_g0": 0.165,
+   "gravity_note": "Lunar surface gravity 1.62 m/s^2 (NSSDC). Latest NASA statement found by IGNIS (LPSC 2026 presentation).",
+   "pressure": {
+    "value": 8.2,
+    "unit": "psi"
+   },
+   "o2_percent": 34.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20260001966",
+    "page": 25,
+    "quote": "HLS, Lunar habitat and pressurized rover will nominally use 8.2 psia / 34% O2"
+   },
+   "derived": {
+    "pressure_kpa": 56.54,
+    "o2_mole_fraction": 0.34,
+    "o2_partial_pressure_kpa": 19.22
+   },
+   "verification": "quote verified"
+  },
+  {
+   "id": "LUNAR-2026-UPPER-BAND",
+   "name": "Lunar habitat upper O2 control band (NASA 2026)",
+   "gravity_g0": 0.165,
+   "gravity_note": "Lunar surface gravity. Total pressure taken as the 8.2 psia nominal stated in the preceding bullet of the same slide.",
+   "pressure": {
+    "value": 8.2,
+    "unit": "psi"
+   },
+   "o2_percent": 37.0,
+   "unknown_note": null,
+   "provenance": {
+    "source_id": "NTRS-20260001966",
+    "page": 25,
+    "quote": "Control bands are expected to allow up to 37% O2"
+   },
+   "derived": {
+    "pressure_kpa": 56.54,
+    "o2_mole_fraction": 0.37,
+    "o2_partial_pressure_kpa": 20.92
+   },
+   "verification": "quote verified"
+  },
+  {
    "id": "LUNAR-SURFACE-HABITAT",
-   "name": "Lunar surface habitat (nominal)",
+   "name": "Lunar surface habitat (2022 planning baseline)",
    "gravity_g0": 0.165,
    "gravity_note": "Lunar surface gravity 1.62 m/s^2 (NSSDC).",
    "pressure": {
@@ -118,7 +164,7 @@
   },
   {
    "id": "LUNAR-SURFACE-HABITAT-EVA",
-   "name": "Lunar surface habitat (8.2 psi / 34% capability)",
+   "name": "Lunar surface habitat (2022 baseline, 8.2 psi / 34% capability)",
    "gravity_g0": 0.165,
    "gravity_note": "Lunar surface gravity 1.62 m/s^2 (NSSDC).",
    "pressure": {

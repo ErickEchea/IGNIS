@@ -47,8 +47,30 @@ scenarios:
       page: 20
       quote: "(assuming 10.2 psia (70.3 kPa), 26.5% O2 atmosphere)"
 
+  - id: LUNAR-2026-NOMINAL
+    name: "HLS / lunar habitat / pressurized rover (NASA 2026, nominal)"
+    gravity_g0: 0.165
+    gravity_note: "Lunar surface gravity 1.62 m/s^2 (NSSDC). Latest NASA statement found by IGNIS (LPSC 2026 presentation)."
+    pressure: {value: 8.2, unit: psi}
+    o2_percent: 34
+    provenance:
+      source_id: NTRS-20260001966
+      page: 25
+      quote: "HLS, Lunar habitat and pressurized rover will nominally use 8.2 psia / 34% O2"
+
+  - id: LUNAR-2026-UPPER-BAND
+    name: "Lunar habitat upper O2 control band (NASA 2026)"
+    gravity_g0: 0.165
+    gravity_note: "Lunar surface gravity. Total pressure taken as the 8.2 psia nominal stated in the preceding bullet of the same slide."
+    pressure: {value: 8.2, unit: psi}
+    o2_percent: 37
+    provenance:
+      source_id: NTRS-20260001966
+      page: 25
+      quote: "Control bands are expected to allow up to 37% O2"
+
   - id: LUNAR-SURFACE-HABITAT
-    name: "Lunar surface habitat (nominal)"
+    name: "Lunar surface habitat (2022 planning baseline)"
     gravity_g0: 0.165
     gravity_note: "Lunar surface gravity 1.62 m/s^2 (NSSDC)."
     pressure: {value: 10.2, unit: psi}
@@ -59,7 +81,7 @@ scenarios:
       quote: "nominal operating pressure of 10.2 psia (70.3 kPa) and 26.5% Oxygen concentration"
 
   - id: LUNAR-SURFACE-HABITAT-EVA
-    name: "Lunar surface habitat (8.2 psi / 34% capability)"
+    name: "Lunar surface habitat (2022 baseline, 8.2 psi / 34% capability)"
     gravity_g0: 0.165
     gravity_note: "Lunar surface gravity 1.62 m/s^2 (NSSDC)."
     pressure: {value: 8.2, unit: psi}

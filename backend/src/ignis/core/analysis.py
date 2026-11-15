@@ -443,7 +443,9 @@ def scenario_owns_cell(sc: Scenario, cell: dict[str, Any]) -> bool:
     return True
 
 
-EXPLORATION_SCENARIOS = (
+EXPLORATION_SCENARIOS = (  # order = tie-break preference (most recent NASA statement first)
+    "LUNAR-2026-UPPER-BAND",
+    "LUNAR-2026-NOMINAL",
     "LUNAR-SURFACE-HABITAT",
     "LUNAR-SURFACE-HABITAT-EVA",
     "MARS-SURFACE-HABITAT",
@@ -457,9 +459,16 @@ def next_experiments(grid: dict[str, Any], scenarios: Sequence[Scenario], top_k:
     Cells are ranked by P for the exploration scenarios; selection is greedy with diversity
     (at most one cell per gravity bin and pressure class) so the list is not six variants of one gap.
     """
-    ids = [s.id for s in scenarios if s.id in EXPLORATION_SCENARIOS]
+    ids = [i for i in EXPLORATION_SCENARIOS if any(s.id == i for s in scenarios)]
     # Ties: partial gravity first (microgravity already has long-duration orbital facilities), then lower g.
-    ranked = sorted(grid["cells"], key=lambda c: (priority(c, ids), 1 <= c["g"] <= 5, -c["g"]), reverse=True)
+    def owner_rank(c: dict[str, Any]) -> int:
+        owners = [k for k, s in enumerate(scenarios_by_rank) if scenario_owns_cell(s, c)]
+        return -(owners[0] if owners else len(scenarios_by_rank))
+
+    scenarios_by_rank = [next(s for s in scenarios if s.id == i) for i in ids]
+    ranked = sorted(
+        grid["cells"], key=lambda c: (priority(c, ids), 1 <= c["g"] <= 5, owner_rank(c), -c["g"]), reverse=True
+    )
     out: list[dict[str, Any]] = []
     used: set[tuple[Any, ...]] = set()
     for cell in ranked:
@@ -467,7 +476,7 @@ def next_experiments(grid: dict[str, Any], scenarios: Sequence[Scenario], top_k:
             break
         if cell["pressure"] == PRESSURE_CLASSES[2]:
             continue
-        own = [s for s in scenarios if s.id in ids and scenario_owns_cell(s, cell)]
+        own = [s for s in scenarios_by_rank if scenario_owns_cell(s, cell)]
         if not own:
             continue  # proposals sit exactly at a mission's conditions, never in a neighbouring bin
         sc = own[0]

@@ -19,8 +19,9 @@ gravity levels where crews will actually live?
 ## Slide 2: The partial-gravity blind spot
 
 - Artemis surface operations at 0.165 g; Mars at 0.38 g.
-- Cabins: the lunar Surface Habitat at 10.2 psia / 26.5% O₂, with an 8.2 psia / 34% capability
-  (NASA/TM-20220000524). Long-duration lunar and Mars habitats: 8.0 psia / 32% (2006 EAWG).
+- Cabins: HLS, lunar habitat and pressurized rover will nominally use 8.2 psia / 34% O₂, with control bands up to 37%
+  (NASA, LPSC 2026). The earlier baseline was 10.2 psia / 26.5% (NASA/TM-20220000524). Mars habitats: 8.0 psia / 32%
+  (2006 EAWG).
 - 0 of 24 NASA PSI combustion investigations are at partial gravity.
 - 5 partial-gravity campaigns in our ledger. The longest test lasted 150 s; most lasted 5–25 s.
 
@@ -79,7 +80,7 @@ show why, and what data would unlock it.
 ## Slide 6: What to measure next (our recommendation)
 
 - Gap Radar: P = relevance × 1/(1 + campaigns) × D × F, with the formula on screen.
-- #1: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂). The only evidence in our ledger is a 5.18-s drop-tower limit series on two films; no long-duration test is in our ledger or planned in our sources (FM2 plans 8.2 psia/34% and 14.7 psia/21%).
+- #1: lunar gravity at the upper O₂ control band of the lunar habitat (8.2 psia, up to 37% O₂; NASA, 2026). The only lunar-gravity evidence at reduced pressure in our ledger is a 5.18-s drop-tower limit series on two films (at 10.2 psia). FM2 plans 34% at 8.2 psia, not the 37% upper band, and no long-duration test at 37% is planned in our sources.
 - Recommended platform: lunar surface (FM2-class) or a spin vehicle (LUCI-class). Pair every test with a 1-g
   test to compute the oxygen margin.
 
@@ -93,8 +94,8 @@ show why, and what data would unlock it.
 - Validator checks:
   - invented citations, DOI or page mismatches and untraceable numbers are removed;
   - claims the cited text does not entail are downgraded to hypotheses.
-- Golden set (25 questions): abstained correctly 25/25; 41% of sentences verified, 52% kept as hypotheses,
-  7% removed.
+- Golden set (25 questions, local qwen3:8b): abstained correctly 25/25; 73% of sentences verified, 24% kept as
+  hypotheses, 3% removed. Manual audit: 9/10 verified sentences correct.
 - Works with Gemini, a local Ollama model, or no LLM at all.
 
 **Speaker notes:** Language models explain; they never compute or decide the truth. Thank you. Everything is

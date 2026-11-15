@@ -9,7 +9,7 @@ export function Home() {
   const nPsi = catalog.data?.length
   const nPartialPsi = catalog.data?.filter((i) => i.gravity_regime === 'partial_gravity').length
   const minMargin = analysis.data ? Math.min(...analysis.data.bridge.margin_checks.map((m) => m.computed)) : undefined
-  const lunarNominal = analysis.data?.next_experiments.find((n) => n.closest_scenario.id === 'LUNAR-SURFACE-HABITAT')
+  const top = analysis.data?.next_experiments[0]
 
   return (
     <div className="space-y-10 py-4">
@@ -36,9 +36,9 @@ export function Home() {
           src="Olson & Ferkul 2012, Table I · recomputed by IGNIS (9/9 match)"
         />
         <Fact
-          value={lunarNominal ? `≤ ${lunarNominal.max_duration_s ?? '?'} s` : '…'}
-          text="longest lunar-gravity flammability test at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂) in our ledger: drop-tower limit tests on two films. No long-duration test there is in our ledger or planned in our sources."
-          src="Gap Radar · FM2 plans 8.2 psia/34% and 14.7 psia/21% instead"
+          value={top ? `≤ ${top.max_duration_s ?? '?'} s` : '…'}
+          text="longest lunar-gravity flammability test at reduced pressure in our ledger (drop-tower limit tests on two films, 10.2 psia). Lunar habitats may run up to 37% O₂ at 8.2 psia (NASA, 2026); FM2 plans 34%, and no long-duration test at the upper band is planned in our sources."
+          src={top ? `Gap Radar #1: ${top.closest_scenario.name} · P = ${top.priority}` : 'Gap Radar'}
         />
       </section>
 

@@ -394,3 +394,10 @@ def test_real_nli_entails_quote_inside_long_passage() -> None:
         e, {"NTRS-X"}, {}, nli,
     )
     assert r.sentences[0].verdict == "VERIFIED"
+
+
+def test_label_stripping_keeps_punctuation_and_spacing() -> None:
+    from ignis.evidence.validator.validator import _strip_labels
+
+    assert _strip_labels("A material passes Test 1 [S1].") == "A material passes Test 1."
+    assert _strip_labels("Rates 0.9 and 1.5 mm/s [S1, T2], see text.") == "Rates 0.9 and 1.5 mm/s, see text."

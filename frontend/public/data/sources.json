@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-15T01:56:21+00:00",
+ "built_at": "2026-11-15T02:20:14+00:00",
  "sources": [
   {
    "id": "NTRS-20130010991",
@@ -31,6 +31,23 @@
    "full_text_indexed": true,
    "raw_path": "ntrs/pdf/20260000646.pdf",
    "sha256": "5889dd8e772829d83e052c5fccf947fb4ced5fe6bf2b21d3be91602685e88726"
+  },
+  {
+   "id": "NTRS-20260001966",
+   "title": "Material Flammability at Lunar and Martian Gravity",
+   "authors": [
+    "Paul Ferkul",
+    "Nathan Kralik",
+    "Ya-Ting Liao",
+    "Michael Johnston"
+   ],
+   "year": 2026,
+   "url": "https://ntrs.nasa.gov/citations/20260001966",
+   "doi": null,
+   "license": "NTRS GOV_PERMITTED",
+   "full_text_indexed": true,
+   "raw_path": "ntrs/pdf/20260001966.pdf",
+   "sha256": "89c604a71fe33840a79aaad8fdb9942e11b32d88b20af6fa46f3bb48b1b63113"
   },
   {
    "id": "NTRS-20250010653",

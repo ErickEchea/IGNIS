@@ -6,7 +6,8 @@
 ## Summary (≈150 words)
 
 Fire depends on gravity, yet nearly all spacecraft-fire evidence comes from Earth (1 g) or orbit (~0 g). Artemis
-and Mars crews will live at 0.165 g and 0.38 g, in reduced-pressure, oxygen-enriched cabins. IGNIS turns NASA's
+and Mars crews will live at 0.165 g and 0.38 g, in reduced-pressure, oxygen-enriched cabins (8.2 psia, 34% O₂
+nominal for lunar surface systems, per NASA 2026). IGNIS turns NASA's
 combustion archive into traceable evidence, and asks what we know, how well a mission condition is covered,
 and what to measure next.
 
@@ -18,7 +19,7 @@ and what to measure next.
 - **Scientific Copilot:** every drafted sentence is checked by a deterministic and NLI validator. Unsupported
   sentences are removed or marked as hypotheses.
 
-The headline gap: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂). The only evidence in our ledger is a 5.18-s drop-tower limit series on two films; no long-duration test is in our ledger or planned in our sources (FM2 plans 8.2 psia/34% and 14.7 psia/21%).
+The headline gap: lunar gravity at the upper O₂ control band of the lunar habitat (8.2 psia, up to 37% O₂; NASA, 2026). The only lunar-gravity evidence at reduced pressure in our ledger is a 5.18-s drop-tower limit series on two films (at 10.2 psia). FM2 plans 34% at 8.2 psia, not the 37% upper band, and no long-duration test at 37% is planned in our sources.
 
 ## What it does
 

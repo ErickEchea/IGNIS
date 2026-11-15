@@ -7,7 +7,7 @@ import { useAnalysis, useCards, useScenarios } from '../lib/data'
 import { priority } from '../lib/ranking'
 import type { Analysis, GapCell, Scenario } from '../lib/types'
 
-const DEFAULT_SCENARIOS = ['LUNAR-SURFACE-HABITAT', 'LUNAR-SURFACE-HABITAT-EVA', 'GATEWAY-NOMINAL', 'MARS-SURFACE-HABITAT']
+const DEFAULT_SCENARIOS = ['LUNAR-2026-UPPER-BAND', 'LUNAR-2026-NOMINAL', 'LUNAR-SURFACE-HABITAT', 'GATEWAY-NOMINAL', 'MARS-SURFACE-HABITAT']
 type View = 'priority' | 'coverage'
 
 const RAMP_LIGHT = ['#f4f8fd', '#cde2fb', '#86b6ef', '#3987e5', '#1c5cab', '#0d366b']
@@ -216,7 +216,7 @@ export default function Gaps() {
           ))}
         </div>
         <Note>
-          This list is computed from the priority formula for the four exploration scenarios. It is a transparent prioritization, not a Bayesian
+          This list is computed from the priority formula for the exploration scenarios (lunar 2026 nominal and upper band, lunar 2022 baseline, Gateway, Mars). It is a transparent prioritization, not a Bayesian
           experimental design: expected information gain needs a validated predictor, and the C.2 gate is closed.
         </Note>
         {fm2 && (

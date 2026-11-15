@@ -23,6 +23,7 @@ from ignis.evidence.cards import normalize_text, numbers_in
 Verdict = Literal["VERIFIED", "DOWNGRADED", "REMOVED", "UNCHECKED"]
 CATEGORIES = ("DOCUMENTED_FACT", "SCIENTIFIC_INTERPRETATION", "HYPOTHESIS", "UNKNOWN")
 ENTAIL_MIN = 0.5
+WINDOW_ENTAIL_MIN = 0.9  # windows lose context (e.g. 'average' vs a specific material): stricter
 CONTRADICT_MIN = 0.5
 _DOI = re.compile(r"\b10\.\d{4,9}/[^\s\]\),;]+", re.IGNORECASE)
 _PAGE = re.compile(r"\b(?:p\.|page)\s*(\d{1,4})\b", re.IGNORECASE)
@@ -91,7 +92,10 @@ def premise_windows(text: str, size: int = 3, max_windows: int = 12) -> list[str
 
 
 def _strip_labels(text: str) -> str:
-    return _LABEL.sub("", text).strip()
+    # Remove [S1]-style labels and the space they leave before punctuation ("microgravity ." hurts NLI).
+    out = _LABEL.sub("", text)
+    out = re.sub(r"\s+([.,;:!?])", r"\1", out)
+    return re.sub(r"\s{2,}", " ", out).strip()
 
 
 def _significant_numbers(text: str) -> set[str]:
@@ -177,7 +181,9 @@ def validate(
                     if best_e >= ENTAIL_MIN:
                         break
                     rw = nli.predict(window, hyp)
-                    best_e = max(best_e, float(getattr(rw, "entailment", 0.0)))
+                    we = float(getattr(rw, "entailment", 0.0))
+                    if we >= WINDOW_ENTAIL_MIN:
+                        best_e = max(best_e, we)
             chk.entailment = round(best_e, 3)
             chk.checks["entailed"] = best_e >= ENTAIL_MIN
             if best_e < ENTAIL_MIN and best_c >= CONTRADICT_MIN:

@@ -12,8 +12,9 @@ Team **Artisanal Intelligence** (Riobamba, Ecuador) · MIT license · not affili
 ## The problem
 
 Nearly all spacecraft-fire evidence comes from Earth (1 g) or orbit (~0 g). Artemis and Mars crews will live
-at partial gravity, in reduced-pressure, oxygen-enriched cabins. NASA documents the lunar Surface Habitat at 10.2 psia
-with 26.5% O₂, with an 8.2 psia / 34% O₂ capability (NASA/TM-20220000524). The 2006 Exploration Atmospheres Working
+at partial gravity, in reduced-pressure, oxygen-enriched cabins. The latest NASA statement IGNIS found (LPSC 2026) says the
+HLS, lunar habitat and pressurized rover "will nominally use 8.2 psia / 34% O2", with control bands up to 37% O₂.
+An earlier planning baseline put the lunar Surface Habitat at 10.2 psia / 26.5% O₂ (NASA/TM-20220000524). The 2006 Exploration Atmospheres Working
 Group recommended 8.0 psia / 32% O₂ for long-duration lunar and Mars habitats (NTRS 20150021491).
 
 ### Thesis: the partial-gravity blind spot
@@ -61,7 +62,7 @@ We tested two hypotheses against sources. We did not assume them.
 2. **How well is a mission condition covered?** Pick a scenario (ISS, Gateway, lunar habitat, Mars). Its
    atmosphere is verified in NASA documents, or marked UNKNOWN. Then see the evidence and the comparability
    caveats.
-3. **What should fly next?** Top gap: lunar gravity at the nominal lunar-habitat atmosphere (10.2 psia, 26.5% O₂). The only evidence in our ledger is a 5.18-s drop-tower limit series on two films; no long-duration test is in our ledger or planned in our sources (FM2 plans 8.2 psia/34% and 14.7 psia/21%).
+3. **What should fly next?** Top gap: lunar gravity at the upper O₂ control band of the lunar habitat (8.2 psia, up to 37% O₂; NASA, 2026). The only lunar-gravity evidence at reduced pressure in our ledger is a 5.18-s drop-tower limit series on two films (at 10.2 psia). FM2 plans 34% at 8.2 psia, not the 37% upper band, and no long-duration test at 37% is planned in our sources.
 
 ## Architecture
 
@@ -147,9 +148,11 @@ Ollama, IGNIS still runs in "evidence only" mode.
 - Ranking and priority weights are documented judgment calls, not fitted parameters.
 - Finding Cards were drafted with AI assistance. They are accepted only by deterministic checks, and a human
   spot-check is reported in TEST_REPORT.md.
-- The Copilot validator is conservative but not perfect: in the golden set, 41% of drafted sentences were
-  verified by NLI and 52% were kept only as hypotheses. It has also removed correct sentences when the cited
-  passage wrote a number differently.
+- The Copilot validator reduces errors but does not eliminate them. In the golden set (local `qwen3:8b`), 73% of
+  drafted sentences were verified by NLI, 24% were kept only as hypotheses and 3% were removed. A manual audit of 10
+  random verified sentences found 9 correct and 1 that dropped a qualifier ("quiescent"). An earlier audit found a
+  known false verification: a three-material average was attributed to a single material. The validator also
+  sometimes removes correct sentences when the cited passage writes a number differently.
 
 ## Use of AI (SI) tools
 
